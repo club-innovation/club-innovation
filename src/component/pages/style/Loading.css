@@ -19,7 +19,7 @@ h1 {
 }
 
 .loading-effect:before {
-    content: "Loading";
+    content: "under development";
     animation: ellipsis 2s linear infinite;
 }
 
@@ -30,18 +30,18 @@ span {
 /* Define the animation keyframes */
 @keyframes ellipsis {
     0% {
-        content: "Loading";
+        content: "under development";
     }
 
     33% {
-        content: "Loading.";
+        content: "under development.";
     }
 
     66% {
-        content: "Loading..";
+        content: "under development..";
     }
 
     100% {
-        content: "Loading...";
+        content: "under development...";
     }
 }
