@@ -19,7 +19,7 @@ function App() {
         <HashRouter>
             <Navbar/>
             <Routes>
-                <Route path="/" element={<Loading/>}/>
+                <Route path="/" element={<Home/>}/>
                 <Route path="/team" element={<Team/>}/>
                 <Route path="/events" element={<Events/>}/>
                 <Route path="/projects" element={<Projects/>}/>
