@@ -1,0 +1,47 @@
+.Loading-container {
+    height: 100vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 6vw;
+}
+
+.loading-effect {
+    font-weight: 600;
+    font-size: 4vw;
+    animation: ellipsis 0.5s linear infinite;
+}
+
+.loading-effect:before {
+    content: "Loading";
+    animation: ellipsis 2s linear infinite;
+}
+
+span {
+    color: #8CEFE9;
+}
+
+/* Define the animation keyframes */
+@keyframes ellipsis {
+    0% {
+        content: "Loading";
+    }
+
+    33% {
+        content: "Loading.";
+    }
+
+    66% {
+        content: "Loading..";
+    }
+
+    100% {
+        content: "Loading...";
+    }
+}
