@@ -1,5 +1,7 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./component/Navbar";
 
 import Home from "./component/pages/Home";
 import Team from "./component/pages/Team";
@@ -14,18 +16,18 @@ import Loading from "./component/pages/Loading";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
+            <Navbar/>
             <Routes>
                 <Route path="/" element={<Loading/>}/>
-                <Route path="club-innovation" element={<Home/>}/>
-                <Route path="team" element={<Team/>}/>
-                <Route path="events" element={<Events/>}/>
-                <Route path="projects" element={<Projects/>}/>
-                <Route path="contact" element={<Contact/>}/>
-                <Route path="about" element={<About/>}/>
-                <Route path="*" element={<NoPage />} />
+                <Route path="/team" element={<Team/>}/>
+                <Route path="/events" element={<Events/>}/>
+                <Route path="/projects" element={<Projects/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/about" element={<About/>}/>
+                <Route path="/*" element={<NoPage />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
