@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/club-innovation/static/css/main.396e71a5.css",
-    "main.js": "/club-innovation/static/js/main.d791359e.js",
+    "main.css": "/club-innovation/static/css/main.6f5b2ee1.css",
+    "main.js": "/club-innovation/static/js/main.200006df.js",
     "index.html": "/club-innovation/index.html",
-    "main.396e71a5.css.map": "/club-innovation/static/css/main.396e71a5.css.map",
-    "main.d791359e.js.map": "/club-innovation/static/js/main.d791359e.js.map"
+    "main.6f5b2ee1.css.map": "/club-innovation/static/css/main.6f5b2ee1.css.map",
+    "main.200006df.js.map": "/club-innovation/static/js/main.200006df.js.map"
   },
   "entrypoints": [
-    "static/css/main.396e71a5.css",
-    "static/js/main.d791359e.js"
+    "static/css/main.6f5b2ee1.css",
+    "static/js/main.200006df.js"
   ]
 }
