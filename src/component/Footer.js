@@ -3,9 +3,10 @@ import "./Footer.css"
 
 function Footer() {
   return (
+    
     <>
     <div>Footer</div>
-    <div>&#123; sd</div>
+    <div> &#123;ems </div>
     </>
     
   )
