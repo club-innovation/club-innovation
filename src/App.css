@@ -5,3 +5,24 @@
 .secondary-color {
     color: var(--secondary-color);
 }
+
+button {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 0;
+}
+
+button:hover {
+    color: #fff;
+    background-color: var(--dark-primary-color);
+}
+
+button:active {
+    transform: translateY(1px);
+}
