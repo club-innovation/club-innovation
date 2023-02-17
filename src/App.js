@@ -13,7 +13,7 @@ import About from "./component/pages/About";
 import NoPage from "./component/pages/NoPage";
 
 // Loading is a page for website maintenance
-import Loading from "./component/pages/Loading";
+//import Loading from "./component/pages/Loading";
 
 function App() {
     return (

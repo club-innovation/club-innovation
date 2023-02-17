@@ -1,0 +1,58 @@
+.description
+{
+    display: flex;
+    justify-content: center;
+}
+.description-details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    margin-left: 5vw;
+}
+
+img
+{
+    width: 30%;
+    margin-right: 5vw;
+}
+
+h2
+{
+    font-size: 2vw;
+}
+
+p
+{
+    font-size: 1.5vw;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 800px)
+{
+    .description 
+    {
+        display: block;
+    }
+    .description-details {
+        width: 50%;
+        margin: auto;
+    }
+
+    img {
+        width: 50%;
+        margin: 0 0 25px 25%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
