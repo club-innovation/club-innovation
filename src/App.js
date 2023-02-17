@@ -2,6 +2,7 @@ import "./App.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
 
 import Home from "./component/pages/Home";
 import Team from "./component/pages/Team";
