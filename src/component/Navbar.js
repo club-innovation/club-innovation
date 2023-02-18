@@ -1,11 +1,15 @@
 import React from "react"
 import "./Navbar.css"
+import hamburger from "../imgs/svg/hamburger.svg"
 
 import { Outlet, Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <>
+    <div className="navbar-container">
+    <h1>&#123;Club<span className="primary-color">Innovation</span>&#125;</h1>
+      <div className="navbar">
       <nav>
         <ul>
           <li>
@@ -26,11 +30,14 @@ function Navbar() {
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li>
-            <Link to="/404">404</Link>
-          </li>
         </ul>
       </nav>
+      <a>
+      <img className="hamburger-btn" src={hamburger} alt="hamburger button"/>
+      </a>
+      </div>
+    </div>
+      
 
       <Outlet />
     </>

@@ -1,0 +1,40 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar>a{
+    margin-left: 25px;
+}
+
+h1 {
+    margin: 15px;
+}
+
+ul {
+    display: flex;
+    background-color: var(--primary-color);
+    width: fit-content;
+    border-radius: 20px;
+}
+
+li {
+    list-style: none;
+    padding: 20px 35px;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: large;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.hamburger-btn {
+    width: 65px;
+}
