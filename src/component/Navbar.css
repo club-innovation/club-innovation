@@ -60,3 +60,7 @@
     width: 65px;
     cursor: pointer;
 }
+
+.navigation {
+    visibility: hidden;
+}
