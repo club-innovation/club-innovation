@@ -11,11 +11,11 @@
 }
 
 .navbar>a{
-    margin-left: 25px;
+    margin-left: 1.2vw;
 }
 
 .navbar-container h1 {
-    font-size: 2vw;
+    font-size: calc(12px + 1.5vw);
     margin-right: 20px;
 }
 
@@ -34,7 +34,7 @@
     height: 3vw;
     line-height: 3vw;
     text-align: center;
-    font-size: 1vw;
+    font-size: calc(4px + .9vw);
 }
 
 
