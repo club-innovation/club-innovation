@@ -11,7 +11,7 @@ function Navbar() {
     <div className="navbar-container">
     <h1>&#123;Club<span className="primary-color">Innovation</span>&#125;</h1>
       <div className="navbar">
-        <nav>
+        <nav className="navigation">
         <ul>
           <li>
             <Link to="/">Home</Link>
