@@ -1,42 +1,30 @@
 .Footer {
     background-color: var(--primary-color);
-    bottom: 0;
+   
     position: relative;
+    top: 50px;
     width: 100%;
+    height: 60vh;
     
 }
 .container1{
+    width: 30%;
     margin: 4vw;
-    height:100%;
+    height:65%;
+    border: solid;
     left: 0;
 }
-
-.p1  {
-    width: 35vw;
-    color: var(--dark-secondary-color);
-    font-weight: 600;
-    font-size: 22px;
-    font-family: 'Inter';
-    font-style: normal;
-    margin-bottom: 0;
-}
-.p2, .p5{
-    margin-top: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
+.title1{
+    width: 20vw;
     font-size: 20px;
-    line-height: 160.02%;
-    text-decoration-line: underline;
-    color: var(--dark-secondary-color);
-    opacity: 0.7;
+    color: black;
+    font-weight: bolder;
 }
-.p4 {
-    width: 35vw;
-    color: var(--dark-secondary-color);
-    font-weight: 600;
-    font-size: 22px;
-    font-family: 'Inter';
-    font-style: normal;
-    margin-bottom: 0;
+a{
+    color: gray;
+    position: relative;
+    top: 9px;
+}
+.inov{
+    color: black;
 }
