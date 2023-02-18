@@ -12,7 +12,7 @@ function Events() {
     <div>
       <Description 
         title={<>Club <span className="primary-color">Innovation</span> Events</>} 
-        description={"Club Innovation is dedicated to promoting innovation and creativity among the students of EMSI Marrakech. The club's primary responsibility is to conduct a range of programming events, workshops and competitions."} 
+        description={"The main objective of Club Innovation at EMSI Marrakech is to foster innovation and creativity among the student body. To accomplish this, the club is responsible for organizing and hosting a variety of programming events, workshops, and competitions, aimed at encouraging students to develop and showcase their skills and talents."} 
         image={projectsSVG}/>
     </div>
   )
