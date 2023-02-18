@@ -1,0 +1,66 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar>a{
+    margin-left: 25px;
+}
+
+.navbar-container h1 {
+    margin-top: 14px;
+    margin-right: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-top: 19px;
+    width: fit-content;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a{
+    background-color: var(--primary-color);
+    padding: 20px 35px;
+}
+
+
+.navbar li a:hover {
+    background-color: var(--dark-primary-color);
+
+}
+
+.navbar li:first-child a
+{
+    border-radius: 20px 0 0 20px;
+}
+
+.navbar li:last-child a
+{
+    border-radius: 0 20px 20px 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: large;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.hamburger-btn {
+    width: 65px;
+    cursor: pointer;
+}
+
+.navigation {
+    visibility: hidden;
+}
