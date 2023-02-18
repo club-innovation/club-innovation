@@ -41,12 +41,9 @@ color: var(--primary-color);
     font-family: 'Poppins';
    
 }
-.nav1{ 
-position: absolute;    
-right: 0;
-margin-right: 20%;
-}
-.ul1 {
-    list-style: none;
 
+.discription{
+    position: absolute;
+    right: 0;
+    margin:20% ;
 }
