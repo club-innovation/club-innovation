@@ -4,13 +4,9 @@ import Background from "../../imgs/home/background.jpg"
 
 function Home() {
   return (
-    <>
-    <div className="Background">
-    <img src={Background} />
-
-
+    <div className="background">
+      <img src={Background} />
     </div>
-    </>
   )
 }
 
