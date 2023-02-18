@@ -1,5 +1,6 @@
 import React from "react"
 import "./Navbar.css"
+import closebtn from "../imgs/svg/close.svg"
 import hamburger from "../imgs/svg/hamburger.svg"
 
 import { Outlet, Link } from "react-router-dom";
@@ -10,7 +11,7 @@ function Navbar() {
     <div className="navbar-container">
     <h1>&#123;Club<span className="primary-color">Innovation</span>&#125;</h1>
       <div className="navbar">
-      <nav>
+        <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -31,10 +32,10 @@ function Navbar() {
             <Link to="/about">About</Link>
           </li>
         </ul>
-      </nav>
-      <a>
-      <img className="hamburger-btn" src={hamburger} alt="hamburger button"/>
-      </a>
+        </nav>
+        <a>
+          <img className="hamburger-btn" src={closebtn} alt="hamburger button"/>
+        </a>
       </div>
     </div>
       
