@@ -1,0 +1,33 @@
+.Footer {
+    background-color: var(--primary-color);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    
+}
+.container1{
+    margin: 4vw;
+    height:100%;
+    left: 0;
+}
+
+.p1 , .p4 {
+    width: 20%;
+    color: var(--dark-secondary-color);
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    margin-bottom: 0;
+}
+.p2, .p5{
+    margin-top: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160.02%;
+    text-decoration-line: underline;
+    color: var(--dark-secondary-color);
+    opacity: 0.7;
+}
