@@ -26,6 +26,9 @@ function Navbar() {
           <li>
             <Link to="/about">About</Link>
           </li>
+          <li>
+            <Link to="/404">404</Link>
+          </li>
         </ul>
       </nav>
 
