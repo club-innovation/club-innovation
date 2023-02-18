@@ -18,6 +18,9 @@ function Navbar() {
             <Link to="/events">Events</Link>
           </li>
           <li>
+            <Link to="/team">Team</Link>
+          </li>
+          <li>
             <Link to="/contact">Contact</Link>
           </li>
           <li>
