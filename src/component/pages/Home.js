@@ -1,11 +1,11 @@
 import React from "react"
 import "./style/Home.css"
-import Background from "../../imgs/home/background.jpg"
+import background from "../../imgs/home/background.jpg"
 
 function Home() {
   return (
     <div className="background">
-      <img src={Background} />
+      <img src={background} alt="Background"/>
     </div>
   )
 }
