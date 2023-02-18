@@ -1,0 +1,19 @@
+.background
+{
+    background-image: url(../../../imgs/home/background.jpg);
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 50vw;
+   min-height: 430px;
+                        }
+.p1{
+    font-weight: bolder;
+    font-size: 3.5vw;
+    margin-bottom: 20px;
+                        }
+.p2{
+   margin-bottom: 10px;
+    font-size: 2vw;  
+    font-weight: bolder;
+                        }
