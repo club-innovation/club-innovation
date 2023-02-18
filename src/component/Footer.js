@@ -3,7 +3,7 @@ import "./Footer.css"
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div>Footer @2023</div>
   )
 }
 
