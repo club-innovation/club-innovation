@@ -1,6 +1,7 @@
 .navbar-container{
     display: flex;
     justify-content: space-around;
+    margin: 30px 0;
 }
 
 .navbar{
@@ -12,29 +13,49 @@
 }
 
 h1 {
-    margin: 15px;
+    margin-top: 14px;
 }
 
 ul {
     display: flex;
-    background-color: var(--primary-color);
+    margin-top: 19px;
     width: fit-content;
-    border-radius: 20px;
 }
 
 li {
     list-style: none;
+}
+
+li a{
+    background-color: var(--primary-color);
     padding: 20px 35px;
+}
+
+
+li a:hover {
+    background-color: var(--dark-primary-color);
+
+}
+
+li:first-child a
+{
+    border-radius: 20px 0 0 20px;
+}
+
+li:last-child a
+{
+    border-radius: 0 20px 20px 0;
 }
 
 a{
     text-decoration: none;
     font-family: 'Poppins';
     font-size: large;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--secondary-color);
 }
 
 .hamburger-btn {
     width: 65px;
+    cursor: pointer;
 }
