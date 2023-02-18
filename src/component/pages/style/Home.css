@@ -1,49 +1,19 @@
-.background img
+.background
 {
+    background-image: url(../../../imgs/home/background.jpg);
    width: 100%;
-   margin: 0;
-top: 0;
-z-index: -1;
-position: absolute;
-}
-.to {
-    font-size: 48px;
-    font-weight: bolder;
-color: var(--primary-color);
-
-
-}
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 50vw;
+   min-height: 430px;
+                        }
 .p1{
     font-weight: bolder;
-    font-size: 48px;
+    font-size: 3.5vw;
     margin-bottom: 20px;
-}
-
+                        }
 .p2{
    margin-bottom: 10px;
-    font-size: 36px;  
+    font-size: 2vw;  
     font-weight: bolder;
-
-}
-.innovation{
-    font-weight: bolder;
-    font-size: 36px;
-    color: var(--primary-color);
-}
-.par1{
-   font-size: small;
-   font-family: 'Poppins';
-
-}
-.par2{
-    margin: 0.5px;
-    font-size: small;
-    font-family: 'Poppins';
-   
-}
-
-.discription{
-    position: absolute;
-    right: 0;
-    margin:20% ;
-}
+                        }
