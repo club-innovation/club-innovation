@@ -4,7 +4,9 @@ import background from "../../imgs/home/background.jpg";
 import logo1 from "../../imgs/home/coding.png";
 import programming from "../../imgs/home/programming.gif";
 import project from "../../imgs/home/project.svg";
-import Description from "../Description";
+import projects from "../../imgs/home/projects.gif";
+import terminal from "../../imgs/home/terminal.gif";
+import helps from "../../imgs/home/helps.gif";
 function Home() {
   return (
     <div>
@@ -26,15 +28,15 @@ function Home() {
         </p>
         <div className="info2">
           <div className="par">
-            <p>
-              ClubInnovation is where students with different interests such as
+            <p className="para">
+              Club Innovation is where students with different interests such as
               computing and responsible for conducting programming events for
               the students of Emsi Marrakech.
             </p>
             <div className="par1">
-              <p>
-                Discover the ClubInnovation system A system where you will have
-                fun and learn at the same time!
+              <p className="para2">
+                Discover the Club system A system where you will have fun and
+                learn at the same time!
               </p>
             </div>
           </div>
@@ -66,49 +68,41 @@ function Home() {
             {/* second one */}
             <div className="home-list">
               <div className="home-list-gif">
-                <img src={programming}></img>
+                <img src={projects}></img>
               </div>
               <div className="home-list-description">
-                <p className="home-list-description-title">
-                  Learning Resources
-                </p>
+                <p className="home-list-description-title">Projects</p>
                 <p className="home-list-description-paragraph">
-                  Free Online resources for learning and obtaining certificates
-                  in many areas related to computer sience.
+                  We will have a lot of projects ! Several teams will be formed
+                  And We will all work together on fun projects!
                 </p>
               </div>
             </div>
             {/* third one */}
             <div className="home-list">
               <div className="home-list-gif">
-                <img src={programming}></img>
+                <img src={terminal}></img>
               </div>
               <div className="home-list-description">
-                <p className="home-list-description-title">
-                  Learning Resources
-                </p>
+                <p className="home-list-description-title">Competitions</p>
                 <p className="home-list-description-paragraph">
-                  Free Online resources for learning and obtaining certificates
-                  in many areas related to computer sience.
+                  Do you have a competitive spirit? We will organize
+                  competitions.
                 </p>
               </div>
             </div>
             {/* fourth one */}
             <div className="home-list">
               <div className="home-list-gif">
-                <img src={programming}></img>
+                <img src={helps}></img>
               </div>
               <div className="home-list-description">
-                <p className="home-list-description-title">
-                  Learning Resources
-                </p>
+                <p className="home-list-description-title">Help</p>
                 <p className="home-list-description-paragraph">
-                  Free Online resources for learning and obtaining certificates
-                  in many areas related to computer sience.
+                  Stuck and want help? Our discord is here for you!
                 </p>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
