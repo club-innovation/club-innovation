@@ -35,7 +35,6 @@
     animation: gradient 15s ease infinite;
     animation: pulse 0.5s ease-in-out;
     background: linear-gradient(45deg, var(--primary-color), var( --dark-secondary-color), #23a6d5, #23d5ab);
-    /* background: rgba(0, 0, 0, 0.2);  */
 }
 .member-list-card:hover .member-list-name
 {
@@ -58,8 +57,6 @@
 }
 
 .icons{
-    height: 30px;
-    width: 25px;
     color: white;
 }
 
@@ -101,7 +98,6 @@
     position: absolute;
     visibility: hidden;
 }
-
 
 @media screen and (max-width: 1200px)
 {

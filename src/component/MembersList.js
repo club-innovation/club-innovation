@@ -2,10 +2,10 @@ import React from "react"
 import "./List.css"
 import "./pages/style/MembersList.css"
 import MembersData from './MembersData'
-import {FaGithub} from 'react-icons/fa'
-import { FaLinkedin } from "react-icons/fa"
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link } from "react-router-dom"
-import { FaInstagram } from "react-icons/fa"
 
 function MembersList() {
   return (
@@ -17,9 +17,9 @@ function MembersList() {
                    <div className="particle-background"></div> {/* add this element */}
                         <div className="overlay">
                               <ul className="iconsUl">
-                                 <li title="Github Link"><Link to={member.github}><FaGithub className="icons" /></Link></li>
-                                 <li title="Linkedin Link"><Link to={member.linkedin}><FaLinkedin className="icons"/></Link></li>
-                                 <li title="Instagram Link"><Link to={member.instagram}><FaInstagram className="icons"/></Link></li>
+                                 <li title="Github Link"><Link to={member.github}><GitHubIcon className="icons" fontSize="large"/></Link></li>
+                                 <li title="Linkedin Link"><Link to={member.linkedin}><LinkedInIcon className="icons" fontSize="large"/></Link></li>
+                                 <li title="Instagram Link"><Link to={member.instagram}><InstagramIcon className="icons" fontSize="large"/></Link></li>
                               </ul>
                         </div>
                         <div className="image">
