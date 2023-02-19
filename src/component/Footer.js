@@ -1,3 +1,4 @@
+import { DialerSip } from "@mui/icons-material";
 import React from "react"
 import "./Footer.css"
 
@@ -5,6 +6,7 @@ function Footer() {
   return (
     <> 
        <div className="Footer">
+        <div className="row">
         <div className="container1">
             <div className="title1">want to become a part of our community?</div>
             <a href="" className="link1">Get in touch</a>
@@ -31,8 +33,21 @@ function Footer() {
            <button className="Subscribe">Subscribe</button>
 
         </div>
+
+        </div>
+        
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <div className="Endfooter">
+          <a href=""className="conct"> About </a> <a href=""className="conct"> Our system </a> <a href=""className="conct"> Event </a> <a href=""className="conct"> Members </a><a href=""className="conct"> Contact </a>
+          
+         </div>
+
         
        </div>
+      
       
       
     </>
