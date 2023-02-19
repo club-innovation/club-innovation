@@ -5,6 +5,7 @@
     top: 49px;
     width: 100%;
     height: auto;
+   
   
    
     
@@ -23,8 +24,7 @@
     margin: 4vw;
     height:59%;
     border: solid;
-    left: 0;
-    position: relative;
+    
     border: none;
     
 }
@@ -33,8 +33,7 @@
     margin: 4vw;
     height:59%;
     border: solid;
-    left: 0;
-    position: relative;
+    
     border:none
     
 }
@@ -82,6 +81,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+  
+    
 }
 .check{
     background-color: var(--primary-color);
@@ -98,7 +99,7 @@
      color:white;
  }
  .Endfooter{
-    position: relative;
+   position: relative;
    bottom: 32px;
    display: flex;
    justify-content: space-around;
@@ -128,5 +129,43 @@
   
    margin-left: 20px;
 }
+@media screen and (max-width: 800px) {
+    
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        right: 9%;
+       
+    }
+    .title1,.title2{
+        width: 49vw;
+    }
+   
+    .container2{
+       position: relative;
+       top: 30px;
+       
+    }
+    .Email{
+        width: 240px;
+    }
+
+    .LogoInovation{
+        font-size: 16px;
+    }
+    .signupText{
+        width: 40vw;
+    }
+    .link2{
+        width: 50vw;
+    }
+    
+    
+  
+  }
+
 
 

@@ -15,21 +15,21 @@ function Footer() {
             <a href="" className="link1">Get in touch</a>
             <br/>
             <br/>
+           
+            <div> <h2 className="LogoInovation">&#123;Club <span className="inov">Innovation</span>&#125;</h2></div>
             <br/>
-            <div> <h2>&#123;Club <span className="inov">Innovation</span>&#125;</h2></div>
-            <br/>
-            <br/>
+           
             <div className="title2">want to become a part of us?</div>
-            <a href="" className="link1">check out our game challenge</a>
+            <a href="" className="link1" ><div className="link2">check out our game challenge</div></a>
           
         </div>
         <div className="container2">
         <div className="title2">keep up with news from us</div>
-         <br/>
+        
          <input type={"text"} placeholder="Email" className="Email"/>
          <br/>
          <br/>
-         <br/>
+      
          
          <input type={"checkbox" } className="check" color="--primary-color" /> <div className="signupText">Sign up to our Newsletter, to recieve updates on the latest news releases and special offers.</div> 
            <br/>
