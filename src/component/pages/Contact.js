@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./style/Contact.css";
-
-
-
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -31,7 +29,8 @@ function Contact() {
 
   return (
     <div className="Contact">
-    <p className="Info">Contact <span className="primary-color">Us</span></p>
+      <p className="Info">Contact <span className="primary-color">Us</span></p>
+      <div className="ContainerContact">
       <div className="ContainerContact1">
         <form onSubmit={handleSubmit}>
           <label htmlFor="firstName">First Name:</label>
@@ -82,13 +81,14 @@ function Contact() {
         </form>
       </div>
       <div className="ContainerContact2">
-        <p>Contact</p>
-        <p>contact@emsicoders.com</p>
-        <p>Based in</p>
-        <p>Marrakech</p>
+        <p className="p1">Contact</p>
+        <p className="p2">contact@emsicoders.com</p>
+        <p className="p3">Based in</p>
+        <p className="p4">Marrakech</p>
       </div>
       <div className="ContainerContact3">
-      
+      <FacebookOutlinedIcon className="header-icon" fontSize="large" />
+        </div>
       </div>
     </div>
   );

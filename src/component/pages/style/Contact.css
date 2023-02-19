@@ -1,10 +1,5 @@
 .Contact{
-  
   width: 100%;
-}
-.ContainerContact1{
-  width: 50%;
-  background-color: blue;
 }
 .ContainerContact1 form {
     display: flex;
@@ -13,6 +8,7 @@
     gap: 0.1vw;
     margin: 5vw;
     position: relative;
+    margin-top: 2vw;
 
 }
   
@@ -20,26 +16,34 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 19px;
     line-height: 120%;
     
 }
   
 .ContainerContact1 input{
-  width: 30%;
   padding: 5px;
   border-radius: 0px;
   border: none;
-   
+  outline: none;
   background-color: var(--secondary-cokor);
-  border-bottom: 10px;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  width: 220%;
+
     
 }
 .ContainerContact1 textarea {
-  width: 30%;
+  
   resize: none;
+  border: none;
+  outline: none;
   background-color: var(--secondary-cokor);
-  border-bottom: 30%;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  width: 225%;
+
+
 }
   
 .ContainerContact1 button[type="submit"] {
@@ -50,25 +54,52 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   background-color: var(--primary-color);
-    
+  border-radius: 100px;
+  color: var(--dark-secondary-color);
+  font-weight: 500;
 }
   
 .ContainerContact1 button[type="submit"]:hover {
   color: white;
   background-color: var(--dark-primary-color);
+  border-radius: 100px;
+  color: var(--dark-secondary-color);
+  font-weight: 500;
+  
+  
 }
 .Info{
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 3.4vw;
+  font-size: 4.3vw;
   line-height: 120%;
   margin: 5vw;
+  margin-bottom: 0;
 }
 .ContainerContact2 {
-  
-  background-color: blueviolet;
-  
   position: relative;
-  width: 50%;
+  left: 36%;
+  margin-right: 10vw;
+  width: 25%;
+  top : 150px;
+  
+}
+.p1, .p2, .p3, .p4{
+  text-align: left;
+  
+}
+.p1, .p3{
+  font-size: 2vw;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.p2, .p4{
+  font-size: 1vw;
+  margin-bottom: 5vw;
+  font-weight: 400;
+}
+
+.ContainerContact{
+  display: flex;
 }
