@@ -1,53 +1,74 @@
+.Contact{
+  
+  width: 100%;
+}
+.ContainerContact1{
+  width: 50%;
+  background-color: blue;
+}
 .ContainerContact1 form {
     display: flex;
     flex-direction: column;
     align-items: left;
     gap: 0.1vw;
     margin: 5vw;
+    position: relative;
 
-  }
+}
   
-  .ContainerContact1 label {
+.ContainerContact1 label {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 1vw;
     line-height: 120%;
-  }
-  
-  .ContainerContact1 input{
-    width: 30%;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     
-  }
-  .ContainerContact1 textarea {
-   width: 30%;
-   resize: none;
-
-    
-  }
+}
   
-  .ContainerContact1 button[type="submit"] {
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+.ContainerContact1 input{
+  width: 30%;
+  padding: 5px;
+  border-radius: 0px;
+  border: none;
+   
+  background-color: var(--secondary-cokor);
+  border-bottom: 10px;
     
-  }
+}
+.ContainerContact1 textarea {
+  width: 30%;
+  resize: none;
+  background-color: var(--secondary-cokor);
+  border-bottom: 30%;
+}
   
-  .ContainerContact1 button[type="submit"]:hover {
-     color: aqua;
-  }
+.ContainerContact1 button[type="submit"] {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primary-color);
+    
+}
+  
+.ContainerContact1 button[type="submit"]:hover {
+  color: white;
+  background-color: var(--dark-primary-color);
+}
 .Info{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.4vw;
-    line-height: 120%;
-    margin: 5vw;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.4vw;
+  line-height: 120%;
+  margin: 5vw;
+}
+.ContainerContact2 {
+  
+  background-color: blueviolet;
+  
+  position: relative;
+  width: 50%;
 }

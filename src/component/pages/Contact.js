@@ -85,8 +85,8 @@ function Contact() {
       <div className="ContainerContact2">
         <p>Contact</p>
         <p>contact@emsicoders.com</p>
-        <p></p>
-        <p></p>
+        <p>Based in</p>
+        <p>Marrakech</p>
       </div>
       <div className="ContainerContact3">
       
