@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./style/Contact.css";
 
-import { Outlet, Link } from "react-router-dom";
 
 
 
