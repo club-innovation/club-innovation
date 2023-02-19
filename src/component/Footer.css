@@ -146,7 +146,7 @@
    
     .container2{
        position: relative;
-       top: 30px;
+        top: 30px;
        
     }
     .Email{
@@ -162,7 +162,10 @@
     .link2{
         width: 50vw;
     }
-    
+    .Endfooter{
+        display: flex;
+        flex-direction: column;
+    }
     
   
   }
