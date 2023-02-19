@@ -14,6 +14,11 @@
     margin-left: 1.2vw;
 }
 
+.navbar-container > a
+{
+    text-decoration: none;
+    color: #fff;
+}
 .navbar-container h1 {
     font-size: calc(12px + 1.5vw);
     margin-right: 20px;

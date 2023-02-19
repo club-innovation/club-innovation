@@ -18,7 +18,7 @@ function Navbar() {
   {
     if(window.innerWidth <= 800)
     {
-      toggleHidden();
+      setBar({ isHidden: true });
     }
   }
   function toggleOverflow()
@@ -59,7 +59,9 @@ function Navbar() {
     <>
     <div className="navbar-container">
 
-    <h1>&#123;Club<span className={smallScreen && !bar.isHidden ? 'secondary-color' : 'primary-color'}>Innovation</span>&#125;</h1>
+    <Link to="/" onClick={toggleNav}>
+      <h1>&#123;Club<span className={smallScreen && !bar.isHidden ? 'secondary-color' : 'primary-color'}>Innovation</span>&#125;</h1>
+    </Link>
 
       <div className="navbar">
         <nav className="navigation" style={style}>
