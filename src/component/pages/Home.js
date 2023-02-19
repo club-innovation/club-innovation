@@ -40,11 +40,11 @@ function Home() {
               </p>
             </div>
           </div>
-          <img src={logo1}></img>
+          <div className="info2-img"><img src={logo1}></img></div>
         </div>
       </div>
       <div className="offer">
-        <p className="title1">
+        <p className="title2">
           &#123;What We Offer <span className="primary-color">You?</span>&#125;
         </p>
 

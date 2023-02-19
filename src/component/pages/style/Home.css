@@ -30,8 +30,17 @@
   text-align: center;
   font-weight: bold;
   font-size: 2.3vw;
+  margin-top: 4vw;
+  margin-bottom:3vw ;
 }
-
+.title2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.3vw;
+    margin-top: 6vw;
+    margin-bottom:4vw ;
+  
+}
 .info2 {
   justify-content: center;
   display: flex;
@@ -39,7 +48,9 @@
 }
 
 .info2 img {
-  width: 30%;
+  width: 100%;
+  height: auto;
+
 }
 
 .par1 {
