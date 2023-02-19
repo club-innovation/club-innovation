@@ -83,11 +83,15 @@
     display: flex;
     justify-content: space-between;
 }
-#check{
+.check{
     background-color: var(--primary-color);
     opacity: 0.6;
     position: relative;
     top:2px;
+    border: none;
+    opacity:0.4;
+    border: 2px solid black;
+    border-radius: 0;
 }
 .Subscribe{
      background-color: black;
@@ -97,21 +101,32 @@
     position: relative;
    bottom: 32px;
    display: flex;
-   justify-content: center;
+   justify-content: space-around;
    
    
+ }
+ .incons{
+    position: relative;
+    right: 150px;
  }
  .conct{
     margin-left: 35px;
     font-weight: 500;
     text-decoration: none;
    color: #070E21;
-
+   
     
 
  }
-.header-icon{
+ .header-icon{
+    font-size: small;
+ }
+.icon{
     color: var(--dark-secondary-color);
+
+   text-decoration: none;
+  
+   margin-left: 20px;
 }
 
 

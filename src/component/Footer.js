@@ -1,7 +1,10 @@
 import { DialerSip } from "@mui/icons-material";
 import React from "react"
 import "./Footer.css"
-
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 function Footer() {
   return (
     <> 
@@ -28,7 +31,7 @@ function Footer() {
          <br/>
          <br/>
          
-         <input type={"checkbox" } className="check" /> <div className="signupText">Sign up to our Newsletter, to recieve updates on the latest news releases and special offers.</div> 
+         <input type={"checkbox" } className="check" color="--primary-color" /> <div className="signupText">Sign up to our Newsletter, to recieve updates on the latest news releases and special offers.</div> 
            <br/>
            <button className="Subscribe">Subscribe</button>
 
@@ -42,9 +45,17 @@ function Footer() {
          <br/>
           
          <div className="Endfooter">
-        
-          <a href=""className="conct"> About </a> <a href=""className="conct"> Our system </a> <a href=""className="conct"> Event </a> <a href=""className="conct"> Members </a><a href=""className="conct"> Contact </a>
-          <a href=""className="conct">Learn</a> <a href=""className="icon"></a>
+           <div className="contact">
+           <a href=""className="conct"> About </a> <a href=""className="conct"> Our system </a> <a href=""className="conct"> Event </a> <a href=""className="conct"> Members </a><a href=""className="conct"> Contact </a>
+           <a href=""className="conct">Learn</a> <a href=""className="icon"></a>
+           </div>
+           <div className="incons">
+            <a  href=""className="icon"> <InstagramIcon className="header-icon"  /></a>
+            <a  href=""className="icon"> <GitHubIcon className="header-icon"  /></a>
+            <a  href=""className="icon"> <TwitterIcon className="header-icon"  /></a>
+            <a  href=""className="icon"> <LinkedInIcon className="header-icon"  /></a>
+           </div>
+         
          </div>
 
         
