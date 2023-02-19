@@ -1,26 +1,26 @@
 .navbar-container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 30px 0;
 }
 
 .navbar{
     display: flex;
+    align-items: center;
 }
 
 .navbar>a{
-    margin-left: 25px;
+    margin-left: 1.2vw;
 }
 
 .navbar-container h1 {
-    margin-top: 14px;
+    font-size: calc(12px + 1.5vw);
     margin-right: 20px;
 }
 
 .navbar ul {
     display: flex;
-    margin-top: 19px;
-    width: fit-content;
 }
 
 .navbar li {
@@ -29,7 +29,12 @@
 
 .navbar li a{
     background-color: var(--primary-color);
-    padding: 20px 35px;
+    display: block;
+    width: 7vw;
+    height: 3vw;
+    line-height: 3vw;
+    text-align: center;
+    font-size: calc(4px + .9vw);
 }
 
 
@@ -40,12 +45,12 @@
 
 .navbar li:first-child a
 {
-    border-radius: 20px 0 0 20px;
+    border-radius: 0.8vw 0 0 0.8vw;
 }
 
 .navbar li:last-child a
 {
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 0.8vw 0.8vw 0;
 }
 
 .navbar a{
@@ -57,8 +62,10 @@
 }
 
 .hamburger-btn {
-    width: 65px;
+    width: 3vw;
     cursor: pointer;
+    display: block;
+    margin: 0;
 }
 
 .navigation {
