@@ -74,8 +74,17 @@
 }
 
 /* Media Queries */
+@media screen and (min-width: 801px) {
+    .navbar-container h1 span {
+        color: var(--primary-color)
+    }
+}
 @media screen and (max-width: 800px) {
    
+    .navbar-container h1 {
+        z-index: 1;
+        position: relative;
+    }
     .hamburger-btn
     {
         z-index: 1;
