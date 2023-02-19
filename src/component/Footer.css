@@ -2,9 +2,9 @@
     background-color: var(--primary-color);
    
     position: relative;
-    top: 50px;
+    top: 49px;
     width: 100%;
-    height: 80vh;
+    height: auto;
   
    
     
@@ -57,7 +57,7 @@
     color: black;
 }
 .Email{
-    width: 340px;
+    width: 80%;
     height: 30px;
     background-color: var(--primary-color);
     border: none;
@@ -95,7 +95,10 @@
  }
  .Endfooter{
     position: relative;
-    left: 22%;
+   bottom: 32px;
+   display: flex;
+   justify-content: center;
+   
    
  }
  .conct{
@@ -103,6 +106,8 @@
     font-weight: 500;
     text-decoration: none;
    color: #070E21;
+
+    
 
  }
 .header-icon{

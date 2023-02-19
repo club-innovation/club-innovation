@@ -40,9 +40,11 @@ function Footer() {
          <br/>
          <br/>
          <br/>
+          
          <div className="Endfooter">
+        
           <a href=""className="conct"> About </a> <a href=""className="conct"> Our system </a> <a href=""className="conct"> Event </a> <a href=""className="conct"> Members </a><a href=""className="conct"> Contact </a>
-          <a href=""className="conct"></a>
+          <a href=""className="conct">Learn</a> <a href=""className="icon"></a>
          </div>
 
         
