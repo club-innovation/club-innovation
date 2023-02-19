@@ -1,6 +1,6 @@
 .background
 {
-    background-image: url(../../../imgs/home/background.jpg);
+   background-image: url(../../../imgs/home/background.jpg);
    width: 100%;
    background-size: cover;
    background-repeat: no-repeat;
@@ -17,8 +17,8 @@
     font-size: 4vw;  
     font-weight: bolder;
                         }
-.discription{
+/* .discription{
     position: relative;
     right: -63%;
-    bottom: -30%; ;
-}
+    bottom: -30%;
+} */
