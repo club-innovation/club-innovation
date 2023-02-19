@@ -4,17 +4,6 @@
     position: relative;
     top: 50px;
     width: 100%;
-<<<<<<< Updated upstream
-    height: 60vh;
-    
-}
-.container1{
-    width: 30%;
-    margin: 4vw;
-    height:65%;
-    border: solid;
-    left: 0;
-=======
     height: 80vh;
     display: flex;
     justify-content: space-between;
@@ -54,7 +43,6 @@
     position: relative;
     border:none
     
->>>>>>> Stashed changes
 }
 .title1{
     width: 20vw;
@@ -62,16 +50,6 @@
     color: black;
     font-weight: bolder;
 }
-<<<<<<< Updated upstream
-a{
-    color: gray;
-    position: relative;
-    top: 9px;
-}
-.inov{
-    color: black;
-}
-=======
 .link1{
     color: var(--secondary-color);
     position: relative;
@@ -117,4 +95,3 @@ a{
      color:white;
  }
  
->>>>>>> Stashed changes
