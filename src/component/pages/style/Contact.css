@@ -57,6 +57,8 @@
   border-radius: 100px;
   color: var(--dark-secondary-color);
   font-weight: 500;
+  width: 15vw;
+  
 }
   
 .ContainerContact1 button[type="submit"]:hover {
@@ -65,6 +67,8 @@
   border-radius: 100px;
   color: var(--dark-secondary-color);
   font-weight: 500;
+  width: 15vw;
+  
   
   
 }
@@ -102,4 +106,79 @@
 
 .ContainerContact{
   display: flex;
+}
+.ContainerContact3{
+  display: flex;
+  top: 410px;
+  position: relative;
+  
+}
+.facebook {
+  margin-right : 2vw;
+  color: var(--primary-color);
+}
+.insta{
+  margin-right: 2vw;
+  color: var(--primary-color);
+}
+.twitter{
+  color: var(--primary-color);
+}
+button {
+  position: relative;
+  left: 50%;
+}
+@media screen and (max-width: 800px)
+{
+    button
+    {
+      position: relative;
+      left: 50%;
+      width: 100%;
+    }
+    .Info{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.3vw;
+      line-height: 120%;
+      margin: 5vw;
+      margin-bottom: 0;
+      position: relative;
+      left: 25%;
+    }
+    .p1, .p3{
+      font-size: 3vw;
+      margin-bottom: 0;
+      font-weight: 700;
+      position: relative;
+      top: 70%;
+      right: 220%;
+    }
+    .p2, .p4{
+      font-size: 1vw;
+      margin-bottom: 5vw;
+      font-weight: 400;
+      position: relative;
+      top: 70%;
+      right: 220%;
+    }
+    .ContainerContact3{
+      display: flex;
+      top: 410px;
+      position: relative;
+      
+    }
+    .facebook {
+      margin-right : 2vw;
+      color: var(--primary-color);
+    }
+    .insta{
+      margin-right: 2vw;
+      color: var(--primary-color);
+    }
+    .twitter{
+      color: var(--primary-color);
+    }
+
 }

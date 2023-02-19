@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./style/Contact.css";
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
+
 
 function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -87,7 +91,10 @@ function Contact() {
         <p className="p4">Marrakech</p>
       </div>
       <div className="ContainerContact3">
-      <FacebookOutlinedIcon className="header-icon" fontSize="large" />
+      <a href="Facebook.com" className="facebook"><FacebookOutlinedIcon className="header-icon" fontSize="large" /></a>
+      <a href="Instagram.com" className="insta"><InstagramIcon className="header-icon" fontSize="large" /></a>
+      <a href="Twitter.com" className="twitter"><TwitterIcon className="header-icon" fontSize="large" /></a>
+
         </div>
       </div>
     </div>
