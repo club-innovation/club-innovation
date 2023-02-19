@@ -12,18 +12,18 @@
     margin-left: 5vw;
 }
 
-img
+.description img
 {
     width: 30%;
     margin-right: 5vw;
 }
 
-h2
+.description-details h2
 {
     font-size: 2vw;
 }
 
-p
+.description-details p
 {
     font-size: 1.5vw;
     margin-top: 15px;
@@ -40,17 +40,17 @@ p
         margin: auto;
     }
 
-    img {
+    .description img {
         width: 50%;
         margin: 0 0 25px 25%;
     }
 
-    h2 {
+    .description-details h2 {
         text-align: center;
         font-size: xx-large;
     }
 
-    p {
+    .description-details p {
         font-size: 16px;
         margin-top: 15px;
         text-align: center;

@@ -9,11 +9,16 @@
                         }
 .p1{
     font-weight: bolder;
-    font-size: 3.5vw;
+    font-size: 5vw;
     margin-bottom: 20px;
                         }
 .p2{
    margin-bottom: 10px;
-    font-size: 2vw;  
+    font-size: 4vw;  
     font-weight: bolder;
                         }
+.discription{
+    position: relative;
+    right: -63%;
+    bottom: -30%; ;
+}
