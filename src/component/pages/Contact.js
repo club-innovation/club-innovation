@@ -15,7 +15,7 @@ function Contact() {
   function sendEmail() {
     const recipient = "example@company.com";
     const subject = `Contact Us - ${firstName} ${lastName}`;
-    const body = `First Name: ${firstName}\n\nLast Name: ${lastName}\n\nPhone Number: ${phone}\n\nMessage: ${message}`;
+    const body = `First Name: ${firstName}\nLast Name: ${lastName}\nPhone Number: ${phone}\nMessage: ${message}`;
     const messageUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${recipient}&su=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
