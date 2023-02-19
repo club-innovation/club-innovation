@@ -55,7 +55,7 @@
 
 .navbar a{
     text-decoration: none;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: large;
     font-weight: 400;
     color: var(--secondary-color);
@@ -63,6 +63,7 @@
 
 .hamburger-btn {
     width: 3vw;
+    min-width: 30px;
     cursor: pointer;
     display: block;
     margin: 0;
@@ -70,4 +71,41 @@
 
 .navigation {
     visibility: hidden;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+   
+    .hamburger-btn
+    {
+        z-index: 1;
+        position: relative;
+    }
+    .navigation
+    {
+        background-color: var(--primary-color);
+        width: 50%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .navbar ul {
+        display: block;
+        margin: 20vh 0;
+    }
+    .navbar li a {
+        width: 100%;
+        height: 10vh;
+        line-height: 10vh;
+        text-align: center;
+        font-size: calc(4px + 4vh);
+    }
+    .navbar li:first-child a,
+    .navbar li:last-child a 
+    {
+        border-radius: 0;
+    }
 }
