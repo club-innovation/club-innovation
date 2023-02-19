@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./style/Contact.css";
 
+import { Outlet, Link } from "react-router-dom";
+
+
+
 function Contact() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -85,7 +89,7 @@ function Contact() {
         <p></p>
       </div>
       <div className="ContainerContact3">
-      <Link to="/">Home</Link>
+      
       </div>
     </div>
   );
