@@ -14,6 +14,7 @@ function MembersList() {
             {MembersData.map(member => {
                 return (
                  <div className="member-list-card">
+                   <div className="particle-background"></div> {/* add this element */}
                         <div className="overlay">
                               <ul className="iconsUl">
                                  <li title="Github Link"><Link to={member.github}><FaGithub className="icons" /></Link></li>
