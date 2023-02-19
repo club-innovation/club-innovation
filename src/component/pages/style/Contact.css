@@ -1,63 +1,22 @@
 .Contact{
-  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 30%;
+  margin-left: 200px;
+  margin-bottom: 70px;
+  margin-top: 100px;
 }
-.ContainerContact1 form {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 0.1vw;
-    margin: 5vw;
-    position: relative;
-    margin-top: 2vw;
-
-}
-  
-.ContainerContact1 label {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 120%;
-    
-}
-  
-.ContainerContact1 input{
-  padding: 5px;
-  border-radius: 0px;
-  border: none;
-  outline: none;
-  background-color: var(--secondary-cokor);
-  border-bottom: 2px solid #fff;
-  color: #fff;
-  width: 220%;
-
-    
-}
-.ContainerContact1 textarea {
-  
-  resize: none;
-  border: none;
-  outline: none;
-  background-color: var(--secondary-cokor);
-  border-bottom: 2px solid #fff;
-  color: #fff;
-  width: 225%;
-
-
-}
-  
 .ContainerContact1 button[type="submit"] {
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   background-color: var(--primary-color);
   border-radius: 100px;
   color: var(--dark-secondary-color);
-  font-weight: 500;
-  width: 15vw;
+  font-weight: 1000;
+  
   
 }
   
@@ -66,56 +25,93 @@
   background-color: var(--dark-primary-color);
   border-radius: 100px;
   color: var(--dark-secondary-color);
-  font-weight: 500;
-  width: 15vw;
+  font-weight: 1000;
+}
+.button {
+  text-align: center;
   
-  
-  
+}
+.button button {
+  width: 100%;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.ContainerContact1{
+  text-align: left;
 }
 .Info{
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 4.3vw;
+  font-size: 3vw;
   line-height: 120%;
-  margin: 5vw;
-  margin-bottom: 0;
+  margin-bottom: 45px;
 }
-.ContainerContact2 {
-  position: relative;
-  left: 36%;
-  margin-right: 10vw;
-  width: 25%;
-  top : 150px;
+.ContainerContact1 input{
+  padding: 5px;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+  background-color: var(--secondary-cokor);
+  border-bottom: 2px solid #fff;
+  color: var(--primary-color);
+  width: 100%;
+  font-size: 20px;
+    
+}
+.ContainerContact1 textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: var(--secondary-cokor);
+  border-bottom: 2px solid #fff;
+  color: var(--primary-color);
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  font-size: 20px;
+
+}
+.p1contain, .p3contain{
+  
+  font-weight: 700;
+  font-size: 2vw;
   
 }
-.p1, .p2, .p3, .p4{
+.p2contain, .p4contain{
+  
+  font-weight: 400;
+  font-size: 1vw;
+  
+}
+.Container2{
+  
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 2px;
   text-align: left;
   
 }
-.p1, .p3{
-  font-size: 2vw;
-  margin-bottom: 0;
-  font-weight: 700;
-}
-.p2, .p4{
-  font-size: 1vw;
-  margin-bottom: 5vw;
-  font-weight: 400;
-}
 
-.ContainerContact{
+.p1ragraph{
+  margin-bottom: 30px;
+  margin-top: 140px;
+  
+}
+.ContainerContact3 ul{
+  list-style: none;
   display: flex;
 }
-.ContainerContact3{
-  display: flex;
-  top: 410px;
-  position: relative;
-  
+.ContainerContact3 ul li {
+  margin: 10px;
+}
+.Container21{
+  justify-content: space-around;
 }
 .facebook {
   margin-right : 2vw;
   color: var(--primary-color);
+
 }
 .insta{
   margin-right: 2vw;
@@ -124,114 +120,53 @@
 .twitter{
   color: var(--primary-color);
 }
-button {
-  position: relative;
-  left: 50%;
-}
 @media screen and (max-width: 800px)
 {
   .Contact{
-    align-items: center;
-   
+    display: block;
+    width: 100%;
+    margin: 0;
+    grid-gap: 0;
+    margin-bottom: 70px;
+    margin-top: 50px;
   }
-  .ContainerContact1{
-    align-items: center;
-    align-self: center;
+  .Info{
+    font-size: 40px;
+  }
+  .ContainerContact{
+    width: 70%;
+    margin: auto;
+  }
+  .button {
     text-align: center;
-    width: 100%;
-    position: relative;
-    display: flex;
     
-    right: -20%;
   }
-  .ContainerContact1 input{
-    padding: 5px;
-    border-radius: 0px;
-    border: none;
-    outline: none;
-    background-color: var(--secondary-cokor);
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    width: 100%;
+  .p1contain, .p3contain{
   
-      
+    font-weight: 700;
+    font-size: 4vw;
+    
   }
   
-  .ContainerContact1 button[type="submit"]
-    {
-    position: relative;
-    left: 5%;
-    display: flex;
-    width: 100%;
+  .p2contain, .p4contain{
+    
+    font-weight: 400;
+    font-size: calc(0.2px + 3.2vw);
+    
+    
+  }
+  .Container2{
+    
     text-align: center;
+    
+  }
+  .p1ragraph{
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+  .ContainerContact3 {
+    margin: auto;
+    margin-top: 20px;
 
-    
-    }
-    .ContainerContact1 button[type="submit"]:hover {
-      color: white;
-      background-color: var(--dark-primary-color);
-      border-radius: 100px;
-      color: var(--dark-secondary-color);
-      font-weight: 500;
-      width: 100%;
-      text-align: center;
-      left: 5%;
-    }
-    .Info{
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 5.3vw;
-      line-height: 120%;
-      margin: 5vw;
-      margin-bottom: 0;
-      position: relative;
-      left: 28%;
-    }
-    .ContainerContact1 textarea {
-  
-      resize: none;
-      border: none;
-      outline: none;
-      background-color: var(--secondary-cokor);
-      border-bottom: 2px solid #fff;
-      color: #fff;
-      width: 100%;
-    
-    
-    }
-    .p1, .p3{
-      font-size: 3vw;
-      margin-bottom: 0;
-      font-weight: 700;
-      position: relative;
-      top: 70%;
-      right: 220%;
-    }
-    .p2, .p4{
-      font-size: 1vw;
-      margin-bottom: 5vw;
-      font-weight: 400;
-      position: relative;
-      top: 70%;
-      right: 220%;
-    }
-    .ContainerContact3{
-      display: block;
-      top: 80%;
-      position: absolute;
-      right: 40%;
-    }
-    .facebook {
-      margin-right : 2vw;
-      color: var(--primary-color);
-    }
-    .insta{
-      margin-right: 2vw;
-      color: var(--primary-color);
-    }
-    .twitter{
-      color: var(--primary-color);
-    }
-
+  }
 }
