@@ -1,5 +1,6 @@
 import React from "react";
 import "./style/Home.css";
+
 import background from "../../imgs/home/background.jpg";
 import logo1 from "../../imgs/home/coding.png";
 import programming from "../../imgs/home/programming.gif";
@@ -8,9 +9,13 @@ import projects from "../../imgs/home/projects.gif";
 import terminal from "../../imgs/home/terminal.gif";
 import helps from "../../imgs/home/helps.gif";
 import ending from "../../imgs/home/ending.gif";
+
+import { Polygones } from "../Particle";
+
 function Home() {
   return (
     <div>
+      <Polygones/>
       <div className="background">
         <div className="discription">
           <p className="p1">

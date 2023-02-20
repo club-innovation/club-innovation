@@ -1,7 +1,7 @@
 import React from "react"
 import "./style/NotFound.css"
 
-import Stars from "../Particle";
+import { Stars, Polygones } from "../Particle";
 
 //Images
 import astronaut from "../../imgs/notFound/astronaut.svg"

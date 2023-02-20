@@ -1,6 +1,6 @@
 import React from "react"
 import "./List.css"
-import "./pages/style/MembersList.css"
+import "./MembersList.css"
 import MembersData from './MembersData'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
