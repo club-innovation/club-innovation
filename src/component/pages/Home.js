@@ -7,6 +7,7 @@ import project from "../../imgs/home/project.svg";
 import projects from "../../imgs/home/projects.gif";
 import terminal from "../../imgs/home/terminal.gif";
 import helps from "../../imgs/home/helps.gif";
+import ending from "../../imgs/home/ending.gif";
 function Home() {
   return (
     <div>
@@ -118,6 +119,13 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="home-ending">
+        
+          <div className="home-ending-gif"><img src={ending} className="ending-gif"/></div>
+      </div>
+      <div className="ening-title-div">
+          <p className="home-ending-title">&#123;What Are You <span className="primary-color">Waiting For?</span>&#125;</p>
+          </div>
     </div>
   );
 }

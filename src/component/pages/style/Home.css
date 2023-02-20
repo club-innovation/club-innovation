@@ -75,7 +75,7 @@
   line-height: 38px;
   margin-top: 40px;
   border-radius: 20px;
-  weight: 30%;
+  font-weight: 30%;
   padding: 20px;
 
 
@@ -170,8 +170,26 @@
   color: black;
   padding-right: 15px;
 }
+.home-ending{
+  background-color: yellow;
+  display: flex;
+}
 
+.home-ending-title{
 
+  font-weight: bold;
+  font-size: 2.3vw;
+  text-align: right;
+}
+.ending-title-div {
+  background-color: red;
+  width: fit-content;
+}
+
+.home-ending-gif{
+  background-color: aqua;
+  width: fit-content;
+}
 @media screen and (max-width: 800px) {
   .discription {
     padding-right: 0;
