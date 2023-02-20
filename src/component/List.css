@@ -1,30 +1,59 @@
+.list-parent
+{
+    margin-bottom: 50px;
+}
+
 .list
 {
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 .list-container
 {
     display: grid;
     grid-template-columns: 40vw 40vw;
-    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.list-container a
+{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 15px;
 }
 
 .list-card
 {
     background-color: var(--primary-color);
+    background-size: cover;
+    background-repeat: no-repeat;
     aspect-ratio: 16/9;
-    margin: 15px;
-    border-radius: 12px;
+    border-radius: 2vw;
     cursor: pointer;
+    display: flex;
+    align-items: end;
+    text-align: center;
 }
 
-.list-card p
+.list-card > p
 {
-    text-align: center;
     font-family: 'Poppins';
-    font-size: 13.9vw;
+    font-size: 12vw;
     font-weight: 500;
+    margin: 0 auto;
+}
+
+.list-card-info
+{
+    margin: 5%;
+}
+.list-card-info-title
+{
+    font-size: 1.7vw;
+    font-weight: 500;
+    text-align: left;
+    text-shadow: 1px 1px 5px #000;
 }
 
 .list-btn-container
@@ -50,7 +79,11 @@
         margin-bottom: 40px;
     }
 
-    .list-card p {
+    .list-card > p {
         font-size: 29.3vw;
+    }
+
+    .list-card-info-title {
+        font-size: 3.5vw;
     }
 }
