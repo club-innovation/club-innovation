@@ -1,53 +1,33 @@
-
 .Footer {
     background-color: var(--primary-color);
-   
     position: relative;
     top: 49px;
     width: 100%;
-    height: auto;
-   
-  
-   
-    
-}
-
-
-.title2{
-    width: 25vw;
-    font-size: 20px;
-    color: black;
-    font-weight: bolder;
-    font-family: 'Inter';
+    height: auto; 
 }
 .container1{
-    width: 30%;
+    width: 50%;
     margin: 4vw;
-    height:70%;
+    height: auto;
     border: solid;
-    
     border: none;
-    
+}
+.tit1{
+    color: #070E21;
+    font-weight: bolder;
+    width: 16vw;
+    margin-bottom: 6px;
 }
 .container2{
     width: 30%;
     margin: 4vw;
     height:59%;
     border: solid;
-    
-    border:none
-    
-}
-.title1{
-    width: 20vw;
-    font-size: 20px;
-    color: black;
-    font-weight: bolder;
+    border: none;  
 }
 .link1{
     color: var(--secondary-color);
-    position: relative;
-    top: 9px;
+    margin-top: 20px;
     font-weight: light;
 }
 .inov{
@@ -109,26 +89,25 @@
  }
  .incons{
     position: relative;
-    
-    
  }
  .conct{
     margin-left: 35px;
     font-weight: 500;
     text-decoration: none;
    color: #070E21;
-   
-    
-
  }
+ .tit2{
+    color: #070E21;
+    font-weight: bolder;
+    width: 19vw;
+    margin-top: 20px;
+}
  .header-icon{
     font-size: small;
  }
 .icon{
     color: var(--dark-secondary-color);
-
    text-decoration: none;
-  
    margin-left: 20px;
 }
 @media screen and (max-width: 800px) {
@@ -138,41 +117,43 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        right: 9%;
-       
+        
+
     }
-    .title1,.title2{
+    .tit1,.tit2{
         width: 49vw;
     }
    
     .container2{
        position: relative;
         top: 40px;
+       right: 60px;
+       
+    }
+    .container1{
+        position: relative;
        
     }
     .Email{
         width: 240px;
     }
-
     .LogoInovation{
-        font-size: 16px;
+        font-size: 20px;
     }
     .signupText{
-        width: 40vw;
+        font-size: 16px;
+        width: 50vw;
     }
     .link2{
         width: 50vw;
     }
     .Endfooter{
         font-size: 1rem;
-      
-        
-        
     }
     .incons{
         position: relative;
-        right: 12px;
+        right: 40px;
+        top: 6px;
     }
     .Footer{
         height: auto;
@@ -181,7 +162,6 @@
        
 
     }
-    
     .conct{
         font-size: 18px;
         margin-top: 20px;
@@ -192,25 +172,20 @@
         align-items: center;
     }
     .conct{
-       
         width: 20vw;
         text-align: center;
          position: relative;
          top:19px;
          left: 20px;
-         
-       
-        
     }
     .contact{
         display: flex;
         flex-wrap: wrap;
         position: relative;
         bottom: 16px;
-      
-      
+        
+       
     }
-   
   }
 
 

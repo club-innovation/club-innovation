@@ -11,20 +11,21 @@ function Footer() {
        <div className="Footer">
         <div className="row">
         <div className="container1">
-            <div className="title1">want to become a part of our community?</div>
+            <div className="tit1" >want to become a part of our community?</div>
             <a href="" className="link1">Get in touch</a>
+           < br/>
+           < br/>
+          
+            <div> <h1 className="LogoInovation">&#123;Club <span className="inov">Innovation</span>&#125;</h1></div>
+               
+            <div className="tit2">want to become a part of us?</div>
             <br/>
             <br/>
-           
-            <div> <h2 className="LogoInovation">&#123;Club <span className="inov">Innovation</span>&#125;</h2></div>
-            <br/>
-           
-            <div className="title2">want to become a part of us?</div>
             <a href="" className="link1" ><div className="link2">check out our game challenge</div></a>
           
         </div>
         <div className="container2">
-        <div className="title2">keep up with news from us</div>
+        <div className="tit1">keep up with news from us</div>
         
          <input type={"text"} placeholder="Email" className="Email"/>
          <br/>
@@ -39,14 +40,14 @@ function Footer() {
 
         </div>
         
-         <br/>
+        
          <br/>
          <br/>
          <br/>
           
          <div className="Endfooter">
            <div className="contact">
-           <a href=""className="conct"> About </a> <a href=""className="conct"> Our system </a> <a href=""className="conct"> Event </a> <a href=""className="conct"> Members </a><a href=""className="conct"> Contact </a>
+           <a href=""className="conct"> About </a> <a href=""className="conct"> Home </a> <a href=""className="conct"> Event </a> <a href=""className="conct"> Members </a><a href=""className="conct"> Contact </a>
            <a href=""className="conct">Learn</a> <a href=""className="icon"></a>
            </div>
            <div className="incons">
