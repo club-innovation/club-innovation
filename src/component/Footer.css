@@ -1,3 +1,4 @@
+/* Default styles for the footer */
 .Footer {
     background-color: var(--primary-color);
     position: relative;
@@ -5,6 +6,7 @@
     width: 100%;
     height: auto; 
 }
+
 .container1{
     width: 50%;
     margin: 4vw;
@@ -12,12 +14,14 @@
     border: solid;
     border: none;
 }
+
 .tit1{
     color: #070E21;
     font-weight: bolder;
     width: 16vw;
     margin-bottom: 6px;
 }
+
 .container2{
     width: 30%;
     margin: 4vw;
@@ -25,17 +29,18 @@
     border: solid;
     border: none;  
 }
+
 .link1{
     color: var(--secondary-color);
     margin-top: 20px;
     font-weight: light;
 }
+
 .inov{
-    font-family: 
-    Poppins;
- 
+    font-family: Poppins;
     color: black;
 }
+
 .Email{
     width: 80%;
     height: 30px;
@@ -50,21 +55,19 @@
     font-weight:light;
     font-family: "inter";
     font-style: normal;
-   width: 25vw;
-   position: relative;
+    width: 25vw;
+    position: relative;
     left: 19px;
     bottom:  19px;
-     color: var(--secondary-color);
-    
-   
+    color: var(--secondary-color);
 }
+
 .row{
     width: 100%;
     display: flex;
     justify-content: space-between;
-  
-    
 }
+
 .check{
     background-color: var(--primary-color);
     opacity: 0.6;
@@ -75,78 +78,92 @@
     border: 2px solid black;
     border-radius: 0;
 }
+
 .Subscribe{
-     background-color: black;
-     color:white;
- }
- .Endfooter{
-   position: relative;
-   bottom: 32px;
-   display: flex;
-   justify-content: space-around;
-   
-   
- }
- .incons{
+    background-color: black;
+    color:white;
+}
+
+.Endfooter{
     position: relative;
- }
- .conct{
+    bottom: 32px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.incons{
+    position: relative;
+}
+
+.conct{
     margin-left: 35px;
     font-weight: 500;
     text-decoration: none;
-   color: #070E21;
- }
- .tit2{
+    color: #070E21;
+}
+
+.tit2{
     color: #070E21;
     font-weight: bolder;
     width: 19vw;
     margin-top: 20px;
 }
- .header-icon{
+
+.header-icon{
     font-size: small;
- }
+}
+
 .icon{
     color: var(--dark-secondary-color);
-   text-decoration: none;
-   margin-left: 20px;
+    text-decoration: none;
+    margin-left: 20px;
 }
+
+/* Media queries for responsive design */
 @media screen and (max-width: 800px) {
-    
+    .Footer {
+        height: auto;
+        position: relative;
+        top:29px;
+    }
 
     .row{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-
     }
+
     .tit1,.tit2{
         width: 49vw;
     }
-   
+
     .container2{
-       position: relative;
+        position: relative;
         top: 40px;
-       right: 60px;
-       
+        right: 60px;
     }
+
     .container1{
         position: relative;
-       
     }
+
     .Email{
         width: 240px;
     }
+
     .LogoInovation{
         font-size: 20px;
     }
+
     .signupText{
         font-size: 16px;
         width: 50vw;
     }
+
     .link2{
         width: 50vw;
     }
+
     .Endfooter{
         font-size: 1rem;
     }
