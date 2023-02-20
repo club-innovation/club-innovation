@@ -18,36 +18,48 @@
 
 .p2 {
   margin-bottom: 10px;
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-weight: bolder;
+}
+
+.p3 {
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.p3 span {
+  display: block;
 }
 
 .discription {
   padding-right: 8%;
 }
 
-.title1 {
+.club-information-title {
   text-align: center;
   font-weight: bold;
   font-size: 2.3vw;
   margin-top: 4vw;
-  margin-bottom:3vw ;
+  margin-bottom: 3vw;
 }
-.title2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.3vw;
-    margin-top: 6vw;
-    margin-bottom:4vw ;
-  
+
+.offer-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.3vw;
+  margin-top: 6vw;
+  margin-bottom: 4vw;
+
 }
-.info2 {
+
+.club-info {
   justify-content: center;
   display: flex;
 
 }
 
-.info2 img {
+.club-info img {
   width: 100%;
   height: auto;
 
@@ -63,7 +75,7 @@
   line-height: 38px;
   margin-top: 40px;
   border-radius: 20px;
-  weight: 30%;
+  font-weight: 30%;
   padding: 20px;
 
 
@@ -158,8 +170,26 @@
   color: black;
   padding-right: 15px;
 }
+.home-ending{
+  background-color: yellow;
+  display: flex;
+}
 
+.home-ending-title{
 
+  font-weight: bold;
+  font-size: 2.3vw;
+  text-align: right;
+}
+.ending-title-div {
+  background-color: red;
+  width: fit-content;
+}
+
+.home-ending-gif{
+  background-color: aqua;
+  width: fit-content;
+}
 @media screen and (max-width: 800px) {
   .discription {
     padding-right: 0;
@@ -182,7 +212,7 @@
     font-weight: bolder;
   }
 
-  .info2 {
+  .club-info {
     justify-content: center;
     display: flex;
 
@@ -191,7 +221,7 @@
 
   }
 
-  .info2 img {
+  .club-info img {
     order: -1;
   }
 
