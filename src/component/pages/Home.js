@@ -19,14 +19,21 @@ function Home() {
           <p className="p2">
             &#123;Club<span className="primary-color">Innovation</span>&#125;
           </p>
+          <p className="p3">
+            Free your creative mind and improve your computer skills by
+            <span>
+              participating in various projects and training programs with us,
+            </span>
+            <span> and have fun while doing it!</span>
+          </p>
         </div>
       </div>
-      <div className="info1">
-        <p className="title1">
+      <div className="club-information">
+        <p className="club-information-title">
           &#123;What is Club<span className="primary-color">Innovation?</span>
           &#125;
         </p>
-        <div className="info2">
+        <div className="club-info">
           <div className="par">
             <p className="para">
               Club Innovation is where students with different interests such as
@@ -40,11 +47,13 @@ function Home() {
               </p>
             </div>
           </div>
-          <div className="info2-img"><img src={logo1}></img></div>
+          <div className="info2-img">
+            <img src={logo1}></img>
+          </div>
         </div>
       </div>
       <div className="offer">
-        <p className="title2">
+        <p className="offer-title">
           &#123;What We Offer <span className="primary-color">You?</span>&#125;
         </p>
 

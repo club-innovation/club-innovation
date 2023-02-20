@@ -18,36 +18,48 @@
 
 .p2 {
   margin-bottom: 10px;
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-weight: bolder;
+}
+
+.p3 {
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.p3 span {
+  display: block;
 }
 
 .discription {
   padding-right: 8%;
 }
 
-.title1 {
+.club-information-title {
   text-align: center;
   font-weight: bold;
   font-size: 2.3vw;
   margin-top: 4vw;
-  margin-bottom:3vw ;
+  margin-bottom: 3vw;
 }
-.title2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.3vw;
-    margin-top: 6vw;
-    margin-bottom:4vw ;
-  
+
+.offer-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.3vw;
+  margin-top: 6vw;
+  margin-bottom: 4vw;
+
 }
-.info2 {
+
+.club-info {
   justify-content: center;
   display: flex;
 
 }
 
-.info2 img {
+.club-info img {
   width: 100%;
   height: auto;
 
@@ -182,7 +194,7 @@
     font-weight: bolder;
   }
 
-  .info2 {
+  .club-info {
     justify-content: center;
     display: flex;
 
@@ -191,7 +203,7 @@
 
   }
 
-  .info2 img {
+  .club-info img {
     order: -1;
   }
 
