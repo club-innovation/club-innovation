@@ -23,7 +23,7 @@
 .container1{
     width: 30%;
     margin: 4vw;
-    height:59%;
+    height:70%;
     border: solid;
     
     border: none;
@@ -170,7 +170,10 @@
         
         
     }
-    
+    .incons{
+        position: relative;
+        right: 12px;
+    }
     .Footer{
         height: auto;
         position: relative;
@@ -204,6 +207,7 @@
         flex-wrap: wrap;
         position: relative;
         bottom: 16px;
+      
       
     }
    
