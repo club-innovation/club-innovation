@@ -1,0 +1,46 @@
+.notFound-space {
+    margin: 0 8vw 0 10vw;
+}
+
+#notFound-moon {
+    width: 30%;
+    padding-bottom: 15%;
+}
+
+#notFound-fog {
+    width: 25%;
+    transform: translate(-118%, -5%);
+    position: relative;
+    z-index: -1;
+}
+
+#notFound-earth
+{
+    width: 9%;
+    transform: translate(-540%, -20%);
+}
+
+#notFound-astronaut
+{
+    width: 12%;
+    transform: translate(100%, 0%);
+}
+
+.notFound-description
+{
+    text-align: center;
+    font-family: 'Poppins';
+    width: fit-content;
+    margin-bottom: -10%;
+    transform: translate(180%, -300%);
+}
+
+.notFound-description h2
+{
+    font-size: 4vw;
+}
+
+.notFound-description h4 
+{
+    font-size: 3vw;
+}

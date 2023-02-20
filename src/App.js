@@ -10,7 +10,7 @@ import Events from "./component/pages/Events";
 import Projects from "./component/pages/Projects";
 import Contact from "./component/pages/Contact";
 import About from "./component/pages/About";
-import NoPage from "./component/pages/NoPage";
+import NotFound from "./component/pages/NotFound";
 
 // Loading is a page for website maintenance
 //import Loading from "./component/pages/Loading";
@@ -26,7 +26,7 @@ function App() {
                 <Route path="/projects" element={<Projects/>}/>
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/about" element={<About/>}/>
-                <Route path="/*" element={<NoPage />} />
+                <Route path="/*" element={<NotFound />} />
             </Routes>
             <Footer/>
         </HashRouter>
