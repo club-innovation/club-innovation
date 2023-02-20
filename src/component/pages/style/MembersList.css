@@ -6,7 +6,7 @@
     display: inline-block;
     border-radius: 50%;
     margin: auto;
-    width: 183px;
+    width: 175px;
     margin-top: 10px;
     box-sizing: border-box;
 }
@@ -16,19 +16,26 @@
     justify-content: center;
 }
 
+.contentBox{
+    margin-top: 20px;
+}
+
 .member-list-container{
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-columns: 18vw 18vw 18vw;
 }
 .member-list-card
 {
+    min-height: 220px;
+    min-width: 210px;
     position: relative;
     background-color: var(--primary-color);
     margin: 15px;
     border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
+    padding-bottom: 10px;
 }
 .member-list-card:hover 
 {
@@ -111,6 +118,9 @@
         font-size: 15px;
         padding-bottom: 10px;   
     }
+    .image img{
+        width: 150px;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -122,17 +132,18 @@
     .member-list-card {
         width: 55%;
         margin: auto;
+        margin-bottom: 40px;
     }
     .member-list-poste {
         font-size: 15px;
-        padding-bottom: 10px;   
     }
     .image img{
-        width: 140px;
+        width: 160px;
+    }
+    .contentBox{
+        margin-top: 20px;
     }
 }
-
-
   
 @keyframes gradient {
     0% {
