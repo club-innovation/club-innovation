@@ -21,16 +21,16 @@
 }
 .container1{
     width: 30%;
-    margin: 4vw;
+   
     height:59%;
     border: solid;
     
-    border: none;
+    
     
 }
 .container2{
     width: 30%;
-    margin: 4vw;
+ 
     height:59%;
     border: solid;
     
@@ -38,10 +38,12 @@
     
 }
 .title1{
-    width: 20vw;
+    width: 40vw;
     font-size: 20px;
     color: black;
     font-weight: bolder;
+    
+    
 }
 .link1{
     color: var(--secondary-color);

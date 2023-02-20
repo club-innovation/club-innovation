@@ -12,6 +12,7 @@ function Footer() {
         <div className="row">
         <div className="container1">
             <div className="title1">want to become a part of our community?</div>
+            <br/>
             <a href="" className="link1">Get in touch</a>
             <br/>
             <br/>
