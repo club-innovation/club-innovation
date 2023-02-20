@@ -24,7 +24,7 @@
    
     height:59%;
     border: solid;
-    
+    border:none
     
     
 }
@@ -186,8 +186,14 @@
     }
     .Endfooter{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
+    }
+    .incons{
+        position: relative;
+        right: 9px;
+        margin-top: 20px;
+
     }
     .conct{
         margin-left: 16.2px;
@@ -196,10 +202,11 @@
         
     }
     .contact{
-        width: 30vw;
+        width: 40vw;
         display: flex;
       flex-wrap: wrap;
         bottom: 16px;
+        margin-bottom: 13px;
     }
    
   }
