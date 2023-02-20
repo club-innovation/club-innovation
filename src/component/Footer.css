@@ -22,8 +22,8 @@
 }
 .container1{
     width: 30%;
-    margin: 4vw;
-    height:70%;
+   
+    height: 59%;
     border: solid;
     
     border: none;
@@ -39,7 +39,7 @@
     
 }
 .title1{
-    width: 20vw;
+    width: 30vw;
     font-size: 20px;
     color: black;
     font-weight: bolder;
