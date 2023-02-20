@@ -4,7 +4,7 @@
     position: relative;
     top: 49px;
     width: 100%;
-    height: auto;
+    height: 75vh;
    
   
    
@@ -108,7 +108,8 @@
  }
  .incons{
     position: relative;
-    right: 150px;
+    
+    
  }
  .conct{
     margin-left: 35px;
@@ -146,7 +147,7 @@
    
     .container2{
        position: relative;
-        top: 30px;
+        top: 40px;
        
     }
     .Email{
@@ -163,11 +164,42 @@
         width: 50vw;
     }
     .Endfooter{
-        display: flex;
-        flex-direction: column;
+        font-size: 1rem;
+      
+        
+        
     }
     
-  
+    .Footer{
+        height: 180vh;
+        position: relative;
+        top:29px;
+       
+
+    }
+    
+    .conct{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .Endfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conct{
+        margin-left: 16.2px;
+        margin-right: 2px;
+        
+        
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 16px;
+    }
+   
   }
 
 
