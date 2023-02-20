@@ -15,7 +15,7 @@ function About() {
      <>
         <Description 
             title={<>About <span className="primary-color">Us</span></>} 
-            description={"Emsicoders is a part of Innovation Club of students of the Moroccan School of Engineering Sciences (EMSI), which brings together computer enthusiasts. It aims to satisfy your curiosity about the IT field and support you in your course. We want to create a passion in the mind of the student in order to keep pace with global progress, which we will provide training (programming languages, web development, mobile development, etc.) as well as collective work between the members of club (Competitions, projects...)."} 
+            description={"The Innovation Club at Moroccan School of Engineering Sciences (EMSI) unites computer enthusiasts with the goal of satisfying their curiosity in the IT field and supporting them in their coursework. Our aim is to cultivate a passion for staying up-to-date with global progress through training in programming languages, web development, mobile development, and other areas. We also promote collective work among our members through competitions, projects, and other activities."} 
             image={teamwork}
             ImageClass = "img-teamwork"
          />
@@ -27,7 +27,7 @@ function About() {
          />
         <Description 
             title={<>Vision</>} 
-            description={"Our vision is to allow all EMSI students to have a place where they can grow and meet their passion. In 5 years, we will be the best computer community in Morocco. We will create projects and we will win several competitions and thus have a great influence in the field of IT in Morocco."} 
+            description={"Our vision is to provide a platform for every EMSI student to flourish and pursue their interests. Within 5 years, we aim to become the foremost computer community in Morocco, recognized for our exceptional projects and accomplishments in various competitions. As a result, we aspire to have a significant impact on the IT industry in Morocco."} 
             image={Vision}
             ImageClass = "img-vision"
         />

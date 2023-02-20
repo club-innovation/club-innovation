@@ -36,14 +36,17 @@ function Home() {
         <div className="club-info">
           <div className="par">
             <p className="para">
-              Club Innovation is where students with different interests such as
-              computing and responsible for conducting programming events for
-              the students of Emsi Marrakech.
+              Club Innovation is an organization at EMSI Marrakech that aims to
+              inspire innovation and creativity among students, particularly
+              those with interests in computing. The club is responsible for
+              planning and hosting various programming events, workshops, and
+              competitions that provide opportunities for students to showcase
+              their skills and talents.
             </p>
             <div className="par1">
               <p className="para2">
-                Discover the Club system A system where you will have fun and
-                learn at the same time!
+                The Club system provides an array of enjoyable and educational
+                activities and events that enable you to learn while having fun.
               </p>
             </div>
           </div>
