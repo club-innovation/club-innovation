@@ -47,7 +47,7 @@ function Footer() {
           
          <div className="Endfooter">
            <div className="contact">
-           <a href=""className="conct"> About </a> <a href=""className="conct"> Our system </a> <a href=""className="conct"> Event </a> <a href=""className="conct"> Members </a><a href=""className="conct"> Contact </a>
+           <a href=""className="conct"> About </a> <a href=""className="conct"> Home </a> <a href=""className="conct"> Event </a> <a href=""className="conct"> Members </a><a href=""className="conct"> Contact </a>
            <a href=""className="conct">Learn</a> <a href=""className="icon"></a>
            </div>
            <div className="incons">
