@@ -14,21 +14,20 @@ function MembersList() {
             {MembersData.map(member => {
                 return (
                  <div className="member-list-card">
-                   <div className="particle-background"></div> {/* add this element */}
                         <div className="overlay">
                               <ul className="iconsUl">
-                                 <li title="Github Link"><Link to={member.github}><GitHubIcon className="icons" fontSize="large"/></Link></li>
-                                 <li title="Linkedin Link"><Link to={member.linkedin}><LinkedInIcon className="icons" fontSize="large"/></Link></li>
-                                 <li title="Instagram Link"><Link to={member.instagram}><InstagramIcon className="icons" fontSize="large"/></Link></li>
+                                 <li title="Github Link"><Link target="_blank" to={member.github}><GitHubIcon className="icons" fontSize="large"/></Link></li>
+                                 <li title="Linkedin Link"><Link target="_blank" to={member.linkedin}><LinkedInIcon className="icons" fontSize="large"/></Link></li>
+                                 <li title="Instagram Link"><Link target="_blank" to={member.instagram}><InstagramIcon className="icons" fontSize="large"/></Link></li>
                               </ul>
                         </div>
-                        <div className="image">
-                            <img src={member.image} alt="image"/>
+                            <div className="image">
+                                <img src={member.image} alt="image"/>
+                            </div>
+                            <div className="contentBox">
+                              <h2 className="member-list-name">&#123;{member.name} &#125;</h2>  
+                              <h3 className="member-list-poste">{member.role}</h3> 
                         </div>
-                        <div className="contentBox">
-                          <h2 className="member-list-name">&#123;{member.name} &#125;</h2>  
-                          <h3 className="member-list-poste">{member.role}</h3> 
-                        </div> 
                   </div>
                 )
             })}

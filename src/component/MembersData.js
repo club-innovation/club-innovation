@@ -54,21 +54,13 @@ const Members = [
         image: mohammed,
         github: 'https://github.com/Nezgova',
         instagram : 'https://www.instagram.com/mohamed_nezhari/',
-        linkedin: ''
+        linkedin: 'https://www.linkedin.com/in/mohamed-nezhari-306b3625a'
     },
     {
         name: 'Taha Ammour',
         role: 'Technical Co-Manager',
         image: taha,
         github: 'https://github.com/taha-ammour',
-        instagram: '',
-        linkedin: ''
-    },
-    {
-        name: 'Abdelmoughit Moubarik',
-        role: 'Communication Manager',
-        image: moughit,
-        github: 'https://github.com/AkaMoughit',
         instagram: '',
         linkedin: ''
     },

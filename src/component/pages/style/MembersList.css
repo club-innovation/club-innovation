@@ -16,10 +16,14 @@
     justify-content: center;
 }
 
+.contentBox{
+    margin-top: 30px;
+}
+
 .member-list-container{
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-columns: 18vw 18vw 18vw;
 }
 .member-list-card
 {
@@ -29,6 +33,7 @@
     border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
+    height: 43vh;
 }
 .member-list-card:hover 
 {
@@ -111,6 +116,9 @@
         font-size: 15px;
         padding-bottom: 10px;   
     }
+    .image img{
+        width: 170px;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -120,15 +128,19 @@
         display: block;
     }
     .member-list-card {
-        width: 55%;
+        width: 53%;
         margin: auto;
+        margin-bottom: 40px;
     }
     .member-list-poste {
         font-size: 15px;
         padding-bottom: 10px;   
     }
     .image img{
-        width: 140px;
+        width: 180px;
+    }
+    .contentBox{
+        margin-top: 20px;
     }
 }
 
