@@ -1,6 +1,8 @@
 import React from "react"
 import "./style/NotFound.css"
 
+import Stars from "../Particle";
+
 //Images
 import astronaut from "../../imgs/notFound/astronaut.svg"
 import earth from "../../imgs/notFound/earth.svg"
@@ -9,6 +11,8 @@ import fog from "../../imgs/notFound/fog.svg"
 
 function NotFound() {
   return (
+    <>
+    <Stars />
     <div className="notFound">
       <div className="notFound-space">
         <img id="notFound-moon" src={moon} alt="moon" />
@@ -22,6 +26,7 @@ function NotFound() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
