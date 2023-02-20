@@ -13,41 +13,39 @@
 }
 
 
-.title2{
-    width: 25vw;
-    font-size: 20px;
-    color: black;
-    font-weight: bolder;
-    font-family: 'Inter';
-}
+
 .container1{
-    width: 30%;
-   
-    height: 59%;
+    width: 50%;
+    margin: 4vw;
+    height: auto;
     border: solid;
-    
     border: none;
+   
+  
     
+}
+.tit1{
+    color: #070E21;
+    font-weight: bolder;
+    width: 16vw;
+    margin-bottom: 6px;
 }
 .container2{
     width: 30%;
     margin: 4vw;
     height:59%;
     border: solid;
+    border: none;
+
     
-    border:none
+   
     
 }
-.title1{
-    width: 30vw;
-    font-size: 20px;
-    color: black;
-    font-weight: bolder;
-}
+
 .link1{
     color: var(--secondary-color);
-    position: relative;
-    top: 9px;
+    
+    margin-top: 20px;
     font-weight: light;
 }
 .inov{
@@ -121,6 +119,12 @@
     
 
  }
+ .tit2{
+    color: #070E21;
+    font-weight: bolder;
+    width: 19vw;
+    margin-top: 20px;
+}
  .header-icon{
     font-size: small;
  }
@@ -142,7 +146,7 @@
         right: 9%;
        
     }
-    .title1,.title2{
+    .tit1,.tit2{
         width: 49vw;
     }
    
@@ -151,15 +155,23 @@
         top: 40px;
        
     }
+    .container1{
+        position: relative;
+        left:42px ;
+    }
     .Email{
         width: 240px;
     }
-
+   
+   
     .LogoInovation{
-        font-size: 16px;
+        font-size: 26px;
+       
+
     }
     .signupText{
-        width: 40vw;
+        font-size: medium;
+        width: 60vw;
     }
     .link2{
         width: 50vw;
@@ -173,6 +185,7 @@
     .incons{
         position: relative;
         right: 12px;
+        top: 6px;
     }
     .Footer{
         height: auto;
