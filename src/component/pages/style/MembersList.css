@@ -6,7 +6,7 @@
     display: inline-block;
     border-radius: 50%;
     margin: auto;
-    width: 183px;
+    width: 175px;
     margin-top: 10px;
     box-sizing: border-box;
 }
@@ -17,7 +17,7 @@
 }
 
 .contentBox{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .member-list-container{
@@ -27,13 +27,15 @@
 }
 .member-list-card
 {
+    min-height: 220px;
+    min-width: 210px;
     position: relative;
     background-color: var(--primary-color);
     margin: 15px;
     border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
-    height: 43vh;
+    padding-bottom: 10px;
 }
 .member-list-card:hover 
 {
@@ -117,7 +119,7 @@
         padding-bottom: 10px;   
     }
     .image img{
-        width: 170px;
+        width: 150px;
     }
 }
 
@@ -128,23 +130,20 @@
         display: block;
     }
     .member-list-card {
-        width: 53%;
+        width: 55%;
         margin: auto;
         margin-bottom: 40px;
     }
     .member-list-poste {
         font-size: 15px;
-        padding-bottom: 10px;   
     }
     .image img{
-        width: 180px;
+        width: 160px;
     }
     .contentBox{
         margin-top: 20px;
     }
 }
-
-
   
 @keyframes gradient {
     0% {
