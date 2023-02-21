@@ -10,132 +10,94 @@
   align-items: center;
 }
 
-.p1 {
-  font-weight: bolder;
-  font-size: 5vw;
-  margin-bottom: 10px;
+.description-home {
+    padding-right: 8%;
 }
 
-.p2 {
-  margin-bottom: 10px;
+.description-home h1 {
+  font-weight: bolder;
+  font-size: 5vw;
+}
+
+.description-home h3 {
   font-size: 3.5vw;
   font-weight: bolder;
 }
 
-.p3 {
-  margin-bottom: 10px;
-  font-size: medium;
-  font-weight: lighter;
-}
 
-.p3 span {
+.description-home p span {
   display: block;
 }
 
-.discription {
-  padding-right: 8%;
+.description-home p {
+  font-weight: 200;
+  font-size: larger;
 }
 
-.club-information-title {
+.club-information-container h2{
   text-align: center;
-  font-weight: bold;
-  font-size: 2.3vw;
-  margin-top: 4vw;
-  margin-bottom: 3vw;
-}
-
-.offer-title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.3vw;
-  margin-top: 6vw;
-  margin-bottom: 4vw;
-
-}
-
-.club-info {
-  justify-content: center;
-  display: flex;
-
-}
-
-.club-info img {
-  width: 100%;
-  height: auto;
-
-}
-
-.par1 {
-  background-color: var(--primary-color);
-  color: var(--dark-secondary-color);
-  font-family: 'Poppins';
-  font-style: normal;
-  width: 63%;
-  font-size: 25px;
-  line-height: 38px;
   margin-top: 40px;
-  border-radius: 20px;
-  font-weight: 30%;
-  padding: 20px;
-
-
+  font-size: 35px;
 }
 
-.para2 {
-  font-weight: bolder;
-
-  margin: 10px;
-
-}
-
-.par {
-  width: 50%;
-  margin-bottom: 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 45px;
-  margin-top: 70px;
-  margin-left: 100px;
-
-}
-
-.para {
 
 
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 45px;
-
-
-}
-
-.lists {
+.club-info-left{
   display: flex;
+  min-width: 30%;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+  margin-left: 5vw;
+}
+
+.club-info-left{
+  font-size: 20px;
+}
+
+.club-info-img img{
+  width: 90%;
+}
+
+.text-container{
+  width: 90%;
+}
+
+.text-container p{
+  padding: 20px;
+  background-color: var(--primary-color);
+  margin-top: 30px;
+  color: black;
+  font-weight: bolder;
+  border-radius: 20px;
+}
+
+.club-info{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
 }
+
 
 .container {
   display: grid;
-  grid-template-columns: 40vw 40vw;
+  grid-template-columns: 30vw 30vw;
+  grid-gap: 50px;
   width: fit-content;
+  margin: auto;
 }
 
-.home-list {
+.home-card {
   background-color: var(--primary-color);
   aspect-ratio: 18/9;
   margin: 15px;
+  width: 100%;
   border-radius: 1.5vw;
-  cursor: pointer;
   display: flex;
-
 }
 
 .home-list-description {
-
   width: 50%;
   color: var(--secondary-color);
   display: flex;
@@ -143,10 +105,17 @@
   justify-content: center;
 }
 
+.home-list-description h3 {
+  font-size: 20px;
+}
+
+.home-list-description p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .home-list-gif {
-
   width: 50%;
-
 }
 
 .home-list-gif img {
@@ -154,75 +123,189 @@
   border-radius: 1.5vw;
   margin-top: 10%;
   margin-left: 10%;
-
 }
 
-.home-list-description-title {
-  font-size: 1.5vw;
-  font-weight: 800;
-  font-family: 'Inter';
-  margin-bottom: 1.5vw;
-
-}
-
-.home-list-description-paragraph {
-  font-size: 1vw;
-  color: black;
-  padding-right: 15px;
-}
 .home-ending{
-  background-color: yellow;
+  margin-bottom: 30px;
   display: flex;
+  justify-content: space-evenly;
 }
 
-.home-ending-title{
+.home-ending-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
+.home-ending-content p{
+  font-size: 30px;
   font-weight: bold;
-  font-size: 2.3vw;
-  text-align: right;
-}
-.ending-title-div {
-  background-color: red;
-  width: fit-content;
 }
 
-.home-ending-gif{
-  background-color: aqua;
-  width: fit-content;
+.home-ending-content input[type="button"] {
+   margin-top: 40px;
+   width: 30%;
+   background-color: var(--primary-color);
+   border: none;
+   padding: 15px;
+   border-radius: 15px;
+   text-align: center;
+   font-weight: bolder;
+   font-size: 13px;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.home-ending-content input[type="button"]:hover{
+  background-color: var(--dark-primary-color);
+  color: white;
+  transform: translateY(-5px);
+}
+
+
+
+.but-ending{
+  text-align: center;
+}
+
+
+.offer h2{
+  margin: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  .home-list-description p {
+  }
+  .club-information-container h2 {
+     font-size: 23px;
+  }
+  .text-container{
+    width: 50%;
+    text-align: center;
+  }
+  .offer h2{
+    margin-bottom: 5%;
+ }
+  .club-info-left p {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+   .club-info-img {
+    text-align: center;
+   }
+  .club-info-img img{
+    width: 50%;
+  }
+  .club-info-img{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .text-container{
+    margin: auto;
+  }
+  .club-info-left{
+    margin: auto;
+    width: 80%;
+  }
+  .club-info{
+    display: block;
+  }
+  .container{
+    display: block;
+    width: 50%;
+  }
+  .home-card{
+     margin: auto;
+     margin-bottom: 40px;
+  }
+ 
+  .text-container {
+    padding: 20px;
+  }
+  .home-ending{
+    text-align: center;
+    display: block;
+  }
+  .home-ending img {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 800px) {
-  .discription {
+  .description-home {
     padding-right: 0;
+    text-align: center;
   }
-
-  .background {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .p1 {
-    font-weight: bolder;
+  .description-title h1 {
     font-size: 9vw;
-    margin-bottom: 1vw;
   }
-
-  .p2 {
-    margin-bottom: 10px;
-    font-size: 6vw;
-    font-weight: bolder;
+  .description-title h3 {
+     font-size: 6vw;
+     letter-spacing: 0.3vw;
   }
-
-  .club-info {
-    justify-content: center;
-    display: flex;
-
-    flex-direction: column;
-    align-items: center;
-
+  .description-text p{
+    font-size: 3vw;
+    width: 70%;
+    margin: auto;
+    transform: translateY(20%);
   }
-
-  .club-info img {
-    order: -1;
+  .home-ending {
+     display: block;
   }
+ .home-ending img{
+    width: 60%;
+ }
+ .club-info-img{
+    margin: auto;
+    width: 70%;
+    margin-bottom: 30px;
+}
+ .image-home {
+    width: 100%;
+    text-align: center;
+ }
+ .home-ending-content {
+  margin-top:  20px;
+ }
 
+ .home-ending-content p {
+    font-size: 20px;
+ }
+ .offer h2{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+ }
+
+.home-list-description p{
+  font-size: 80%;
+  font-weight: 400;
+  text-align: center;
+}
+.home-list-description h3 {
+  text-align: center;
+}
+.container{
+  width: 80%;
+}
+ .home-card{
+     padding-right: 5%;
+     min-width: 75%;
+     min-height: 45vw;
+ }
+ .club-info{
+  text-align: center;
+ }
+  .club-info-left p {
+    width: 90%;
+  }
+  .text-container {
+    width: 80%;
+  }
 }

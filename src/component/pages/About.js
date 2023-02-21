@@ -6,11 +6,11 @@ import Description from "../About_Description"
 import List from "../List"
 
 //Images
-import teamwork from "../../imgs/svg/teamwork.svg"
-import Vision from "../../imgs/svg/vision.svg" 
-import build from "../../imgs/svg/build.svg"
+import teamwork from "../../imgs/AboutUs/AboutUs.gif"
+import Vision from "../../imgs/AboutUs/Vision.gif" 
+import build from "../../imgs/AboutUs/build.gif"
 
-function About() {
+function About() {   
   return (
      <div className="about">
         <Description 

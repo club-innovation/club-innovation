@@ -2,14 +2,15 @@ import React from "react";
 import "./style/Home.css";
 
 import background from "../../imgs/home/background.jpg";
-import logo1 from "../../imgs/home/coding.png";
+import coding from "../../imgs/home/coding.gif";
 import programming from "../../imgs/home/programming.gif";
 import project from "../../imgs/home/project.svg";
 import projects from "../../imgs/home/projects.gif";
 import terminal from "../../imgs/home/terminal.gif";
 import helps from "../../imgs/home/helps.gif";
 import ending from "../../imgs/home/ending.gif";
-
+import help from "../../imgs/home/help.gif";
+import HomeCards from "../HomeCards";
 import { Polygones } from "../Particle";
 
 function Home() {
@@ -17,120 +18,83 @@ function Home() {
     <div>
       <Polygones/>
       <div className="background">
-        <div className="discription">
-          <p className="p1">
-            {" "}
-            Welcome <span className="primary-color">To</span>
-          </p>
-          <p className="p2">
-            &#123;Club<span className="primary-color">Innovation</span>&#125;
-          </p>
-          <p className="p3">
-            Free your creative mind and improve your computer skills by
-            <span>
-              participating in various projects and training programs with us,
-            </span>
-            <span> and have fun while doing it!</span>
-          </p>
+        <div className="description-home">
+          <div className="description-title">
+            <h1>
+              Welcome <span className="primary-color">To</span>
+            </h1>
+            <h3>
+              &#123;Club<span className="primary-color">Innovation</span>&#125;
+            </h3>
+          </div>
+          <div className="description-text">
+            <p>
+              Free your creative mind and improve your computer skills by
+              <span>
+                participating in various projects and training programs with us,
+              </span>
+              <span> and have fun while doing it!</span>
+            </p>
+          </div>
         </div>
       </div>
-      <div className="club-information">
-        <p className="club-information-title">
+      <div className="club-information-container">
+        <h2>
           &#123;What is Club<span className="primary-color">Innovation?</span>
           &#125;
-        </p>
+        </h2>
         <div className="club-info">
-          <div className="par">
-            <p className="para">
-              Club Innovation is an organization at EMSI Marrakech that aims to
-              inspire innovation and creativity among students, particularly
-              those with interests in computing. The club is responsible for
-              planning and hosting various programming events, workshops, and
-              competitions that provide opportunities for students to showcase
-              their skills and talents.
-            </p>
-            <div className="par1">
-              <p className="para2">
-                The Club system provides an array of enjoyable and educational
-                activities and events that enable you to learn while having fun.
-              </p>
-            </div>
+        <div className="club-info-img">
+            <img src={coding}></img>
           </div>
-          <div className="info2-img">
-            <img src={logo1}></img>
+          <div className="club-info-left">
+            <div>
+              <p>
+                  Club Innovation is an organization at EMSI Marrakech that aims to
+                  inspire innovation and creativity among students, particularly
+                  those with interests in computing. The club is responsible for
+                  planning and hosting various programming events, workshops, and
+                  competitions that provide opportunities for students to showcase
+                  their skills and talents.
+                </p>
+                <div className="text-container">
+                   <p>
+                      Discover the Emsi Innovation System a system where you will have fun and learn at the same time
+                   </p>
+                </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="offer">
-        <p className="offer-title">
+        <h2>
           &#123;What We Offer <span className="primary-color">You?</span>&#125;
-        </p>
+        </h2>
 
-        <div className="lists">
           <div className="container">
-            {/* first one */}
-            <div className="home-list">
-              <div className="home-list-gif">
-                <img src={programming}></img>
-              </div>
-              <div className="home-list-description">
-                <p className="home-list-description-title">
-                  Learning Resources
-                </p>
-                <p className="home-list-description-paragraph">
-                  Free Online resources for learning and obtaining certificates
-                  in many areas related to computer sience.
-                </p>
-              </div>
-            </div>
-            {/* second one */}
-            <div className="home-list">
-              <div className="home-list-gif">
-                <img src={projects}></img>
-              </div>
-              <div className="home-list-description">
-                <p className="home-list-description-title">Projects</p>
-                <p className="home-list-description-paragraph">
-                  We will have a lot of projects ! Several teams will be formed
-                  And We will all work together on fun projects!
-                </p>
-              </div>
-            </div>
-            {/* third one */}
-            <div className="home-list">
-              <div className="home-list-gif">
-                <img src={terminal}></img>
-              </div>
-              <div className="home-list-description">
-                <p className="home-list-description-title">Competitions</p>
-                <p className="home-list-description-paragraph">
-                  Do you have a competitive spirit? We will organize
-                  competitions.
-                </p>
-              </div>
-            </div>
-            {/* fourth one */}
-            <div className="home-list">
-              <div className="home-list-gif">
-                <img src={helps}></img>
-              </div>
-              <div className="home-list-description">
-                <p className="home-list-description-title">Help</p>
-                <p className="home-list-description-paragraph">
-                  Stuck and want help? Our discord is here for you!
-                </p>
-              </div>
-            </div>
-          </div>
+            <HomeCards title="Learning Resources" description="Free Online resources for learning and obtaining certificates
+                  in many areas related to computer sience." image={programming}/>
+
+            <HomeCards description="We will have a lot of projects ! Several teams will be formed
+                  And We will all work together on fun projects!" image={projects} title="Projects"/>
+
+            <HomeCards description="Do you have a competitive spirit? We will organize
+                  competitions." image={terminal} title="Competitions"/>
+
+             <HomeCards description="Stuck and want help? Our dicord is here for you." image={help} title="Help"/>
         </div>
       </div>
       <div className="home-ending">
-        
-          <div className="home-ending-gif"><img src={ending} className="ending-gif"/></div>
+        <div className="image-home" >
+              <img src={ending}/>
+        </div>
+        <div className="home-ending-content">
+            <p >&#123;What Are You <span className="primary-color">Waiting For?</span>&#125;</p>
+            <div className="but-ending">
+               <input type="button" value="Explore"/>
+            </div>
+        </div>
       </div>
-      <div className="ening-title-div">
-          <p className="home-ending-title">&#123;What Are You <span className="primary-color">Waiting For?</span>&#125;</p>
-          </div>
     </div>
   );
 }
