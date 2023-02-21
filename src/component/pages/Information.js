@@ -1,7 +1,7 @@
 import React from "react"
 import "./style/Information.css"
 
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 //Components
 import Description from "../Description"
@@ -11,48 +11,64 @@ import MembersList from '../MembersList'
 import ProjectsData from "../../data/ProjectsData"
 import EventsData from "../../data/EventsData"
 
-
-function Information({type}) {
+function Information({ type }) {
 
     const { id } = useParams();
 
-    function GetData()
-    {
-        if (type === "projects") return ProjectsData;
-        if (type === "events") return EventsData;
-
+    
+    
+    function GetData() {
+        if (type === "projects") return ProjectsData[id];
+        if (type === "events") return EventsData[id];
+        
         return null;
     }
+    
+    const typeTitle = type === "projects" ? "PROJECT DESCRIPTION" : "EVENT DESCRIPTION";
+    const mapLink = `https://www.bing.com/maps/embed?h=400&w=500&cp=${GetData().map.lat}~${GetData().map.lon}&lvl=18&typ=d&sty=r&src=SHELL&FORM=MBEDV8&pushpins=${GetData().map.lat}_${GetData().map.lon}`;
 
     return (
         <div className="information">
-            <h1 className="list-title">&#123;<span className="primary-color">Information</span>&#125;</h1>
-            <Description title="EVENT DESCRIPTION" description="A coding event is an organized gathering or competition where individuals or teams of programmers come together to solve coding challenges or work on coding projects. These events are often hosted by universities, coding communities, or technology companies and can range from hackathons to coding challenges or coding bootcamps. Participants have the opportunity to learn new coding skills, network with other programmers, and showcase their programming abilities." image={ProjectsData[id].image} />
-        
+            <h1 className="list-title">&#123;<span className="primary-color">{GetData().title}</span>&#125;</h1>
+            <Description title={typeTitle} description={GetData().description} image={ProjectsData[id].image} />
+
             <div className="information-detail">
                 <div className="information-detail-info">
                     <div className="information-detail-info-data">
                         <h3>Timing</h3>
-                        <p>00:00</p>
+                        <p>{GetData().time}</p>
                     </div>
                     <div className="information-detail-info-data">
-                        <h3>Event Duration</h3>
-                        <p>Two hours</p>
+                        <h3>Duration</h3>
+                        <p>{GetData().duration}</p>
                     </div>
                     <div className="information-detail-info-data">
                         <h3>Date</h3>
-                        <p>00-00-0000</p>
+                        <p>{GetData().date}</p>
                     </div>
                     <div className="information-detail-info-data">
                         <h3>City</h3>
-                        <p>Marrakech</p>
+                        <p>{GetData().city}</p>
                     </div>
                 </div>
             </div>
-           
+
             <h1 className="list-title"> &#123;Meet The <span className="primary-color">Organizers</span>&#125;</h1>
-            <MembersList data={GetData()[id].organizers} />
-        
+            <MembersList data={GetData().organizers} />
+
+            <h1 className="list-title"> &#123;Place <span className="primary-color">Of </span>The <span className="primary-color">Event</span>&#125;</h1>
+
+            <div className="information-map">
+                <div className="information-map-details">
+                    <h1><span className="primary-color">WHERE</span></h1>
+                    <p>{GetData().adresse}</p>
+                    <Link target="_blank" to={GetData().link}><button>Join Us</button></Link>
+                </div>
+                <div className="information-map-viewer">
+                    <iframe width="500" height="400" frameborder="0" src={mapLink}></iframe>
+                    <div style={{whiteSpace: "nowrap", textAlign: "center", width: 500, padding: "6px 0"}}></div>
+                </div>
+            </div>
         </div>
     )
 }

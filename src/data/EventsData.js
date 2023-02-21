@@ -19,7 +19,11 @@ const events = [
         duration: "2 hours",
         city: "Marrakech",
         adresse: "Gueliz, Marrakech",
-        map: "10000,199999",
+        map:
+        {
+            lat: 31.653610147613122,
+            lon: -8.021447459904543
+        },
         link: "https://club-innovation.github.io/club-innovation",
         organizers:
             [
@@ -91,7 +95,11 @@ const events = [
         duration: "2 hours",
         city: "Marrakech",
         adresse: "Gueliz, Marrakech",
-        map: "10000,199999",
+        map:
+        {
+            lat: 31.653610147613122,
+            lon: -8.021447459904543
+        },
         link: "https://club-innovation.github.io/club-innovation",
         organizers:
             [
@@ -163,7 +171,11 @@ const events = [
         duration: "2 hours",
         city: "Marrakech",
         adresse: "Gueliz, Marrakech",
-        map: "10000,199999",
+        map:
+        {
+            lat: 31.653610147613122,
+            lon: -8.021447459904543
+        },
         link: "https://club-innovation.github.io/club-innovation",
         organizers:
             [
@@ -235,7 +247,11 @@ const events = [
         duration: "2 hours",
         city: "Marrakech",
         adresse: "Gueliz, Marrakech",
-        map: "10000,199999",
+        map:
+        {
+            lat: 31.653610147613122,
+            lon: -8.021447459904543
+        },
         link: "https://club-innovation.github.io/club-innovation",
         organizers:
             [
@@ -307,7 +323,11 @@ const events = [
         duration: "2 hours",
         city: "Marrakech",
         adresse: "Gueliz, Marrakech",
-        map: "10000,199999",
+        map:
+        {
+            lat: 31.653610147613122,
+            lon: -8.021447459904543
+        },
         link: "https://club-innovation.github.io/club-innovation",
         organizers:
             [
@@ -379,7 +399,11 @@ const events = [
         duration: "2 hours",
         city: "Marrakech",
         adresse: "Gueliz, Marrakech",
-        map: "10000,199999",
+        map:
+        {
+            lat: 31.653610147613122,
+            lon: -8.021447459904543
+        },
         link: "https://club-innovation.github.io/club-innovation",
         organizers:
             [
