@@ -1,4 +1,13 @@
-.event
-{
+.event {
     margin-top: calc(50px + 10vw);
+}
+
+.list-title {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 800px) {
+    .list-title {
+        font-size: 4vw;
+    }
 }

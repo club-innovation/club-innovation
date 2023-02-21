@@ -1,19 +1,18 @@
 import React from "react"
 import "./List.css"
 import "./MembersList.css"
-import MembersData from './MembersData'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link } from "react-router-dom"
 
-function MembersList() {
+function MembersList({ data }) {
   return (
     <div className="member-list">
         <div className="member-list-container">
-            {MembersData.map(member => {
+            {data.map((member, index) => {
                 return (
-                 <div className="member-list-card">
+                 <div className="member-list-card" key={index}>
                         <div className="overlay">
                               <ul className="iconsUl">
                                  <li title="Github Link"><Link target="_blank" to={member.github}><GitHubIcon className="icons" fontSize="large"/></Link></li>
