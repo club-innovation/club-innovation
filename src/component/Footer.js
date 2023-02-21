@@ -1,72 +1,57 @@
 import { DialerSip } from "@mui/icons-material";
-import React from "react"
-import "./Footer.css"
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import React from "react";
+import "./Footer.css";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 function Footer() {
   return (
-    <> 
-       <div className="Footer">
-        <div className="row">
-        <div className="container1">
-            <div className="tit1" >want to become a part of our community?</div>
-            <a href="" className="link1">Get in touch</a>
-           < br/>
-           < br/>
-          
-            <div> <h1 className="LogoInovation">&#123;Club <span className="inov">Innovation</span>&#125;</h1></div>
-               
-            <div className="tit2">want to become a part of us?</div>
-            <br/>
-            <br/>
-            <a href="" className="link1" ><div className="link2">check out our game challenge</div></a>
-          
+    <footer className="footer">
+      <div className="footer__content">
+        <div className="footer__section">
+          <h2 className="footer__title">Want to become part of our community?</h2>
+          <a href="#" className="footer__link">Get in touch</a>
+          <h1 className="footer__logo">
+           <span className="footer__logo-text"> &#123;Club</span> Innovation <span className="footer__logo-text">&#125;</span>
+          </h1>
+          <h2 className="footer__title">Want to be part of Us?</h2>
+          <a href="#" className="footer__link">Check out our game challenge</a>
         </div>
-        <div className="container2">
-        <div className="tit1">keep up with news from us</div>
-        
-         <input type={"text"} placeholder="Email" className="Email"/>
-         <br/>
-         <br/>
-      
-         
-         <input type={"checkbox" } className="check" color="--primary-color" /> <div className="signupText">Sign up to our Newsletter, to recieve updates on the latest news releases and special offers.</div> 
-           <br/>
-           <button className="Subscribe">Subscribe</button>
-
+        <div className="footer__section">
+          <h2 className="footer__title">Keep up with news from us</h2>
+          <input type="email" placeholder="Email" className="footer__input" />
+          <label>
+            <input type="checkbox" className="footer__checkbox" />
+            Sign up to our newsletter, to receive updates on the latest news releases and special offers.
+          </label>
+          <p><button className="footer__button">Subscribe</button></p>
         </div>
-
-        </div>
-        
-        
-         <br/>
-         <br/>
-         <br/>
-          
-         <div className="Endfooter">
-           <div className="contact">
-           <a href=""className="conct"> About </a> <a href=""className="conct"> Home </a> <a href=""className="conct"> Event </a> <a href=""className="conct"> Members </a><a href=""className="conct"> Contact </a>
-           <a href=""className="conct">Learn</a> <a href=""className="icon"></a>
-           </div>
-           <div className="incons">
-            <a  href=""className="icon"> <InstagramIcon className="header-icon"  /></a>
-            <a  href=""className="icon"> <GitHubIcon className="header-icon"  /></a>
-            <a  href=""className="icon"> <TwitterIcon className="header-icon"  /></a>
-            <a  href=""className="icon"> <LinkedInIcon className="header-icon"  /></a>
-           </div>
-         
-         </div>
-         
-        
-       </div>
-      
-      
-      
-    </>
-
-  )
+      </div>
+      <nav className="footer__nav">
+        <a href="#" className="footer__nav-link">About</a>
+        <a href="#" className="footer__nav-link">Our System</a>
+        <a href="#" className="footer__nav-link">Events</a>
+        <a href="#" className="footer__nav-link">Members</a>
+        <a href="#" className="footer__nav-link">Contact</a>
+      </nav>
+      <div className="footer__social">
+        <a href="#" className="footer__social-link">
+          <InstagramIcon className="footer__social-icon" alt="Instagram" />
+        </a>
+        <a href="#" className="footer__social-link">
+          <GitHubIcon className="footer__social-icon" alt="GitHub" />
+        </a>
+        <a href="#" className="footer__social-link">
+          <TwitterIcon className="footer__social-icon" alt="Twitter" />
+        </a>
+        <a href="#" className="footer__social-link">
+          <LinkedInIcon className="footer__social-icon" alt="LinkedIn" />
+        </a>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
