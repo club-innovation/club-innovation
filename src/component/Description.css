@@ -16,6 +16,8 @@
 {
     width: 30%;
     margin-right: 5vw;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .description-details h2

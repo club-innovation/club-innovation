@@ -4,7 +4,7 @@
   grid-gap: 30%;
   margin-left: 180px;
   margin-bottom: 70px;
-  margin-top: 100px;
+  margin-top: calc(10px + 10vw);
 }
 .ContainerContact1 button[type="submit"] {
   color: white;
@@ -138,7 +138,7 @@
     margin: 0;
     grid-gap: 0;
     margin-bottom: 70px;
-    margin-top: 50px;
+    margin-top: calc(50px + 10vw);
   }
   .Info{
     font-size: 40px;

@@ -1,5 +1,6 @@
 import React from "react";
 import "./style/Home.css";
+
 import background from "../../imgs/home/background.jpg";
 import coding from "../../imgs/home/coding.gif";
 import programming from "../../imgs/home/programming.gif";
@@ -9,12 +10,13 @@ import terminal from "../../imgs/home/terminal.gif";
 import helps from "../../imgs/home/helps.gif";
 import ending from "../../imgs/home/ending.gif";
 import help from "../../imgs/home/help.gif";
-import HomeCards from '../HomeCards'
-
+import HomeCards from "../HomeCards";
+import { Polygones } from "../Particle";
 
 function Home() {
   return (
     <div>
+      <Polygones/>
       <div className="background">
         <div className="description-home">
           <div className="description-title">

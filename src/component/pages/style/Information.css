@@ -1,0 +1,125 @@
+.information {
+    margin-top: calc(50px + 10vw);
+}
+
+.information .description h2 {
+    color: var(--primary-color);
+}
+
+.information .description img {
+    width: 40%;
+    box-shadow: 1px 1px 50px var(--dark-secondary-color), -1px -1px 50px var(--light-secondary-color);
+}
+
+.information-detail {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.information-detail-info {
+    width: 42%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20px 0;
+}
+
+.information-detail-info h3 {
+    font-size: 2vw;
+    line-height: 1vw;
+    color: var(--primary-color);
+}
+
+.information-detail-info p {
+    font-size: 1.4vw;
+}
+
+.information-map {
+    display: flex;
+    margin-bottom: 8vw;
+}
+
+.information-map div {
+    width: 50%;
+}
+
+.information-map iframe {
+    border-radius: calc(5px + .6vw);
+}
+
+.information-map-details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 50px;
+}
+
+.information-map-viewer {
+    text-align: center;
+}
+
+.information-map-details h1 {
+    font-size: 2vw;
+}
+.information-map-details p {
+    font-size: 1.5vw;
+}
+.information-map-details button {
+    font-size: 1.5vw;
+    height: 5vw;
+    width: 15vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .information-map {
+        display: block;
+    }
+
+    .information-map-details {
+        margin: 0;
+        margin: 0 auto;
+        transform: translate(0, 300%);
+    }
+
+    .information-map-viewer {
+        margin: 0 auto;
+        padding-bottom: 100px;
+        transform: translate(0, -28%);
+    }
+
+    .information-map-details p
+    {
+        margin: 3vw 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .information .description img {
+        width: 80%;
+        margin: 0 10% 50px 10%;
+    }
+
+    .information-detail {
+        justify-content: center;
+    }
+
+    .information-detail-info {
+        text-align: center;
+        width: 42%;
+        display: block;
+    }
+
+    .information-detail-info h3 {
+        font-size: 5vw;
+        line-height: 1vw;
+        color: var(--primary-color);
+    }
+
+    .information-detail-info p {
+        font-size: 5vw;
+    }
+
+    .information-detail-info-data {
+        margin-bottom: 35px;
+    }
+}

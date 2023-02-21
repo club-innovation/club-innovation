@@ -5,7 +5,6 @@ import oualid from '../imgs/team/oualid.jpeg';
 import taha from '../imgs/team/taha.jpeg';
 import yahya from '../imgs/team/yahya.png';
 import badr from '../imgs/team/bader.jpg'
-import moughit from '../imgs/team/moughit.jpg'
 
 const Members = [
     {

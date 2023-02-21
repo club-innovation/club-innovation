@@ -1,3 +1,7 @@
+.projects {
+    margin-top: calc(50px + 10vw);
+}
+
 .list-title
 {
     text-align: center;
