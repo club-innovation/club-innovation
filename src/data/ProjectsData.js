@@ -21,8 +21,8 @@ const projects = [
         adresse: "ECOLE MAROCAINE DES SCIENCES DE L'INGENIEUR 05 lot bouizgaren, Rte de Safi",
         map:
         {
-            lat: 31.653610147613122,
-            lon: -8.021447459904543
+            lat: 31.63122053463084,
+            lon: -8.012774493797531
         },
         link: "https://club-innovation.github.io/club-innovation",
         organizers:

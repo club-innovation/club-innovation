@@ -5,7 +5,8 @@ import { Link, useParams } from "react-router-dom";
 
 //Components
 import Description from "../Description"
-import MembersList from '../MembersList'
+import MembersList from "../MembersList"
+import GoogleMap from "../GoogleMap"
 
 //Data
 import ProjectsData from "../../data/ProjectsData"
@@ -23,9 +24,16 @@ function Information({ type }) {
         
         return null;
     }
+
+    function GetMap(src)
+    {
+        return (<div className="information-map-viewer">
+            <iframe src={src} width="600" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>);
+    }
     
     const typeTitle = type === "projects" ? "PROJECT DESCRIPTION" : "EVENT DESCRIPTION";
-    const mapLink = `https://www.bing.com/maps/embed?h=400&w=500&cp=${GetData().map.lat}~${GetData().map.lon}&lvl=18&typ=d&sty=r&src=SHELL&FORM=MBEDV8&pushpins=${GetData().map.lat}_${GetData().map.lon}`;
+    const mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13586.747898394668!2d-8.025867060727096!3d31.642419969080752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef9ce2003acb%3A0xbf12ed0e32f9fa0c!2sEcole%20Marocaine%20Des%20Sciences%20de%20l&#39;Ing%C3%A9nieur!5e0!3m2!1sfr!2sma!4v1677022835335!5m2!1sfr!2sma";
 
     return (
         <div className="information">
@@ -59,14 +67,13 @@ function Information({ type }) {
             <h1 className="list-title"> &#123;Place <span className="primary-color">Of </span>The <span className="primary-color">Event</span>&#125;</h1>
 
             <div className="information-map">
+                <div className="information-map-viewer">
+                    <GoogleMap lat={GetData().map.lat} lon={GetData().map.lon} />
+                </div>
                 <div className="information-map-details">
                     <h1><span className="primary-color">WHERE</span></h1>
                     <p>{GetData().adresse}</p>
                     <Link target="_blank" to={GetData().link}><button>Join Us</button></Link>
-                </div>
-                <div className="information-map-viewer">
-                    <iframe width="500" height="400" frameborder="0" src={mapLink}></iframe>
-                    <div style={{whiteSpace: "nowrap", textAlign: "center", width: 500, padding: "6px 0"}}></div>
                 </div>
             </div>
         </div>
