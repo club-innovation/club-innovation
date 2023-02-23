@@ -8,6 +8,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  background-attachment: fixed;
 }
 
 .description-home {
@@ -247,6 +248,7 @@
 @media screen and (max-width: 800px) {
   .background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../imgs/home/background.jpg);
+    background-attachment: fixed;
   }
 
   .description-home {
@@ -341,26 +343,3 @@
 }
 
 
-.typewriter {
-	width: 60.5ch;
-	white-space: nowrap;
-	overflow: hidden;
-	border-right: 4px solid #fff;
-	animation: cursor 3s step-start infinite, 
-    text 3s steps(18) alternate infinite;
-}
-
-@keyframes cursor {
-	0%, 100% { 
-    border-color: #fff; 
-  }
-}
-
-@keyframes text {
-	0% { 
-    width: 0; 
-  }
-	100% { 
-    width: 60.5ch; 
-  }
-}
