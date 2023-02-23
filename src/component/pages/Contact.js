@@ -3,7 +3,7 @@ import "./style/Contact.css";
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import { Polygones } from "../Particle";
 
 
 function Contact() {
@@ -35,6 +35,7 @@ function Contact() {
     <div className="Contact">
       
       <div className="ContainerContact">
+        <Polygones/>
         <p className="Info">Contact <span className="primary-color">Us</span></p>
         <div className="ContainerContact1">
           <form onSubmit={handleSubmit}>
