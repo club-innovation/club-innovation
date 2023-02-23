@@ -13,59 +13,71 @@ function Navbar() {
 
   function toggleHidden() {
     setBar({ isHidden: !bar.isHidden });
+    toggleOverflow();
   }
-  function toggleNav()
+
+  function HideMobileNav()
   {
     if(window.innerWidth <= 800)
-    {
       setBar({ isHidden: true });
-    }
   }
+
   function toggleOverflow()
   {
     //fix overflow in mobile navbar 
-    if(window.innerWidth <= 800 && !bar.isHidden)
-      document.body.style.overflow = "hidden";
-    else
+    if (smallScreen && !bar.isHidden)
       document.body.style.overflow = "visible";
+    else
+      document.body.style.overflow = "hidden";
   }
 
   useEffect(()=>{
-    setBar({ isHidden: window.innerWidth <= 800 });
-  },[]);
-
-  useEffect(() => {
-    toggleOverflow();
-  }, );
+    if (window.innerWidth <= 800)
+    {
+      setBar({ isHidden: true });
+      setSmallScreen(true);
+    }
+  }, [smallScreen]);
 
   useEffect(() => {
     const resizeListener = () => {
-      toggleOverflow();
-      setSmallScreen(false);
+      var isSmallScreen = false;
+      //check if change it from large to small screen
+      const isSmallScreenTMP = isSmallScreen;
+
       if(window.innerWidth <= 800)
       {
-        setSmallScreen(true);
+        isSmallScreen = true;
       }
+
+      //Large screen to small screen
+      if (!isSmallScreenTMP && isSmallScreen)
+      {
+        //hide the navbar
+        HideMobileNav();
+      }
+      setSmallScreen(isSmallScreen);
     };
     window.addEventListener('resize', resizeListener);
+    console.log("smallScreen: " + smallScreen);
 
     // clean up function
     return () => {
       window.removeEventListener('resize', resizeListener);
     }
-  }, []);
+  }, [smallScreen]);
 
   return (
     <>
     <div className="navbar-container">
 
-    <Link to="/" onClick={toggleNav}>
+    <Link to="/" onClick={HideMobileNav}>
       <h1>&#123;Club<span className={smallScreen && !bar.isHidden ? 'secondary-color' : 'primary-color'}>Innovation</span>&#125;</h1>
     </Link>
 
       <div className="navbar">
         <nav className="navigation" style={style}>
-          <ul onClick={toggleNav}>
+          <ul onClick={HideMobileNav}>
             <li>
               <Link to="/">Home</Link>
             </li>
