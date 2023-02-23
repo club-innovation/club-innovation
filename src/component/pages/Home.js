@@ -21,9 +21,9 @@ function Home() {
         <div className="description-home">
           <div className="description-title">
             <div class="typewriter">
-            <h1>
-              Welcome <span className="primary-color">To</span>
-            </h1>
+              <h1>
+                Welcome <span className="primary-color">To</span>
+              </h1>
             </div>
             <h3>
               &#123;Club<span className="primary-color">Innovation</span>&#125;
@@ -37,13 +37,7 @@ function Home() {
               </span>
               <span> and have fun while doing it!</span>
             </p>
-            <br />
-            <br />
-            <br />
-            <br />
-            <button>
-              Explore
-            </button>
+            <input type="button" value="Explore"/>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@
 
 .description-home h1 {
   font-weight: bolder;
-  font-size: 5vw;
+  font-size: 4.5vw;
 }
 
 .description-home h3 {
@@ -33,6 +33,25 @@
   font-size: larger;
 }
 
+.description-text input[type="button"] {
+  margin-top: 40px;
+  width: 30%;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'poppins';
+  font-size: 14px;
+  cursor: pointer;
+  transition: .3s;
+}
+.description-text input[type="button"]:hover {
+  background-color: var(--dark-primary-color);
+  color: white;
+  transform: translateY(-5px);
+}
 .club-information-container h2 {
   text-align: center;
   margin-top: 40px;
@@ -342,7 +361,7 @@
 
 
 .typewriter {
-	width: 60.5ch;
+	width: 60.4ch;
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: 4px solid #fff;
