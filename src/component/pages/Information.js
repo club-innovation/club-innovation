@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./style/Information.css"
 
 import { Link, useParams } from "react-router-dom";
@@ -16,7 +16,9 @@ function Information({ type }) {
 
     const { id } = useParams();
 
-    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [id])
     
     function GetData() {
         if (type === "projects") return ProjectsData[id];
@@ -24,16 +26,8 @@ function Information({ type }) {
         
         return null;
     }
-
-    function GetMap(src)
-    {
-        return (<div className="information-map-viewer">
-            <iframe src={src} width="600" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                </div>);
-    }
     
     const typeTitle = type === "projects" ? "PROJECT DESCRIPTION" : "EVENT DESCRIPTION";
-    const mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13586.747898394668!2d-8.025867060727096!3d31.642419969080752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef9ce2003acb%3A0xbf12ed0e32f9fa0c!2sEcole%20Marocaine%20Des%20Sciences%20de%20l&#39;Ing%C3%A9nieur!5e0!3m2!1sfr!2sma!4v1677022835335!5m2!1sfr!2sma";
 
     return (
         <div className="information">

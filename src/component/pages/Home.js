@@ -1,15 +1,15 @@
 import React from "react";
 import "./style/Home.css";
 
-import background from "../../imgs/home/background.jpg";
+//Images
 import coding from "../../imgs/home/coding.gif";
 import programming from "../../imgs/home/programming.gif";
-import project from "../../imgs/home/project.svg";
 import projects from "../../imgs/home/projects.gif";
 import terminal from "../../imgs/home/terminal.gif";
-import helps from "../../imgs/home/helps.gif";
 import ending from "../../imgs/home/ending.gif";
 import help from "../../imgs/home/help.gif";
+
+//Components
 import HomeCards from "../HomeCards";
 import { Polygones } from "../Particle";
 
