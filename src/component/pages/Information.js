@@ -7,6 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import Description from "../Description"
 import MembersList from "../MembersList"
 import GoogleMap from "../GoogleMap"
+import { Polygones } from "../Particle";
 
 //Data
 import ProjectsData from "../../data/ProjectsData"
@@ -31,6 +32,7 @@ function Information({ type }) {
 
     return (
         <div className="information">
+            <Polygones/>
             <h1 className="list-title">&#123;<span className="primary-color">{GetData().title}</span>&#125;</h1>
             <Description title={typeTitle} description={GetData().description} image={ProjectsData[id].image} />
 

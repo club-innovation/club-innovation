@@ -13,7 +13,7 @@ function Navbar() {
 
   function toggleHidden() {
     setBar({ isHidden: !bar.isHidden });
-    toggleOverflow();
+    SetPageOverflow();
   }
 
   function HideMobileNav()
@@ -22,13 +22,15 @@ function Navbar() {
       setBar({ isHidden: true });
   }
 
-  function toggleOverflow()
+  function SetPageOverflow()
   {
     //fix overflow in mobile navbar 
-    if (smallScreen && !bar.isHidden)
-      document.body.style.overflow = "visible";
-    else
+    if (smallScreen && bar.isHidden)
+    {
       document.body.style.overflow = "hidden";
+    }
+    else
+      document.body.style.overflow = "visible";
   }
 
   useEffect(()=>{
