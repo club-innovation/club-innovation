@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth;
+}
+
 .background {
   background-image: url(../../../imgs/home/background.jpg);
   width: 100%;
@@ -8,6 +12,18 @@
   display: flex;
   justify-content: end;
   align-items: center;
+}
+
+.scroll-up{
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  height: 25px;
+  color: black;
+  cursor: pointer;
+  background-color: var(--primary-color);
 }
 
 .description-home {
@@ -187,10 +203,12 @@
 }
 
 @media screen and (max-width: 1400px) {
+  .typewriter {
+    max-width: 50%;
+  }
   .club-information-container h2 {
     font-size: 23px;
   }
-
   .text-container {
     width: 50%;
     text-align: center;
@@ -264,6 +282,16 @@
 }
 
 @media screen and (max-width: 800px) {
+  .typewriter {
+    margin: auto;
+    max-width: 40%;
+  }
+  .description-title h1{
+    font-size: 6vw;
+  }
+  .scroll-up {
+    position: fixed;
+  }
   .background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../imgs/home/background.jpg);
   }
@@ -273,20 +301,14 @@
     text-align: center;
   }
 
-  .description-title h1 {
-    font-size: 9vw;
-  }
-
   .description-title h3 {
-    font-size: 6vw;
     letter-spacing: 0.3vw;
   }
 
   .description-text p {
-    font-size: 3vw;
     width: 70%;
     margin: auto;
-    transform: translateY(20%);
+    transform: translateY(10%);
   }
 
   .home-ending {
@@ -361,12 +383,11 @@
 
 
 .typewriter {
-	width: 60.4ch;
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: 4px solid #fff;
-	animation: cursor 3s step-start infinite, 
-    text 3s steps(18) alternate infinite;
+	animation: cursor 2s step-start infinite, 
+   text 2s  steps(18) alternate infinite;
 }
 
 @keyframes cursor {
@@ -380,6 +401,6 @@
     width: 0; 
   }
 	100% { 
-    width: 60.5ch; 
+    width: 57.5ch; 
   }
 }

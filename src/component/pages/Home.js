@@ -1,6 +1,5 @@
-import React from "react";
 import "./style/Home.css";
-
+import React, { useState, useEffect } from "react";
 //Images
 import coding from "../../imgs/home/coding.gif";
 import programming from "../../imgs/home/programming.gif";
@@ -13,16 +12,51 @@ import help from "../../imgs/home/help.gif";
 import HomeCards from "../HomeCards";
 import { Polygones } from "../Particle";
 
+//icons  : 
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+
 function Home() {
+  const titleSwitcher = ["Welcome To","Bienvenue à","ⴰⵣⵓⵍ ⴼⵍⴰⵡⵏ"];
+  const [isVisible, setIsVisible] = useState(false);
+  const [index,setIndex] = useState(0);
+  const [text,setText] = useState(titleSwitcher[index]);
+  let textSplit = text.split(' ');
+  let first = textSplit[0];
+  let second = textSplit[1];
+  useEffect(() => {
+    const interval = setInterval(() => {
+        setIndex(prevIndex => (prevIndex + 1) % titleSwitcher.length);
+        console.log(index);
+     },4000);
+     return () => {
+      clearInterval(interval);
+     }
+  },[])
+  useEffect(() => {
+    console.log("here" + index);
+    setText(titleSwitcher[index]);
+  }, [index]);
+  
+
+  window.onscroll = function () {
+    if(window.scrollY >= 80) {
+      setIsVisible(true)
+    } else {
+      setIsVisible(false);
+    }
+  }
+  function returnToHome() {
+    window.scrollTo(0,0);
+  }
   return (
     <div>
       <Polygones/>
-      <div className="background">
+      <div className="background" id="Home">
         <div className="description-home">
           <div className="description-title">
             <div class="typewriter">
               <h1>
-                Welcome <span className="primary-color">To</span>
+                     {first}<span className="primary-color"> {second}</span>
               </h1>
             </div>
             <h3>
@@ -40,7 +74,9 @@ function Home() {
             <input type="button" value="Explore"/>
           </div>
         </div>
+        
       </div>
+      {isVisible &&<span className="scroll-up" onClick={returnToHome}><ArrowUpwardIcon fontSize="large" /></span>}
       <div className="club-information-container">
         <h2>
           &#123;What is Club<span className="primary-color">Innovation?</span>
