@@ -10,6 +10,7 @@ import Events from "./component/pages/Events";
 import Projects from "./component/pages/Projects";
 import Contact from "./component/pages/Contact";
 import About from "./component/pages/About";
+import Game from "./component/pages/Game";
 import NotFound from "./component/pages/NotFound";
 import Information from "./component/pages/Information";
 
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/projects/:id" element={<Information type="projects" />} />
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/about" element={<About/>}/>
+                <Route path="/game" element={<Game/>}/>
                 <Route path="/*" element={<NotFound />} />
             </Routes>
             <Footer/>
