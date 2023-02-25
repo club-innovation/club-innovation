@@ -6,7 +6,7 @@
   height: 50vw;
   min-height: 430px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   background-attachment: fixed;
 }

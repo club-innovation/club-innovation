@@ -3,7 +3,6 @@ import "./style/About.css"
 
 //Components
 import Description from "../About_Description"
-import List from "../List"
 import { Polygones } from "../Particle";
 
 //Images
