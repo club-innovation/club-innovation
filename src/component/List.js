@@ -30,9 +30,13 @@ function List({data, page}) {
                 })}
             </div>
         </div>
+        {data.length < 5 ? 
+        <></> 
+        : 
         <div className="list-btn-container">
             <button className="list-btn" onClick={LoadMore}>{loadMore ? 'Load Less' : 'Load More'}</button>
         </div>
+        }
     </div>
   )
 }
