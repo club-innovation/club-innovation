@@ -17,20 +17,41 @@ function Information({ type }) {
 
     const { id } = useParams();
     const navigate = useNavigate();
+    const typeTitle = type === "projects" ? "Project" : "Event";
+    const [imageSliderIndex, setImageSliderIndex] = useState(0);
 
     useEffect(() => {
         //move to the top of page
         window.scrollTo(0, 0)
     }, [id])
-    
+
     function GetData() {
         if (type === "projects") return ProjectsData[id];
         if (type === "events") return EventsData[id];
         
         return null;
     }
-    
-    const typeTitle = type === "projects" ? "Project" : "Event";
+
+    function ChangeImage(value)
+    {
+        if(value < 0 || value > GetData().images.length-1) return;
+
+        setImageSliderIndex(value);
+    }
+    function ChangeImageLeft()
+    {
+        var count = imageSliderIndex;
+        count = count-1 === 0 ? GetData().images.length-1 : count-1;
+
+        setImageSliderIndex(count);
+    }
+    function ChangeImageRight()
+    {
+        var count = imageSliderIndex;
+        count = count+1 === GetData().images.length ? 0 : count+1;
+
+        setImageSliderIndex(count);
+    }
 
     return (
         <div className="information">
@@ -39,13 +60,14 @@ function Information({ type }) {
             <>
             <Polygones/>
             <h1 className="list-title">&#123;<span className="primary-color">{GetData().title}</span>&#125;</h1>
-            <Description title={typeTitle + " Description"} description={GetData().description} image={ProjectsData[id].image} />
-
+            <Description title={typeTitle + " Description"} description={GetData().description} image={ProjectsData[id].images[imageSliderIndex].url} />
+            
             <div className="information-detail">
                 <div className="information-detail-images">
                     <div className="images-slider">
-                        { GetData().images.map((image)=>{
-                            return (<img src={image.url} alt=""/>)
+                        { GetData().images.map((image,index)=>{
+                            console.log(index);
+                            return (<img key={index} src={image.url} alt="" onClick={() => ChangeImage(index)}/>)
                         })
                         }
                     </div>
