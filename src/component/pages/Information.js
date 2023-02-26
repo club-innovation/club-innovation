@@ -1,7 +1,7 @@
-import React, { useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import "./style/Information.css"
 
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 //Components
 import Description from "../Description"
@@ -16,8 +16,10 @@ import EventsData from "../../data/EventsData"
 function Information({ type }) {
 
     const { id } = useParams();
+    const navigate = useNavigate();
 
     useEffect(() => {
+        //move to the top of page
         window.scrollTo(0, 0)
     }, [id])
     
@@ -32,6 +34,9 @@ function Information({ type }) {
 
     return (
         <div className="information">
+            {console.log()}
+            {GetData() ? 
+            <>
             <Polygones/>
             <h1 className="list-title">&#123;<span className="primary-color">{GetData().title}</span>&#125;</h1>
             <Description title={typeTitle + " Description"} description={GetData().description} image={ProjectsData[id].image} />
@@ -40,7 +45,6 @@ function Information({ type }) {
                 <div className="information-detail-images">
                     <div className="images-slider">
                         { GetData().images.map((image)=>{
-                            console.log(image.url);
                             return (<img src={image.url} alt=""/>)
                         })
                         }
@@ -81,6 +85,9 @@ function Information({ type }) {
                     <Link target="_blank" to={GetData().link}><button>Join Us</button></Link>
                 </div>
             </div>
+            </> 
+            : 
+            <> {navigate("/notFound")} </>}
         </div>
     )
 }
