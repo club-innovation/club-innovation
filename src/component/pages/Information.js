@@ -28,15 +28,24 @@ function Information({ type }) {
         return null;
     }
     
-    const typeTitle = type === "projects" ? "PROJECT DESCRIPTION" : "EVENT DESCRIPTION";
+    const typeTitle = type === "projects" ? "Project" : "Event";
 
     return (
         <div className="information">
             <Polygones/>
             <h1 className="list-title">&#123;<span className="primary-color">{GetData().title}</span>&#125;</h1>
-            <Description title={typeTitle} description={GetData().description} image={ProjectsData[id].image} />
+            <Description title={typeTitle + " Description"} description={GetData().description} image={ProjectsData[id].image} />
 
             <div className="information-detail">
+                <div className="information-detail-images">
+                    <div className="images-slider">
+                        { GetData().images.map((image)=>{
+                            console.log(image.url);
+                            return (<img src={image.url} alt=""/>)
+                        })
+                        }
+                    </div>
+                </div>
                 <div className="information-detail-info">
                     <div className="information-detail-info-data">
                         <h3>Timing</h3>
@@ -60,7 +69,7 @@ function Information({ type }) {
             <h1 className="list-title"> &#123;Meet The <span className="primary-color">Organizers</span>&#125;</h1>
             <MembersList data={GetData().organizers} />
 
-            <h1 className="list-title"> &#123;Place <span className="primary-color">Of </span>The <span className="primary-color">Event</span>&#125;</h1>
+            <h1 className="list-title"> &#123;Place <span className="primary-color">Of </span>The <span className="primary-color">{typeTitle}</span>&#125;</h1>
 
             <div className="information-map">
                 <div className="information-map-viewer">
