@@ -4,4 +4,7 @@
     align-items: center;
     margin-bottom: 100px;
     background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
