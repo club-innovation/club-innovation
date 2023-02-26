@@ -84,7 +84,7 @@ function Home() {
         </h2>
         <div className="club-info">
         <div className="club-info-img">
-            <img src={coding}></img>
+            <img src={coding} alt=""></img>
           </div>
           <div className="club-info-left">
             <div>
@@ -125,7 +125,7 @@ function Home() {
       </div>
       <div className="home-ending">
         <div className="image-home" >
-              <img src={ending}/>
+              <img src={ending} alt=""/>
         </div>
         <div className="home-ending-content">
             <p >&#123;What Are You <span className="primary-color">Waiting For?</span>&#125;</p>

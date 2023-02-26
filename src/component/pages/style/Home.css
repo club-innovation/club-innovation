@@ -10,8 +10,9 @@
   height: 50vw;
   min-height: 430px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
+  background-attachment: fixed;
 }
 
 .scroll-up{
@@ -294,6 +295,7 @@
   }
   .background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../imgs/home/background.jpg);
+    background-attachment: fixed;
   }
 
   .description-home {

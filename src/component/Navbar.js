@@ -19,7 +19,10 @@ function Navbar() {
   function HideMobileNav()
   {
     if(window.innerWidth <= 800)
+    {
       setBar({ isHidden: true });
+      SetPageOverflow();
+    }
   }
 
   function SetPageOverflow()
@@ -30,7 +33,9 @@ function Navbar() {
       document.body.style.overflow = "hidden";
     }
     else
+    {
       document.body.style.overflow = "visible";
+    }
   }
 
   useEffect(()=>{
@@ -56,12 +61,11 @@ function Navbar() {
       if (!isSmallScreenTMP && isSmallScreen)
       {
         //hide the navbar
-        HideMobileNav();
+        setBar({ isHidden: true });
       }
       setSmallScreen(isSmallScreen);
     };
     window.addEventListener('resize', resizeListener);
-    console.log("smallScreen: " + smallScreen);
 
     // clean up function
     return () => {

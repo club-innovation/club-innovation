@@ -3,8 +3,8 @@ import "./style/About.css"
 
 //Components
 import Description from "../About_Description"
-import List from "../List"
-import { Polygones } from "../Particle";
+import GoogleMap from "../GoogleMap"
+import { Polygones } from "../Particle"
 
 //Images
 import teamwork from "../../imgs/AboutUs/AboutUs.gif"
@@ -33,6 +33,15 @@ function About() {
             image={Vision}
             ImageClass = "img-vision"
         />
+        <div className="description">
+            <div className="description-map last-item">
+               <GoogleMap lat={31.63122053463084} lon={-8.012774493797531} />
+            </div>
+            <div className="description-details">
+              <h2>Location</h2>
+              <p>Our club innovation is situated in the vibrant city of <span className="primary-color">Marrakech</span>at the intersection of Bv Hassan II and Rue Yougoslavie, We invite you to visit us at our location</p>
+            </div>
+        </div>
      </div>
   )
 }
