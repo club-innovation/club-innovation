@@ -54,7 +54,7 @@ function Home() {
       <div className="background" id="Home">
         <div className="description-home">
           <div className="description-title">
-            <div class="typewriter">
+            <div className="typewriter">
               <h1>
                      {first}<span className="primary-color"> {second}</span>
               </h1>

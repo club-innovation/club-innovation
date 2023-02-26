@@ -58,7 +58,7 @@
   border-radius: 15px;
   text-align: center;
   font-weight: bold;
-  font-family: 'poppins';
+  font-family: 'Poppins';
   font-size: 14px;
   cursor: pointer;
   transition: .3s;
@@ -284,7 +284,7 @@
 @media screen and (max-width: 800px) {
   .typewriter {
     margin: auto;
-    max-width: 40%;
+    max-width: 53.5%;
   }
   .description-title h1{
     font-size: 6vw;
