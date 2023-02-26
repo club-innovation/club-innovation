@@ -7,13 +7,23 @@ import mohammed from '../imgs/team/mohamed.jpeg'
 import oualid from '../imgs/team/oualid.jpeg'
 import taha from '../imgs/team/taha.jpeg'
 import badr from '../imgs/team/bader.jpg'
+import programming from "../imgs/home/programming.gif";
+import terminal from "../imgs/home/terminal.gif";
+import help from "../imgs/home/help.gif";
 
 const projects = [
     {
         title: "project title",
         shortDescription: "project short description",
-        description: "project description",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         image: background,
+        images: [
+            { url: help },
+            { url: programming },
+            { url: terminal},
+            { url: programming },
+            { url: help},
+        ],
         time: "16:00",
         date: "22/02/2023",
         duration: "2 hours",
@@ -90,6 +100,15 @@ const projects = [
         shortDescription: "project short description",
         description: "project description",
         image: "",
+        images: [
+            { url: "images/1.jpg" },
+            { url: "images/2.jpg" },
+            { url: "images/3.jpg" },
+            { url: "images/4.jpg" },
+            { url: "images/5.jpg" },
+            { url: "images/6.jpg" },
+            { url: "images/7.jpg" },
+        ],
         time: "16:00",
         date: "22/02/2023",
         duration: "2 hours",
@@ -166,6 +185,15 @@ const projects = [
         shortDescription: "project short description",
         description: "project description",
         image: "",
+        images: [
+            { url: "images/1.jpg" },
+            { url: "images/2.jpg" },
+            { url: "images/3.jpg" },
+            { url: "images/4.jpg" },
+            { url: "images/5.jpg" },
+            { url: "images/6.jpg" },
+            { url: "images/7.jpg" },
+        ],
         time: "16:00",
         date: "22/02/2023",
         duration: "2 hours",
@@ -242,6 +270,15 @@ const projects = [
         shortDescription: "project short description",
         description: "project description",
         image: "",
+        images: [
+            { url: "images/1.jpg" },
+            { url: "images/2.jpg" },
+            { url: "images/3.jpg" },
+            { url: "images/4.jpg" },
+            { url: "images/5.jpg" },
+            { url: "images/6.jpg" },
+            { url: "images/7.jpg" },
+        ],
         time: "16:00",
         date: "22/02/2023",
         duration: "2 hours",
@@ -318,6 +355,15 @@ const projects = [
         shortDescription: "project short description",
         description: "project description",
         image: "",
+        images: [
+            { url: "images/1.jpg" },
+            { url: "images/2.jpg" },
+            { url: "images/3.jpg" },
+            { url: "images/4.jpg" },
+            { url: "images/5.jpg" },
+            { url: "images/6.jpg" },
+            { url: "images/7.jpg" },
+        ],
         time: "16:00",
         date: "22/02/2023",
         duration: "2 hours",
@@ -394,6 +440,15 @@ const projects = [
         shortDescription: "project short description",
         description: "project description",
         image: "",
+        images: [
+            { url: "images/1.jpg" },
+            { url: "images/2.jpg" },
+            { url: "images/3.jpg" },
+            { url: "images/4.jpg" },
+            { url: "images/5.jpg" },
+            { url: "images/6.jpg" },
+            { url: "images/7.jpg" },
+        ],
         time: "16:00",
         date: "22/02/2023",
         duration: "2 hours",

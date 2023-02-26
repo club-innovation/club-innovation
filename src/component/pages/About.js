@@ -39,7 +39,7 @@ function About() {
             </div>
             <div className="description-details">
               <h2>Location</h2>
-              <p>Our club innovation is situated in the vibrant city of <span className="primary-color">Marrakech</span>at the intersection of Bv Hassan II and Rue Yougoslavie, We invite you to visit us at our location</p>
+              <p>Our club innovation is situated in the vibrant city of <span className="primary-color"><b>Marrakech</b></span> at the intersection of Bv Hassan II and Rue Yougoslavie, We invite you to visit us at our location</p>
             </div>
         </div>
      </div>
