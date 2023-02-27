@@ -40,14 +40,6 @@ const Members = [
         linkedin: 'https://www.linkedin.com/in/mohamed-nezhari-306b3625a'
     },
     {
-        name: 'Bader tebaa',
-        role: 'Treasurer',
-        image: badr,
-        github: 'https://github.com/badertebaa',
-        instagram: 'https://www.instagram.com/badertebaa/',
-        linkedin: 'https://www.linkedin.com/in/badr-tebaa-310a50207/'
-    },
-    {
         name: 'Walid Habbach',
         role: 'Technical Manager',
         image: oualid,
@@ -62,6 +54,14 @@ const Members = [
         github: 'https://github.com/taha-ammour',
         instagram: '',
         linkedin: ''
+    },
+    {
+        name: 'Bader tebaa',
+        role: 'Treasurer',
+        image: badr,
+        github: 'https://github.com/badertebaa',
+        instagram: 'https://www.instagram.com/badertebaa/',
+        linkedin: 'https://www.linkedin.com/in/badr-tebaa-310a50207/'
     },
 ];
 

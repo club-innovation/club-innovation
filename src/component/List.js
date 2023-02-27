@@ -17,8 +17,8 @@ function List({data, page}) {
     <div className="list-parent">
         <div className="list">
             <div className="list-container">
-                {data.slice(0,len).map((element,index)=>{
-                    const elementLink = "/"+page+"/"+index;
+                {data.slice(0).reverse().slice(0,len).map((element,index)=>{
+                    const elementLink = "/"+page+"/"+(len-1-index);
                     return(
                     <Link to={elementLink} key={index}>
                         <div className="list-card" style={{backgroundImage: `url(${element.image})`}}>
@@ -30,9 +30,13 @@ function List({data, page}) {
                 })}
             </div>
         </div>
+        {data.length < 5 ? 
+        <></> 
+        : 
         <div className="list-btn-container">
             <button className="list-btn" onClick={LoadMore}>{loadMore ? 'Load Less' : 'Load More'}</button>
         </div>
+        }
     </div>
   )
 }
