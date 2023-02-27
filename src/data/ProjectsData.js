@@ -19,7 +19,7 @@ const projects = [
         image: background,
         images: [
             { url: help },
-            { url: programming },
+            { url: background },
             { url: terminal},
             { url: programming },
             { url: help},

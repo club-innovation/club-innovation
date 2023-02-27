@@ -55,18 +55,21 @@ function Information({ type }) {
 
     return (
         <div className="information">
-            {console.log()}
             {GetData() ? 
             <>
             <Polygones/>
             <h1 className="list-title">&#123;<span className="primary-color">{GetData().title}</span>&#125;</h1>
             <Description title={typeTitle + " Description"} description={GetData().description} image={ProjectsData[id].images[imageSliderIndex].url} />
             
+            <div className="information-image-slider">
+                <p onClick={ChangeImageLeft}>&lt;</p>
+                <p onClick={ChangeImageRight}>&gt;</p>
+            </div>
+
             <div className="information-detail">
                 <div className="information-detail-images">
                     <div className="images-slider">
                         { GetData().images.map((image,index)=>{
-                            console.log(index);
                             return (<img key={index} src={image.url} alt="" onClick={() => ChangeImage(index)}/>)
                         })
                         }
