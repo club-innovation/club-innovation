@@ -8,7 +8,7 @@ import badr from '../imgs/team/bader.jpg'
 
 const Members = [
     {
-        name: 'Oussama seme elayne',
+        name: 'Oussama Seme-Elayne',
         role: 'President',
         image: oussama,
         github: 'https://github.com/oussama-seme-elayne',
@@ -32,22 +32,6 @@ const Members = [
         linkedin: 'https://www.linkedin.com/in/hamza-ouabiba-b95392203/'
     },
     {
-        name: 'Walid Habbach',
-        role: 'Technical Manager',
-        image: oualid,
-        github: 'https://github.com/walidhabbach',
-        instagram: 'https://www.instagram.com/walid_habbach/',
-        linkedin: 'https://www.linkedin.com/in/oualid-habbach-0385641bb/'
-    },
-    {
-        name: 'Bader tebaa',
-        role: 'Treasurer',
-        image: badr,
-        github: 'https://github.com/badertebaa',
-        instagram: 'https://www.instagram.com/badertebaa/',
-        linkedin: 'https://www.linkedin.com/in/badr-tebaa-310a50207/'
-    },
-    {
         name: 'Mohamed Nezhari',
         role: 'Project Co-Manager',
         image: mohammed,
@@ -56,12 +40,28 @@ const Members = [
         linkedin: 'https://www.linkedin.com/in/mohamed-nezhari-306b3625a'
     },
     {
+        name: 'Walid Habbach',
+        role: 'Technical Manager',
+        image: oualid,
+        github: 'https://github.com/walidhabbach',
+        instagram: 'https://www.instagram.com/walid_habbach/',
+        linkedin: 'https://www.linkedin.com/in/oualid-habbach-0385641bb/'
+    },
+    {
         name: 'Taha Ammour',
         role: 'Technical Co-Manager',
         image: taha,
         github: 'https://github.com/taha-ammour',
         instagram: '',
         linkedin: ''
+    },
+    {
+        name: 'Bader tebaa',
+        role: 'Treasurer',
+        image: badr,
+        github: 'https://github.com/badertebaa',
+        instagram: 'https://www.instagram.com/badertebaa/',
+        linkedin: 'https://www.linkedin.com/in/badr-tebaa-310a50207/'
     },
 ];
 
