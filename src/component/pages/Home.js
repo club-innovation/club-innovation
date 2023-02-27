@@ -1,5 +1,7 @@
 import "./style/Home.css";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 //Images
 import coding from "../../imgs/home/coding.gif";
 import programming from "../../imgs/home/programming.gif";
@@ -7,7 +9,8 @@ import projects from "../../imgs/home/projects.gif";
 import terminal from "../../imgs/home/terminal.gif";
 import ending from "../../imgs/home/ending.gif";
 import help from "../../imgs/home/help.gif";
-
+import Up from "../../imgs/gif/up.gif"
+import Discord from '../../imgs/home/discord.png'
 //Components
 import HomeCards from "../HomeCards";
 import { Polygones } from "../Particle";
@@ -18,6 +21,7 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 function Home() {
   const titleSwitcher = ["Welcome To","Bienvenue à","ⴰⵣⵓⵍ ⴼⵍⴰⵡⵏ"];
   const [isVisible, setIsVisible] = useState(false);
+  const [isVisibleToggle, setVisibleToggle] = useState(false);
   const [index,setIndex] = useState(0);
   const [text,setText] = useState(titleSwitcher[index]);
   let textSplit = text.split(' ');
@@ -41,8 +45,10 @@ function Home() {
   window.onscroll = function () {
     if(window.scrollY >= 80) {
       setIsVisible(true)
+      setVisibleToggle(true);
     } else {
       setIsVisible(false);
+      setVisibleToggle(false);
     }
   }
   function returnToHome() {
@@ -51,7 +57,7 @@ function Home() {
   return (
     <div>
       <Polygones/>
-      <div className="background" id="Home">
+      <div className="background">
         <div className="description-home">
           <div className="description-title">
             <div className="typewriter">
@@ -73,10 +79,20 @@ function Home() {
             </p>
             <input type="button" value="Explore"/>
           </div>
+          {isVisible &&<div className="toggle-up">
+            <img src={Up}/>
+          </div>}
         </div>
         
+      </div>  
+      <div className="icons-left">
+        <div>
+           <Link target="blank_" to="https://discord.gg/ZB3GbCsG"><span className="discord-icon" onClick={returnToHome}><img src={Discord}/></span></Link>
+        </div>
+        {isVisible && <div className="scroll-up">
+          <span onClick={returnToHome}><ArrowUpwardIcon fontSize="large" /></span>
+        </div>}
       </div>
-      {isVisible &&<span className="scroll-up" onClick={returnToHome}><ArrowUpwardIcon fontSize="large" /></span>}
       <div className="club-information-container">
         <h2>
           &#123;What is Club<span className="primary-color">Innovation?</span>

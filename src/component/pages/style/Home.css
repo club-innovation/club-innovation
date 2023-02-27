@@ -15,17 +15,50 @@
   background-attachment: fixed;
 }
 
+.toggle-up {
+  width: 20%;
+  position: absolute;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(-15vw);
+}
+.toggle-up p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+.toggle-up img{
+  width: 90px;
+}
+
 .scroll-up{
-  position: fixed;
-  bottom: 30px;
-  right: 10px;
   padding: 5px;
   border-radius: 50%;
   height: 25px;
   color: black;
   cursor: pointer;
+  text-align: center;
+  margin-top: 5px;
   background-color: var(--primary-color);
 }
+
+.discord-icon {
+  color: black;
+  cursor: pointer;
+}
+
+.discord-icon img {
+  width: 38px;
+  border-radius: 50%;
+}
+
+.icons-left {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
 
 .description-home {
   padding-right: 8%;
@@ -205,6 +238,11 @@
 
 @media screen and (max-width: 1400px) {
   .typewriter {
+  }
+  .toggle-up {
+    height: 30vh;
+  }
+  .typewriter {
     max-width: 50%;
   }
   .club-information-container h2 {
@@ -282,13 +320,17 @@
   }
 }
 
+
 @media screen and (max-width: 800px) {
   .typewriter {
     margin: auto;
-    max-width: 53.5%;
+    max-width: 43ch;
+  }
+  .icons-left {
+     bottom: 50px;
   }
   .description-title h1{
-    font-size: 6vw;
+    font-size: 7.0vw;
   }
   .scroll-up {
     position: fixed;
