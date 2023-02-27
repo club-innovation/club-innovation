@@ -3,8 +3,9 @@ import React from "react";
 import "./Footer.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import TwitterIcon from "@mui/icons-material/Twitter";
+
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DiscordIcon from "../imgs/svg/discord-mark-white1.svg";
 
 function Footer() {
   return (
@@ -30,25 +31,27 @@ function Footer() {
         </div>
       </div>
       <nav className="footer__nav">
-        <a href="#" className="footer__nav-link">About</a>
-        <a href="#" className="footer__nav-link">Our System</a>
+        <a href="/#/about" className="footer__nav-link">About</a>
+        <a href="#" className="footer__nav-link">Projects</a>
         <a href="#" className="footer__nav-link">Events</a>
-        <a href="#" className="footer__nav-link">Members</a>
+        <a href="#" className="footer__nav-link">Team</a>
         <a href="#" className="footer__nav-link">Contact</a>
       </nav>
       <div className="footer__social">
-        <a href="#" className="footer__social-link">
-          <InstagramIcon className="footer__social-icon" alt="Instagram" />
-        </a>
-        <a href="#" className="footer__social-link">
+        <a href="https://github.com/club-innovation" className="footer__social-link">
           <GitHubIcon className="footer__social-icon" alt="GitHub" />
         </a>
-        <a href="#" className="footer__social-link">
-          <TwitterIcon className="footer__social-icon" alt="Twitter" />
+        <a href="https://www.instagram.com/emsi_innovation/?hl=en" className="footer__social-link">
+          <InstagramIcon className="footer__social-icon" alt="Instagram" />
         </a>
         <a href="#" className="footer__social-link">
           <LinkedInIcon className="footer__social-icon" alt="LinkedIn" />
         </a>
+        <a href="https://discord.gg/UfUpsjrH" className="footer__social-link">
+          
+          <img src={DiscordIcon} className="footer__social-icon-disc" alt="Discord"/>
+        </a>
+        
       </div>
     </footer>
   );

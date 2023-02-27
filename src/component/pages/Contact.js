@@ -106,10 +106,10 @@ function Contact() {
         <div className="ContainerContact3">
           <ul>
             <li> 
-              <a href="/" className="facebook"><FacebookOutlinedIcon className="iconp" fontSize="large" /></a>
+              <a href="https://www.facebook.com/techinnov/" className="facebook"><FacebookOutlinedIcon className="iconp" fontSize="large" /></a>
             </li>
             <li>
-              <a href="/" className="insta"><InstagramIcon className="iconp" fontSize="large" /></a>
+              <a href="https://www.instagram.com/emsi_innovation/?hl=en" className="insta"><InstagramIcon className="iconp" fontSize="large" /></a>
            </li>
             <li> 
               <a href="/" className="twitter"><TwitterIcon className="iconp" fontSize="large" /></a>
