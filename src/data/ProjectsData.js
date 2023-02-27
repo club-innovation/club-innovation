@@ -1,5 +1,5 @@
 // import imageExample from "../imgs/projects/imageexample"
-import Pilot from "../imgs/game/1.png"
+import Pilot from "../imgs/data/game/1.png"
 import yahya from "../imgs/team/yahya.png"
 import hamza from '../imgs/team/hamza.jpg'
 import oussama from '../imgs/team/oussama.jpeg'
@@ -7,16 +7,16 @@ import mohammed from '../imgs/team/mohamed.jpeg'
 import oualid from '../imgs/team/oualid.jpeg'
 import taha from '../imgs/team/taha.jpeg'
 import badr from '../imgs/team/bader.jpg'
-import pone from "../imgs/game/2.png";
-import ptwo from "../imgs/game/3.png";
-import pthree from "../imgs/game/4.png";
-import pfive from "../imgs/game/5.png";
+import pone from "../imgs/data/game/2.png";
+import ptwo from "../imgs/data/game/3.png";
+import pthree from "../imgs/data/game/4.png";
+import pfive from "../imgs/data/game/5.png";
 
-import wone from "../imgs/innovation-website/1.png"
-import wtwo from "../imgs/innovation-website/2.png"
-import wthree from "../imgs/innovation-website/3.png"
-import wfour from "../imgs/innovation-website/4.png"
-import wfive from "../imgs/innovation-website/5.png"
+import wone from "../imgs/data/innovation-website/1.png"
+import wtwo from "../imgs/data/innovation-website/2.png"
+import wthree from "../imgs/data/innovation-website/3.png"
+import wfour from "../imgs/data/innovation-website/4.png"
+import wfive from "../imgs/data/innovation-website/5.png"
 
 const projects = [
     {
