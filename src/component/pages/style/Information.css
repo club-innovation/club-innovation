@@ -11,11 +11,6 @@
     box-shadow: 1px 1px 50px var(--dark-secondary-color), -1px -1px 50px var(--light-secondary-color);
 }
 
-.information-image-slider
-{
-    height: 0px;
-}
-
 .information .description-image-slider
 {
     visibility: visible;

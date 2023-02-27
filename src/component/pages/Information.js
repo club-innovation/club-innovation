@@ -4,7 +4,7 @@ import "./style/Information.css"
 import { Link, useParams, useNavigate } from "react-router-dom";
 
 //Components
-import Description from "../Description"
+import Description from "../Information_Description"
 import MembersList from "../MembersList"
 import GoogleMap from "../GoogleMap"
 import { Polygones } from "../Particle";
@@ -59,12 +59,7 @@ function Information({ type }) {
             <>
             <Polygones/>
             <h1 className="list-title">&#123;<span className="primary-color">{GetData().title}</span>&#125;</h1>
-            <Description title={typeTitle + " Description"} description={GetData().description} image={ProjectsData[id].images[imageSliderIndex].url} />
-            
-            <div className="information-image-slider">
-                <p onClick={ChangeImageLeft}>&lt;</p>
-                <p onClick={ChangeImageRight}>&gt;</p>
-            </div>
+                    <Description title={typeTitle + " Description"} description={GetData().description} image={ProjectsData[id].images[imageSliderIndex].url} ActionLeft={ChangeImageLeft} ActionRight={ChangeImageRight}/>
 
             <div className="information-detail">
                 <div className="information-detail-images">
