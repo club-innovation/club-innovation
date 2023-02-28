@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./style/Contact.css";
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Polygones } from "../Particle";
+import DiscordIcon from "../../imgs/svg/discord-mark-white2.svg";
 
 
 function Contact() {
@@ -106,13 +106,20 @@ function Contact() {
         <div className="ContainerContact3">
           <ul>
             <li> 
-              <a href="https://www.facebook.com/techinnov/" className="facebook"><FacebookOutlinedIcon className="iconp" fontSize="large" /></a>
+              
+                <a href="https://github.com/club-innovation" className="github">
+                 <GitHubIcon className="iconps" alt="GitHub" fontSize="large" />
+                </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/emsi_innovation/?hl=en" className="insta"><InstagramIcon className="iconp" fontSize="large" /></a>
+              <a href="https://www.instagram.com/emsi_innovation/?hl=en" className="insta">
+                <InstagramIcon className="iconp" fontSize="large" />
+                </a>
            </li>
             <li> 
-              <a href="/" className="twitter"><TwitterIcon className="iconp" fontSize="large" /></a>
+              <a href="https://discord.gg/GWfhC66hhG" className="discord">
+                <img src={DiscordIcon} className="iconpd" />
+              </a>
             </li>
           </ul>
            

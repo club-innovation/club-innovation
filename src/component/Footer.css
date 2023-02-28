@@ -103,8 +103,8 @@
     color: var(--secondary-color);
   }
   .footer__social-icon-disc{
-    width: 2.1rem;
-    margin-top: 4px;
+    width: 1.65rem;
+    margin-top: 3px;
     
   }
   @media only screen and (max-width: 768px) {

@@ -108,18 +108,21 @@
 .Container21{
   justify-content: space-around;
 }
-.facebook {
+.github {
   margin-right : 2vw;
   color: var(--primary-color);
+  
 
 }
 .insta{
   margin-right: 2vw;
   color: var(--primary-color);
 }
-.twitter{
+.discord{
   color: var(--primary-color);
+  
 }
+
 .ContainerContact3 ul li a:active {
   
     transform: translateY(3px);
@@ -129,6 +132,14 @@
   color: var(--dark-primary-color);
   
 }
+.iconpd{
+  width: 2.19rem;
+  margin-top: 5px;
+}
+.iconps {
+  font-size: 2rem;
+}
+
 
 @media screen and (max-width: 800px)
 {
