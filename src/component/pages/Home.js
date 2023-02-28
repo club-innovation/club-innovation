@@ -62,6 +62,7 @@ function Home() {
                     loop={0} 
                     cursor
                     cursorStyle='|'
+                    cursorColor="#8CEFE9"
                     typeSpeed={150}
                     deleteSpeed={50}
                     delaySpeed={1000}
