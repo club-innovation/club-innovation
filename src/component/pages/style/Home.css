@@ -48,8 +48,8 @@
 }
 
 .progress {
-  height: 9vh;
-  width: 9vh;
+  height: 7.5vh;
+  width: 7.5vh;
   border-radius: 50%;
   bottom: 25px;
   right: 25px;
@@ -79,7 +79,7 @@
   display: grid;
   place-items: center;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 2vh;
   color: black;
 }
 
@@ -279,8 +279,8 @@
     transform: translateX(-5vh);
   }
   .progress {
-    min-width: 8vh;
-    min-height: 8vh;
+    min-width: 6vh;
+    min-height: 6vh;
   }
   .scroll-icon {
     
