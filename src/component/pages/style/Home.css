@@ -3,7 +3,7 @@
 }
 
 .background {
-  background-image: url(../../../imgs/home/background.jpg);
+   background-image: url(../../../imgs/home/background.jpg);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,22 +15,7 @@
   background-attachment: fixed;
 }
 
-.toggle-up {
-  width: 20%;
-  position: absolute;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transform: translateX(-15vw);
-}
-.toggle-up p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
-}
-.toggle-up img{
-  width: 90px;
-}
+
 
 .icons-left {
   position: fixed;
@@ -50,34 +35,44 @@
   align-items: center;
   width: 50px;
   height: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .discord-icon img {
-  width: 100%;
+  width: 8vh;
   border-radius: 50%;
   height: auto;
   object-fit: contain;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-.scroll-up {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: var(--primary-color);
+.progress {
+  height: 9vh;
+  width: 9vh;
   border-radius: 50%;
-  color: var(--secondary-color);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  bottom: 25px;
+  right: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: grid;
+  place-items: center;
 }
 
-.scroll-up span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+.progress-value{
+  display: block;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: black;
 }
+
+
 .description-home {
   padding-right: 8%;
 }
@@ -199,6 +194,8 @@
   width: 50%;
 }
 
+
+
 .home-list-gif img {
   width: 80%;
   border-radius: 1.5vw;
@@ -254,9 +251,17 @@
   font-size: 30px;
 }
 
+
 @media screen and (max-width: 1400px) {
-  .toggle-up {
-    height: 30vh;
+  .progress {
+    min-width: 8vh;
+    min-height: 8vh;
+  }
+  .discord-icon {
+    margin-bottom: 3vh;
+  }
+  .discord-icon img {
+    min-width: 7vh;
   }
   .club-information-container h2 {
     font-size: 23px;
@@ -339,16 +344,14 @@
     bottom: 10px;
     right: 10px;
   }
-
-  .discord-icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px;
+  .progress {
+    width: 7.8vh;
+    height: 7.8vh;
+    min-height: 7.5vh;
+    min-width: 7.5vh;
   }
-
-  .scroll-up {
-    width: 40px;
-    height: 40px;
+  .discord-icon img {
+    min-width: 7vh;
   }
   .description-title h1{
     font-size: 7.0vw;
@@ -442,4 +445,6 @@
     width: 80%;
   }
 }
+
+
 
