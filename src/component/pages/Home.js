@@ -50,6 +50,12 @@ function Home() {
   }
   
   window.addEventListener("scroll", scrollListener);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <Polygones/>
@@ -80,7 +86,9 @@ function Home() {
               </span>
               <span> and have fun while doing it!</span>
             </p>
-            <input type="button" value="Explore"/>
+            <Link to="/about" onClick={scrollToTop}>
+               <input type="button" value="Explore"/>
+            </Link>
           </div>
         </div>
         {isVisibleToggle && <div className="scroll-icon">
@@ -155,7 +163,10 @@ function Home() {
         <div className="home-ending-content">
             <p >&#123;What Are You <span className="primary-color">Waiting For?</span>&#125;</p>
             <div className="but-ending">
-               <input type="button" value="Explore"/>
+            <Link to="/about" onClick={scrollToTop}>
+              <input type="button" value="Explore"/>
+            </Link>
+               
             </div>
         </div>
       </div>
