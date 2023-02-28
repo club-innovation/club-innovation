@@ -24,6 +24,12 @@ function Game() {
           height="600wv"
         ></iframe>
       </div>
+      <div className="list-title">
+      <div className="use-desktop">
+        <h3>Use Your Desktop !!!</h3>
+      </div>
+      </div>
+      
     </div>
   );
 }

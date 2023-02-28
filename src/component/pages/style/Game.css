@@ -8,3 +8,17 @@
     width: 100%;
     overflow: hidden;
 }
+.use-desktop{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    .GameUi{
+        visibility: hidden;
+    }
+    .use-desktop{
+        visibility: visible;
+        color: var(--primary-color);
+    }
+
+}
