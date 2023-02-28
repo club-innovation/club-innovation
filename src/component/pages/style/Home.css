@@ -13,14 +13,15 @@
   justify-content: flex-end;
   align-items: center;
   background-attachment: fixed;
+  position: relative;
+  z-index: 1;
 }
-
-
 
 .icons-left {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 3;
 }
 
 .icons-container {
@@ -55,9 +56,19 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   display: grid;
   place-items: center;
+  cursor: pointer;
 }
 
+.scroll-icon {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+}
 
+.scroll-icon img {
+  width: 10vh;
+  margin: auto ;
+}
 
 .progress-value{
   display: block;
@@ -72,7 +83,15 @@
   color: black;
 }
 
-
+.progress-arrow {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #333;
+  border-top: 2px solid #333;
+}
 .description-home {
   padding-right: 8%;
 }
@@ -253,9 +272,18 @@
 
 
 @media screen and (max-width: 1400px) {
+  .background {
+  }
+  .scroll-icon {
+    bottom: 2%;
+    transform: translateX(-5vh);
+  }
   .progress {
     min-width: 8vh;
     min-height: 8vh;
+  }
+  .scroll-icon {
+    
   }
   .discord-icon {
     margin-bottom: 3vh;
@@ -340,6 +368,9 @@
 
 
 @media screen and (max-width: 800px) {
+  .background {
+    position: relative;
+  }
   .icons-left {
     bottom: 10px;
     right: 10px;
@@ -443,6 +474,18 @@
 
   .text-container {
     width: 80%;
+  }
+}
+
+@keyframes animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 

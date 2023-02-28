@@ -81,8 +81,10 @@ function Home() {
             </p>
             <input type="button" value="Explore"/>
           </div>
-          
         </div>
+        {isVisibleToggle && <div className="scroll-icon">
+            <img src={Up} />
+        </div>}
       </div>  
      
       <div className="icons-left">
@@ -94,8 +96,7 @@ function Home() {
         </Link>
         {isVisible && 
           <div className="progress">
-            
-            <span className="progress-value">0%</span>
+            <span className="progress-value" onClick={returnToHome}>0%</span>
           </div>
         }
       </div>
