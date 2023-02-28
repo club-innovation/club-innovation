@@ -62,6 +62,7 @@ function Home() {
                     loop={0} 
                     cursor
                     cursorStyle='|'
+                    cursorColor="#8CEFE9"
                     typeSpeed={150}
                     deleteSpeed={50}
                     delaySpeed={1000}
@@ -88,18 +89,18 @@ function Home() {
       </div>  
      
       <div className="icons-left">
-      <div className="icons-container">
-        <Link target="blank_" to="https://discord.gg/ZB3GbCsG">
-          <span className="discord-icon" onClick={returnToHome}>
-            <img src={Discord}/>
-          </span>
-        </Link>
-        {isVisible && 
-          <div className="progress">
-            <span className="progress-value" onClick={returnToHome}>0%</span>
-          </div>
-        }
-      </div>
+        <div className="icons-container">
+          <Link target="blank_" to="https://discord.gg/ZB3GbCsG">
+            <span className="discord-icon" onClick={returnToHome}>
+              <img src={Discord}/>
+            </span>
+          </Link>
+          {isVisible && 
+            <div className="progress">
+              <span className="progress-value" onClick={returnToHome}>0%</span>
+            </div>
+          }
+        </div>
     </div>
       <div className="club-information-container">
         <h2>
