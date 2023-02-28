@@ -8,12 +8,12 @@ import badr from '../imgs/team/bader.jpg'
 
 const Members = [
     {
-        name: 'Hamza Ouabiba',
-        role: 'Project Manager',
-        image: hamza,
-        github: 'https://github.com/Hamza-ouabiba',
-        instagram: 'https://www.instagram.com/hamzaouee/',
-        linkedin: 'https://www.linkedin.com/in/hamza-ouabiba-b95392203/'
+        name: 'Oussama Seme-Elayne',
+        role: 'President',
+        image: oussama,
+        github: 'https://github.com/oussama-seme-elayne',
+        instagram: 'https://www.instagram.com/xx_oprog/',
+        linkedin: 'https://www.linkedin.com/in/oussama-seme-elayne-ba6800198/'
     },
     {
         name: 'Yahya Lazrek',
@@ -24,28 +24,12 @@ const Members = [
         linkedin: 'https://www.linkedin.com/in/yahyalazrek/'
     },
     {
-        name: 'Oussama seme elayne',
-        role: 'President',
-        image: oussama,
-        github: 'https://github.com/oussama-seme-elayne',
-        instagram: 'https://www.instagram.com/xx_oprog/',
-        linkedin: 'https://www.linkedin.com/in/oussama-seme-elayne-ba6800198/'
-    },
-    {
-        name: 'Bader tebaa',
-        role: 'Treasurer',
-        image: badr,
-        github: 'https://github.com/badertebaa',
-        instagram: 'https://www.instagram.com/badertebaa/',
-        linkedin: 'https://www.linkedin.com/in/badr-tebaa-310a50207/'
-    },
-    {
-        name: 'Walid Habbach',
-        role: 'Technical Manager',
-        image: oualid,
-        github: 'https://github.com/walidhabbach',
-        instagram: 'https://www.instagram.com/walid_habbach/',
-        linkedin: 'https://www.linkedin.com/in/oualid-habbach-0385641bb/'
+        name: 'Hamza Ouabiba',
+        role: 'Project Manager',
+        image: hamza,
+        github: 'https://github.com/Hamza-ouabiba',
+        instagram: 'https://www.instagram.com/hamzaouee/',
+        linkedin: 'https://www.linkedin.com/in/hamza-ouabiba-b95392203/'
     },
     {
         name: 'Mohamed Nezhari',
@@ -56,12 +40,28 @@ const Members = [
         linkedin: 'https://www.linkedin.com/in/mohamed-nezhari-306b3625a'
     },
     {
+        name: 'Walid Habbach',
+        role: 'Technical Manager',
+        image: oualid,
+        github: 'https://github.com/walidhabbach',
+        instagram: 'https://www.instagram.com/walid_habbach/',
+        linkedin: 'https://www.linkedin.com/in/oualid-habbach-0385641bb/'
+    },
+    {
         name: 'Taha Ammour',
         role: 'Technical Co-Manager',
         image: taha,
         github: 'https://github.com/taha-ammour',
         instagram: '',
         linkedin: ''
+    },
+    {
+        name: 'Bader tebaa',
+        role: 'Treasurer',
+        image: badr,
+        github: 'https://github.com/badertebaa',
+        instagram: 'https://www.instagram.com/badertebaa/',
+        linkedin: 'https://www.linkedin.com/in/badr-tebaa-310a50207/'
     },
 ];
 

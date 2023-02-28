@@ -17,7 +17,7 @@ function Footer() {
            <span className="footer__logo-text"> &#123;Club</span> Innovation <span className="footer__logo-text">&#125;</span>
           </h1>
           <h2 className="footer__title">Want to be part of Us?</h2>
-          <a href="#" className="footer__link">Check out our game challenge</a>
+          <a href="/#/game" className="footer__link">Check out our game challenge</a>
         </div>
         <div className="footer__section">
           <h2 className="footer__title">Keep up with news from us</h2>

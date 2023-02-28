@@ -1,10 +1,10 @@
-import React, { useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import "./style/Information.css"
 
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 //Components
-import Description from "../Description"
+import Description from "../Information_Description"
 import MembersList from "../MembersList"
 import GoogleMap from "../GoogleMap"
 import { Polygones } from "../Particle";
@@ -16,32 +16,56 @@ import EventsData from "../../data/EventsData"
 function Information({ type }) {
 
     const { id } = useParams();
+    const navigate = useNavigate();
+    const typeTitle = type === "projects" ? "Project" : "Event";
+    const [imageSliderIndex, setImageSliderIndex] = useState(0);
 
     useEffect(() => {
+        //move to the top of page
         window.scrollTo(0, 0)
     }, [id])
-    
+
     function GetData() {
         if (type === "projects") return ProjectsData[id];
         if (type === "events") return EventsData[id];
         
         return null;
     }
-    
-    const typeTitle = type === "projects" ? "Project" : "Event";
+
+    function ChangeImage(value)
+    {
+        if(value < 0 || value > GetData().images.length-1) return;
+
+        setImageSliderIndex(value);
+    }
+    function ChangeImageLeft()
+    {
+        var count = imageSliderIndex;
+        count = count-1 === 0 ? GetData().images.length-1 : count-1;
+
+        setImageSliderIndex(count);
+    }
+    function ChangeImageRight()
+    {
+        var count = imageSliderIndex;
+        count = count+1 === GetData().images.length ? 0 : count+1;
+
+        setImageSliderIndex(count);
+    }
 
     return (
         <div className="information">
+            {GetData() ? 
+            <>
             <Polygones/>
             <h1 className="list-title">&#123;<span className="primary-color">{GetData().title}</span>&#125;</h1>
-            <Description title={typeTitle + " Description"} description={GetData().description} image={ProjectsData[id].image} />
+                    <Description title={typeTitle + " Description"} description={GetData().description} image={ProjectsData[id].images[imageSliderIndex].url} ActionLeft={ChangeImageLeft} ActionRight={ChangeImageRight}/>
 
             <div className="information-detail">
                 <div className="information-detail-images">
                     <div className="images-slider">
-                        { GetData().images.map((image)=>{
-                            console.log(image.url);
-                            return (<img src={image.url} alt=""/>)
+                        { GetData().images.map((image,index)=>{
+                            return (<img key={index} src={image.url} alt="" onClick={() => ChangeImage(index)}/>)
                         })
                         }
                     </div>
@@ -81,6 +105,9 @@ function Information({ type }) {
                     <Link target="_blank" to={GetData().link}><button>Join Us</button></Link>
                 </div>
             </div>
+            </> 
+            : 
+            <> {navigate("/notFound")} </>}
         </div>
     )
 }
