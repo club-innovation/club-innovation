@@ -1,5 +1,4 @@
 import React from "react";
-import "./style/Team.css";
 import "./style/Game.css";
 
 import { Polygones } from "../Particle";
@@ -7,7 +6,18 @@ import { Polygones } from "../Particle";
 
 
 function Game() {
-
+  function requestFullscreen() {
+    console.log("hna");
+    const iframe = document.querySelector('iframe');
+    if (iframe.requestFullscreen) {
+      iframe.requestFullscreen();
+      iframe.className="fullscreen";
+    } else if (iframe.webkitRequestFullscreen) { /* Safari */
+      iframe.webkitRequestFullscreen();
+    } else if (iframe.msRequestFullscreen) { /* IE11 */
+      iframe.msRequestFullscreen();
+    }
+  }
   return (
     <div>
       <Polygones />
@@ -29,7 +39,9 @@ function Game() {
         <h3>Use Your Desktop !!!</h3>
       </div>
       </div>
-      
+      <div className="button-full">
+        <input onClick={requestFullscreen} value="Fullscreen" type="button"/>
+      </div>
     </div>
   );
 }

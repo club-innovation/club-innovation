@@ -298,7 +298,6 @@
     width: 50%;
     text-align: center;
   }
-
   .offer h2 {
     margin-bottom: 5%;
   }
@@ -374,6 +373,9 @@
   .icons-left {
     bottom: 10px;
     right: 10px;
+  }
+  .description-home {
+    margin: auto;
   }
   .progress {
     width: 7.8vh;

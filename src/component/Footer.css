@@ -101,7 +101,11 @@
     font-size: 2rem;
     color: var(--secondary-color);
   }
-  
+  .footer__social-icon-disc{
+    width: 1.65rem;
+    margin-top: 3px;
+    
+  }
   @media only screen and (max-width: 768px) {
     .footer__content {
       flex-direction: column;

@@ -50,6 +50,12 @@ function Home() {
   }
   
   window.addEventListener("scroll", scrollListener);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <Polygones/>
@@ -80,7 +86,9 @@ function Home() {
               </span>
               <span> and have fun while doing it!</span>
             </p>
-            <input type="button" value="Explore"/>
+            <Link to="/about" onClick={scrollToTop}>
+               <input type="button" value="Explore"/>
+            </Link>
           </div>
         </div>
         {isVisibleToggle && <div className="scroll-icon">
@@ -89,18 +97,18 @@ function Home() {
       </div>  
      
       <div className="icons-left">
-      <div className="icons-container">
-        <Link target="blank_" to="https://discord.gg/ZB3GbCsG">
-          <span className="discord-icon" onClick={returnToHome}>
-            <img src={Discord}/>
-          </span>
-        </Link>
-        {isVisible && 
-          <div className="progress">
-            <span className="progress-value" onClick={returnToHome}>0%</span>
-          </div>
-        }
-      </div>
+        <div className="icons-container">
+          <Link target="blank_" to="https://discord.gg/ZB3GbCsG">
+            <span className="discord-icon" onClick={returnToHome}>
+              <img src={Discord}/>
+            </span>
+          </Link>
+          {isVisible && 
+            <div className="progress">
+              <span className="progress-value" onClick={returnToHome}>0%</span>
+            </div>
+          }
+        </div>
     </div>
       <div className="club-information-container">
         <h2>
@@ -155,7 +163,10 @@ function Home() {
         <div className="home-ending-content">
             <p >&#123;What Are You <span className="primary-color">Waiting For?</span>&#125;</p>
             <div className="but-ending">
-               <input type="button" value="Explore"/>
+            <Link to="/about" onClick={scrollToTop}>
+              <input type="button" value="Explore"/>
+            </Link>
+               
             </div>
         </div>
       </div>
