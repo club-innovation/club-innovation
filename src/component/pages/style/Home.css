@@ -272,11 +272,11 @@
 
 
 @media screen and (max-width: 1400px) {
-  .background {
-  }
   .scroll-icon {
-    bottom: 2%;
-    transform: translateX(-5vh);
+    transform: translateX(-2vh);
+  }
+  .scroll-icon img {
+    width: 5vh;
   }
   .progress {
     min-width: 6vh;
