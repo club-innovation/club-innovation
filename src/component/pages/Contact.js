@@ -107,17 +107,17 @@ function Contact() {
           <ul>
             <li> 
               
-                <a href="https://github.com/club-innovation" className="github">
+                <a href="https://github.com/club-innovation" className="github"  target="_blank">
                  <GitHubIcon className="iconps" alt="GitHub" fontSize="large" />
                 </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/emsi_innovation/?hl=en" className="insta">
+              <a href="https://www.instagram.com/emsi_innovation/?hl=en" className="insta" target="_blank">
                 <InstagramIcon className="iconp" fontSize="large" />
                 </a>
            </li>
             <li> 
-              <a href="https://discord.gg/GWfhC66hhG" className="discord">
+              <a href="https://discord.gg/GWfhC66hhG" className="discord"  target="_blank">
                 <img src={DiscordIcon} className="iconpd" />
               </a>
             </li>

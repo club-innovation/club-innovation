@@ -1,5 +1,6 @@
 import React from "react";
 import "./style/Home.css";
+import { Link } from "react-router-dom";
 
 //Images
 import coding from "../../imgs/home/coding.gif";
@@ -14,6 +15,12 @@ import HomeCards from "../HomeCards";
 import { Polygones } from "../Particle";
 
 function Home() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <Polygones/>
@@ -41,9 +48,13 @@ function Home() {
             <br />
             <br />
             <br />
-            <button>
+            
+            <Link to="/about" onClick={scrollToTop}>
+              <button>
               Explore
-            </button>
+              </button>
+            </Link>
+            
           </div>
         </div>
       </div>
@@ -100,7 +111,10 @@ function Home() {
         <div className="home-ending-content">
             <p >&#123;What Are You <span className="primary-color">Waiting For?</span>&#125;</p>
             <div className="but-ending">
-               <input type="button" value="Explore"/>
+            <Link to="/about" onClick={scrollToTop}>
+              <input type="button" value="Explore"/>
+            </Link>
+               
             </div>
         </div>
       </div>

@@ -69,19 +69,21 @@ function Footer() {
         <a
           href="https://github.com/club-innovation"
           className="footer__social-link"
+          target="_blank"
         >
           <GitHubIcon className="footer__social-icon" alt="GitHub" />
         </a>
         <a
           href="https://www.instagram.com/emsi_innovation/?hl=en"
           className="footer__social-link"
+          target="_blank"
         >
           <InstagramIcon className="footer__social-icon" alt="Instagram" />
         </a>
-        <a href="#" className="footer__social-link">
+        <a href="#" className="footer__social-link"  target="_blank">
           <LinkedInIcon className="footer__social-icon" alt="LinkedIn" />
         </a>
-        <a href="https://discord.gg/GWfhC66hhG" className="footer__social-link">
+        <a href="https://discord.gg/GWfhC66hhG" className="footer__social-link"  target="_blank">
           <img
             src={DiscordIcon}
             className="footer__social-icon-disc"
