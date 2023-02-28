@@ -32,34 +32,52 @@
   width: 90px;
 }
 
-.scroll-up{
-  padding: 5px;
-  border-radius: 50%;
-  height: 25px;
-  color: black;
-  cursor: pointer;
-  text-align: center;
-  margin-top: 5px;
-  background-color: var(--primary-color);
+.icons-left {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .discord-icon {
-  color: black;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
 }
 
 .discord-icon img {
-  width: 38px;
+  width: 100%;
   border-radius: 50%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-.icons-left {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
+.scroll-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: var(--secondary-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-
+.scroll-up span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .description-home {
   padding-right: 8%;
 }
@@ -237,13 +255,8 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .typewriter {
-  }
   .toggle-up {
     height: 30vh;
-  }
-  .typewriter {
-    max-width: 50%;
   }
   .club-information-container h2 {
     font-size: 23px;
@@ -322,18 +335,23 @@
 
 
 @media screen and (max-width: 800px) {
-  .typewriter {
-    margin: auto;
-    max-width: 43ch;
-  }
   .icons-left {
-     bottom: 50px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .discord-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .scroll-up {
+    width: 40px;
+    height: 40px;
   }
   .description-title h1{
     font-size: 7.0vw;
-  }
-  .scroll-up {
-    position: fixed;
   }
   .background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../imgs/home/background.jpg);
@@ -425,26 +443,3 @@
   }
 }
 
-
-.typewriter {
-	white-space: nowrap;
-	overflow: hidden;
-	border-right: 4px solid #fff;
-	animation: cursor 2s step-start infinite, 
-   text 2s  steps(18) alternate infinite;
-}
-
-@keyframes cursor {
-	0%, 100% { 
-    border-color: #fff; 
-  }
-}
-
-@keyframes text {
-	0% { 
-    width: 0; 
-  }
-	100% { 
-    width: 57.5ch; 
-  }
-}

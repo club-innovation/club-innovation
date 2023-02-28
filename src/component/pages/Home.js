@@ -1,7 +1,7 @@
 import "./style/Home.css";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import { Typewriter} from "react-simple-typewriter";
 //Images
 import coding from "../../imgs/home/coding.gif";
 import programming from "../../imgs/home/programming.gif";
@@ -19,29 +19,10 @@ import { Polygones } from "../Particle";
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 function Home() {
-  const titleSwitcher = ["Welcome To","Bienvenue à","ⴰⵣⵓⵍ ⴼⵍⴰⵡⵏ"];
   const [isVisible, setIsVisible] = useState(false);
   const [isVisibleToggle, setVisibleToggle] = useState(false);
-  const [index,setIndex] = useState(0);
-  const [text,setText] = useState(titleSwitcher[index]);
-  let textSplit = text.split(' ');
-  let first = textSplit[0];
-  let second = textSplit[1];
-  useEffect(() => {
-    const interval = setInterval(() => {
-        setIndex(prevIndex => (prevIndex + 1) % titleSwitcher.length);
-        console.log(index);
-     },4000);
-     return () => {
-      clearInterval(interval);
-     }
-  },[])
-  useEffect(() => {
-    console.log("here" + index);
-    setText(titleSwitcher[index]);
-  }, [index]);
+  const Titles = ["Welcome To","Bienvenue à","ⴰⵣⵓⵍ ⴼⵍⴰⵡⵏ"];
   
-
   window.onscroll = function () {
     if(window.scrollY >= 80) {
       setIsVisible(true)
@@ -52,7 +33,10 @@ function Home() {
     }
   }
   function returnToHome() {
-    window.scrollTo(0,0);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
   return (
     <div>
@@ -60,11 +44,17 @@ function Home() {
       <div className="background">
         <div className="description-home">
           <div className="description-title">
-            <div className="typewriter">
               <h1>
-                     {first}<span className="primary-color"> {second}</span>
-              </h1>
-            </div>
+                   <Typewriter 
+                    words={Titles} 
+                    loop={0} 
+                    cursor
+                    cursorStyle='|'
+                    typeSpeed={150}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                  />
+              </h1> 
             <h3>
               &#123;Club<span className="primary-color">Innovation</span>&#125;
             </h3>
@@ -86,12 +76,18 @@ function Home() {
         
       </div>  
       <div className="icons-left">
-        <div>
-           <Link target="blank_" to="https://discord.gg/ZB3GbCsG"><span className="discord-icon" onClick={returnToHome}><img src={Discord}/></span></Link>
+        <div className="icons-container">
+          <Link target="blank_" to="https://discord.gg/ZB3GbCsG">
+            <span className="discord-icon" onClick={returnToHome}>
+              <img src={Discord}/>
+            </span>
+          </Link>
+          {isVisible && 
+            <div className="scroll-up">
+              <span onClick={returnToHome}><ArrowUpwardIcon fontSize="large" /></span>
+            </div>
+          }
         </div>
-        {isVisible && <div className="scroll-up">
-          <span onClick={returnToHome}><ArrowUpwardIcon fontSize="large" /></span>
-        </div>}
       </div>
       <div className="club-information-container">
         <h2>
