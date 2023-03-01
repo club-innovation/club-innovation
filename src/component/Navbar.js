@@ -21,7 +21,7 @@ function Navbar() {
     if(window.innerWidth <= 800)
     {
       setBar({ isHidden: true });
-      SetPageOverflow();
+      document.body.style.overflow = "visible";
     }
   }
 
