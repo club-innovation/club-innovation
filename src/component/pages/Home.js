@@ -1,6 +1,7 @@
-import React from "react";
 import "./style/Home.css";
-
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Typewriter} from "react-simple-typewriter";
 //Images
 import coding from "../../imgs/home/coding.gif";
 import programming from "../../imgs/home/programming.gif";
@@ -8,23 +9,71 @@ import projects from "../../imgs/home/projects.gif";
 import terminal from "../../imgs/home/terminal.gif";
 import ending from "../../imgs/home/ending.gif";
 import help from "../../imgs/home/help.gif";
-
+import Up from "../../imgs/gif/up.gif"
+import Discord from '../../imgs/home/discord.png'
 //Components
 import HomeCards from "../HomeCards";
 import { Polygones } from "../Particle";
 
+//icons  : 
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+
 function Home() {
+  const [isVisible, setIsVisible] = useState(false);
+  const [isVisibleToggle, setVisibleToggle] = useState(false);
+  const Titles = ["Welcome To","Bienvenue à","ⴰⵣⵓⵍ ⴼⵍⴰⵡⵏ"];
+  
+  window.onscroll = function () {
+    if(window.scrollY >= 80) {
+      setIsVisible(true)
+      setVisibleToggle(true);
+    } else {
+      setIsVisible(false);
+      setVisibleToggle(false);
+    }
+  }
+  function returnToHome() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+  const scrollListener = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const scrollHeight = document.documentElement.scrollHeight;
+    const scrollPercentage = (scrollTop / (scrollHeight - windowHeight)) * 100;
+    const progressValue = document.querySelector(".progress-value");
+    const progressScroll = document.querySelector(".progress");
+    progressValue.textContent = Math.round(scrollPercentage) + "%";
+    progressScroll.style.background = `conic-gradient(#8CEFE9 ${scrollPercentage}%, #070E21 ${scrollPercentage}%)`;
+  }
+  
+  window.addEventListener("scroll", scrollListener);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <Polygones/>
       <div className="background">
         <div className="description-home">
           <div className="description-title">
-            <div class="typewriter">
-            <h1>
-              Welcome <span className="primary-color">To</span>
-            </h1>
-            </div>
+              <h1>
+                   <Typewriter 
+                    words={Titles} 
+                    loop={0} 
+                    cursor
+                    cursorStyle='|'
+                    cursorColor="#8CEFE9"
+                    typeSpeed={150}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                  />
+              </h1> 
             <h3>
               &#123;Club<span className="primary-color">Innovation</span>&#125;
             </h3>
@@ -37,16 +86,30 @@ function Home() {
               </span>
               <span> and have fun while doing it!</span>
             </p>
-            <br />
-            <br />
-            <br />
-            <br />
-            <button>
-              Explore
-            </button>
+            <Link to="/about" onClick={scrollToTop}>
+               <input type="button" value="Explore"/>
+            </Link>
           </div>
         </div>
-      </div>
+        {isVisibleToggle && <div className="scroll-icon">
+            <img src={Up} />
+        </div>}
+      </div>  
+     
+      <div className="icons-left">
+        <div className="icons-container">
+          <Link target="blank_" to="https://discord.gg/ZB3GbCsG">
+            <span className="discord-icon" onClick={returnToHome}>
+              <img src={Discord}/>
+            </span>
+          </Link>
+          {isVisible && 
+            <div className="progress">
+              <span className="progress-value" onClick={returnToHome}>0%</span>
+            </div>
+          }
+        </div>
+    </div>
       <div className="club-information-container">
         <h2>
           &#123;What is Club<span className="primary-color">Innovation?</span>
@@ -100,7 +163,10 @@ function Home() {
         <div className="home-ending-content">
             <p >&#123;What Are You <span className="primary-color">Waiting For?</span>&#125;</p>
             <div className="but-ending">
-               <input type="button" value="Explore"/>
+            <Link to="/about" onClick={scrollToTop}>
+              <input type="button" value="Explore"/>
+            </Link>
+               
             </div>
         </div>
       </div>

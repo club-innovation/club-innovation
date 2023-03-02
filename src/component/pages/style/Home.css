@@ -1,4 +1,9 @@
+*{
+  scroll-behavior: smooth;
+}
+
 .background {
+   background-image: url(../../../imgs/home/background.jpg);
   background-image: linear-gradient(#070e2150, #070e2150), url(../../../imgs/home/background.jpg);
   width: 100%;
   background-size: cover;
@@ -9,15 +14,92 @@
   justify-content: flex-end;
   align-items: center;
   background-attachment: fixed;
+  position: relative;
+  z-index: 1;
 }
 
+.icons-left {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discord-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.discord-icon img {
+  width: 8vh;
+  border-radius: 50%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.progress {
+  height: 7.5vh;
+  width: 7.5vh;
+  border-radius: 50%;
+  bottom: 25px;
+  right: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+}
+
+.scroll-icon img {
+  width: 10vh;
+  margin: auto ;
+}
+
+.progress-value{
+  display: block;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 2vh;
+  color: black;
+}
+
+.progress-arrow {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #333;
+  border-top: 2px solid #333;
+}
 .description-home {
   padding-right: 8%;
 }
 
 .description-home h1 {
   font-weight: bolder;
-  font-size: 5vw;
+  font-size: 4.5vw;
 }
 
 .description-home h3 {
@@ -34,6 +116,25 @@
   font-size: larger;
 }
 
+.description-text input[type="button"] {
+  margin-top: 40px;
+  width: 30%;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Poppins';
+  font-size: 14px;
+  cursor: pointer;
+  transition: .3s;
+}
+.description-text input[type="button"]:hover {
+  background-color: var(--dark-primary-color);
+  color: white;
+  transform: translateY(-5px);
+}
 .club-information-container h2 {
   text-align: center;
   margin-top: 40px;
@@ -113,6 +214,8 @@
   width: 50%;
 }
 
+
+
 .home-list-gif img {
   width: 80%;
   border-radius: 1.5vw;
@@ -168,16 +271,34 @@
   font-size: 30px;
 }
 
+
 @media screen and (max-width: 1400px) {
+  .scroll-icon {
+    transform: translateX(-2vh);
+  }
+  .scroll-icon img {
+    width: 5vh;
+  }
+  .progress {
+    min-width: 6vh;
+    min-height: 6vh;
+  }
+  .scroll-icon {
+    
+  }
+  .discord-icon {
+    margin-bottom: 3vh;
+  }
+  .discord-icon img {
+    min-width: 7vh;
+  }
   .club-information-container h2 {
     font-size: 23px;
   }
-
   .text-container {
     width: 50%;
     text-align: center;
   }
-
   .offer h2 {
     margin-bottom: 5%;
   }
@@ -245,8 +366,33 @@
   }
 }
 
+
 @media screen and (max-width: 800px) {
   .background {
+    position: relative;
+  }
+  .icons-left {
+    bottom: 10px;
+    right: 10px;
+  }
+  .description-home {
+    margin: auto;
+  }
+  .progress {
+    width: 7.8vh;
+    height: 7.8vh;
+    min-height: 7.5vh;
+    min-width: 7.5vh;
+  }
+  .discord-icon img {
+    min-width: 7vh;
+  }
+  .description-title h1{
+    font-size: 7.0vw;
+  }
+  .background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../imgs/home/background.jpg);
+    background-attachment: fixed;
     background-image: linear-gradient(#070e212e, #070e21), url(../../../imgs/home/background.jpg);
   }
 
@@ -255,20 +401,15 @@
     text-align: center;
   }
 
-  .description-title h1 {
-    font-size: 9vw;
-  }
-
   .description-title h3 {
-    font-size: 6vw;
     letter-spacing: 0.3vw;
   }
 
   .description-text p {
-    font-size: 3vw;
     width: 70%;
     margin: auto;
-    transform: translateY(20%);
+    transform: translateY(10%);
+    font-size: 15px;
   }
 
   .home-ending {
@@ -340,5 +481,6 @@
     width: 80%;
   }
 }
+
 
 
