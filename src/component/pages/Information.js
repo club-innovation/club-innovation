@@ -18,6 +18,8 @@ function Information({ type }) {
     const { id } = useParams();
     const navigate = useNavigate();
     const typeTitle = type === "projects" ? "Project" : "Event";
+    const teamTitle = type === "projects" ? "Developers" : "Organizers";
+    const buttonTitle = type === "projects" ? "Check Out" : "Join Us";
     const [imageSliderIndex, setImageSliderIndex] = useState(0);
 
     useEffect(() => {
@@ -90,7 +92,7 @@ function Information({ type }) {
                 </div>
             </div>
 
-            <h1 className="list-title"> &#123;Meet The <span className="primary-color">Organizers</span>&#125;</h1>
+            <h1 className="list-title"> &#123;Meet The <span className="primary-color">{teamTitle}</span>&#125;</h1>
             <MembersList data={GetData().organizers} />
 
             <h1 className="list-title"> &#123;Place <span className="primary-color">Of </span>The <span className="primary-color">{typeTitle}</span>&#125;</h1>
@@ -102,7 +104,7 @@ function Information({ type }) {
                 <div className="information-map-details">
                     <h1><span className="primary-color">WHERE</span></h1>
                     <p>{GetData().adresse}</p>
-                    <Link target="_blank" to={GetData().link}><button>Join Us</button></Link>
+                            <Link target="_blank" to={GetData().link}><button>{buttonTitle}</button></Link>
                 </div>
             </div>
             </> 
