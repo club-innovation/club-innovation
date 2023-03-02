@@ -35,13 +35,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  margin-bottom: 15px;
+  margin-bottom: calc(15px + .5vw);
 }
 
 .discord-icon img {
-  width: 8vh;
+  width: 7vh;
   border-radius: 50%;
   height: auto;
   object-fit: contain;
@@ -49,8 +47,8 @@
 }
 
 .progress {
-  height: 7.5vh;
-  width: 7.5vh;
+  height: 7vh;
+  width: 7vh;
   border-radius: 50%;
   bottom: 25px;
   right: 25px;
@@ -68,7 +66,7 @@
 
 .scroll-icon img {
   width: 10vh;
-  margin: auto ;
+  margin: auto;
 }
 
 .progress-value{
