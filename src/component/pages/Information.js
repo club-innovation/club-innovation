@@ -61,7 +61,7 @@ function Information({ type }) {
             <>
             <Polygones/>
             <h1 className="list-title">&#123;<span className="primary-color">{GetData().title}</span>&#125;</h1>
-                    <Description title={typeTitle + " Description"} description={GetData().description} image={ProjectsData[id].images[imageSliderIndex].url} ActionLeft={ChangeImageLeft} ActionRight={ChangeImageRight}/>
+            <Description title={typeTitle + " Description"} description={GetData().description} image={GetData().images[imageSliderIndex].url} ActionLeft={ChangeImageLeft} ActionRight={ChangeImageRight}/>
 
             <div className="information-detail">
                 <div className="information-detail-images">

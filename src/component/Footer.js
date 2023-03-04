@@ -30,8 +30,6 @@ function Footer() {
     setEmail(event.target.value.trim());
   }
 
-
-
   function validateEmail() {
     if (submitCount > 2) {
       setMessage("The subscription send limit has been exceeded.");
@@ -58,6 +56,7 @@ function Footer() {
       setSubmitCount(submitCount => submitCount + 1);
       localStorage.setItem(emailSubscribtionKey, submitCount);
       console.log("New count: " + submitCount);
+
     } else {
       setMessage("Please enter a valid email address.");
       setEmailValid(false);
@@ -72,7 +71,9 @@ function Footer() {
     });
   };
 
-  function ResetCounter() {
+  function ResetCounter()
+  {
+
     const tmpExpirationDateValue = localStorage.getItem(expirationDateKey);
     if (Date.now() > tmpExpirationDateValue) {
       setSubmitCount(0);
