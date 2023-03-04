@@ -54,7 +54,14 @@
     color: var(--secondary-color);
  
   }
-  
+  .message{
+    margin-top: 0;
+    margin-bottom:0.5rem ;
+    color: red;
+    font-style: normal;
+    font-size: medium; 
+  }
+
   .footer__checkbox {
     margin-right: 0.5rem;
   }

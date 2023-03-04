@@ -1,6 +1,6 @@
-import { DialerSip } from "@mui/icons-material";
+import { DialerSip, Message } from "@mui/icons-material";
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useState }  from "react";
 import "./Footer.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -8,13 +8,41 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DiscordIcon from "../imgs/svg/discord-mark-white1.svg";
 
+import { addEmail } from "../utils/firestore";
+
 function Footer() {
+
+  const [email, setEmail] = useState(""); 
+  const [isEmailValid, setEmailValid] = useState(false);
+  const [showMessage,setShowMessage]=useState(false);
+  const [message, setMessage] = useState('');
+
+  function handleInputChange(event) {
+    setEmail(event.target.value);
+  }
+
+  function validateEmail() {
+ 
+    const rejex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ 
+    if (rejex.test(email)) {
+      addEmail(new Date().toLocaleString(),email);
+      setMessage("You have successfully subscribed.");
+      setEmailValid(true);
+    } else {
+      setMessage("Please enter a valid email address.");
+      setEmailValid(false);
+    }
+    setShowMessage(true);
+  }
+ 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
+
   return (
     <footer className="footer">
       <div className="footer__content">
@@ -36,14 +64,17 @@ function Footer() {
         </div>
         <div className="footer__section">
           <h2 className="footer__title">Keep up with news from us</h2>
-          <input type="email" placeholder="Email" className="footer__input" />
+          {/* <input type="email" placeholder="Email"  /> */}
+          <input className="footer__input" type="email" placeholder="Email" value={email} onChange={handleInputChange}/>
+          {showMessage && <p className="message" style={{ color: isEmailValid ? 'green' : 'red' }} >{message}</p>}
+
           <label>
-            <input type="checkbox" className="footer__checkbox" />
+            <input type="checkbox" className="footer__checkbox"/>
             Sign up to our newsletter, to receive updates on the latest news
             releases and special offers.
           </label>
           <p>
-            <button className="footer__button">Subscribe</button>
+            <button className="footer__button" onClick={validateEmail}>Subscribe</button>
           </p>
         </div>
       </div>
