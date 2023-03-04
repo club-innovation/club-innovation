@@ -3,11 +3,8 @@ import "./style/Game.css";
 
 import { Polygones } from "../Particle";
 
-
-
 function Game() {
   function requestFullscreen() {
-    console.log("hna");
     const iframe = document.querySelector('iframe');
     if (iframe.requestFullscreen) {
       iframe.requestFullscreen();

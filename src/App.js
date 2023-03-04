@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
+import FloatButtons from "./component/FloatButtons";
 
 import Home from "./component/pages/Home";
 import Team from "./component/pages/Team";
@@ -33,6 +34,7 @@ function App() {
                 <Route path="/game" element={<Game/>}/>
                 <Route path="/*" element={<NotFound />} />
             </Routes>
+            <FloatButtons/>
             <Footer/>
         </HashRouter>
     );
