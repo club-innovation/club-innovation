@@ -8,7 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DiscordIcon from "../imgs/svg/discord-mark-white1.svg";
 
-import { addEmail } from "../utils/firestore";
+import { addEmail, isEmailExists } from "../utils/firestore";
 
 function Footer() {
   const [email, setEmail] = useState("");
@@ -39,17 +39,24 @@ function Footer() {
       localStorage.setItem(expirationDateKey, (Date.now() + 1 * 24 * 60 * 60 * 1000));
       return;
     }
-    
+
     const rejex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (rejex.test(email)) {
-      addEmail(new Date().toLocaleString(), email, isChecked);
-      setMessage("You have successfully subscribed.");
-      setEmailValid(true);
 
-      setSubmitCount(submitCount => submitCount+1);
+      isEmailExists(email).then((result) => {
+        console.log(result);
+        if (!result) {
+          addEmail(new Date().toLocaleString(), email, isChecked);
+        }
+        setMessage("You have successfully subscribed.");
+        setEmailValid(true);
+      });
+
+      setSubmitCount(submitCount => submitCount + 1);
       localStorage.setItem(emailSubscribtionKey, submitCount);
-      console.log("New count: "+submitCount);
+      console.log("New count: " + submitCount);
+
     } else {
       setMessage("Please enter a valid email address.");
       setEmailValid(false);
@@ -66,6 +73,7 @@ function Footer() {
 
   function ResetCounter()
   {
+
     const tmpExpirationDateValue = localStorage.getItem(expirationDateKey);
     if (Date.now() > tmpExpirationDateValue) {
       setSubmitCount(0);
@@ -77,7 +85,7 @@ function Footer() {
     ResetCounter();
     const tmpValue = localStorage.getItem(emailSubscribtionKey);
     const local_submitCount = tmpValue ? +tmpValue : 0;
-    setSubmitCount(()=>local_submitCount);
+    setSubmitCount(() => local_submitCount);
   }, []);
 
   return (

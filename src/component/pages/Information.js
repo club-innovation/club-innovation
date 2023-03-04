@@ -67,7 +67,7 @@ function Information({ type }) {
                 <div className="information-detail-images">
                     <div className="images-slider">
                         { GetData().images.map((image,index)=>{
-                            return (<img key={index} src={image.url} alt="" onClick={() => ChangeImage(index)} />)
+                            return (<img key={index} src={image.url} alt="" onClick={() => ChangeImage(index)}/>)
                         })
                         }
                     </div>
