@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import "./FloatButtons.css"
 import { Link } from "react-router-dom"
 //Images
-import Discord from "../imgs/home/discord.png"
+import Discord from "../imgs/png/discord.png"
 
 function FloatButtons() {
     const [isVisible, setIsVisible] = useState(false);
