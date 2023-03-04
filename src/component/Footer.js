@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-import React from "react"
-import "./Footer.css"
-
-function Footer() {
-=======
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 
@@ -93,10 +87,86 @@ function Footer() {
     setSubmitCount(() => local_submitCount);
   }, []);
 
->>>>>>> Stashed changes
   return (
-    <div>Footer</div>
-  )
+    <footer className="footer">
+      <div className="footer__content">
+        <div className="footer__section">
+          <h2 className="footer__title">
+            Want to become part of our community?
+          </h2>
+          <Link to="/contact" className="footer__link" onClick={scrollToTop}>
+            Get in touch
+          </Link>
+          <h1 className="footer__logo">
+            <span className="footer__logo-text"> &#123;Club</span> Innovation
+            <span className="footer__logo-text">&#125;</span>
+          </h1>
+          <h2 className="footer__title">Want to be part of Us?</h2>
+          <Link to="/game" className="footer__link" onClick={scrollToTop}>
+            Check out our game challenge
+          </Link>
+        </div>
+        <div className="footer__section">
+          <h2 className="footer__title">Keep up with news from us</h2>
+          <input className="footer__input" type="email" placeholder="Email" value={email} onChange={handleInputChange} />
+          {showMessage && <p className="message" style={{ color: isEmailValid ? 'green' : 'red' }} >{message}</p>}
+
+          <label>
+            <input className="footer__checkbox" type="checkbox" checked={isChecked} onChange={handleCheckboxChange} />
+            Sign up to our newsletter, to receive updates on the latest news
+            releases and special offers.
+          </label>
+          <p>
+            <button className="footer__button" onClick={validateEmail}>Subscribe</button>
+          </p>
+        </div>
+      </div>
+      <nav className="footer__nav">
+        <Link to="/about" className="footer__nav-link" onClick={scrollToTop}>
+          About
+        </Link>
+        <Link to="/projects" className="footer__nav-link" onClick={scrollToTop}>
+          Projects
+        </Link>
+        <Link to="/events" className="footer__nav-link" onClick={scrollToTop}>
+          Events
+        </Link>
+        <Link to="/team" className="footer__nav-link" onClick={scrollToTop}>
+          Team
+        </Link>
+        <Link to="/contact" className="footer__nav-link" onClick={scrollToTop}>
+          Contact
+        </Link>
+      </nav>
+
+      <div className="footer__social">
+        <a
+          href="https://github.com/club-innovation"
+          className="footer__social-link"
+          target="_blank"
+        >
+          <GitHubIcon className="footer__social-icon" alt="GitHub" />
+        </a>
+        <a
+          href="https://www.instagram.com/emsi_innovation/?hl=en"
+          className="footer__social-link"
+          target="_blank"
+        >
+          <InstagramIcon className="footer__social-icon" alt="Instagram" />
+        </a>
+        <a href="#" className="footer__social-link" target="_blank">
+          <LinkedInIcon className="footer__social-icon" alt="LinkedIn" />
+        </a>
+        <a href="https://discord.gg/GWfhC66hhG" className="footer__social-link" target="_blank">
+          <img
+            src={DiscordIcon}
+            className="footer__social-icon-disc"
+            alt="Discord"
+          />
+        </a>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

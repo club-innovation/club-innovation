@@ -1,28 +1,69 @@
-.primary-color
-{
-    color: var(--primary-color);
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: none;
 }
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--dark-primary-color), var(--dark-secondary-color));
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease-in-out;
+  animation: pulse 1s ease-out infinite;
+
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: linear-gradient(to right, var(--dark-primary-color), var(--dark-secondary-color));
+}
+
+::-webkit-scrollbar-corner
+{
+  background-color: transparent;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
 .secondary-color {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 button {
-    font-family: 'Poppins';
-    font-size: 15px;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-    width: 150px;
-    height: 50px;
-    border-radius: 15px;
-    cursor: pointer;
-    border: 0;
+  font-family: 'Poppins';
+  font-size: 15px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
-    color: #fff;
-    background-color: var(--dark-primary-color);
+  color: #fff;
+  background-color: var(--dark-primary-color);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 button:active {
-    transform: translateY(1px);
+  transform: translateY(3px);
 }

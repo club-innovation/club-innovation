@@ -1,0 +1,170 @@
+.image {
+    text-align: center;
+    margin: auto;
+}
+.image img{
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto;
+    width: 175px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.member-list{
+    display: flex;
+    justify-content: center;
+}
+
+.contentBox{
+    margin-top: 20px;
+}
+
+.member-list-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 18vw 18vw 18vw;
+}
+.member-list-card
+{
+    min-height: 220px;
+    min-width: 210px;
+    position: relative;
+    background-color: var(--primary-color);
+    margin: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-bottom: 10px;
+}
+.member-list-card:hover 
+{
+    animation: gradient 15s ease infinite;
+    animation: pulse 0.5s ease-in-out;
+    background: linear-gradient(45deg, var(--primary-color), var( --dark-secondary-color), #23a6d5, #23d5ab);
+}
+.member-list-card:hover .member-list-name
+{
+    color: white;
+}
+.member-list-card:hover .member-list-poste
+{
+    color: var(--primary-color);
+}
+.member-list-card:hover .overlay
+{
+    border-radius: 12px;
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.6); 
+    visibility: visible;
+    color: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.icons{
+    color: white;
+}
+
+
+.icons:hover{
+    color: var(--primary-color);
+    transition: .5s;
+}
+
+.iconsUl{
+    list-style: none;
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.iconsUl li{
+    margin: 10px;
+}
+
+.member-list-name{
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: var(--secondary-color);
+}
+
+.member-list-poste{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.overlay{
+    position: absolute;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .member-list-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+
+    .member-list-poste {
+        font-size: 15px;
+        padding-bottom: 10px;   
+    }
+    .image img{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .member-list-container {
+        width: 100%;
+        display: block;
+    }
+    .member-list-card {
+        width: 55%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .member-list-poste {
+        font-size: 15px;
+    }
+    .image img{
+        width: 160px;
+    }
+    .contentBox{
+        margin-top: 20px;
+    }
+}
+  
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}

@@ -1,23 +1,46 @@
-.navbar-container{
+.navbar-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 30px 0;
+
+    position: relative;
+    top: 6vw;
+    margin-top: -3.8vw;
+    z-index: 2;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
 }
 
-.navbar>a{
+.navbar>a {
     margin-left: 1.2vw;
+}
+
+.navbar-container>a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .navbar-container h1 {
     font-size: calc(12px + 1.5vw);
     margin-right: 20px;
+    
 }
+
+.navbar-container h1:hover {
+    animation-name:glow;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px var(--primary-color),0px 0px 5px #614ad3;}
+  to{text-shadow:0px 0px 20px var(--primary-color),0px 0px 20px #614ad3;}
+}
+
 
 .navbar ul {
     display: flex;
@@ -27,7 +50,7 @@
     list-style: none;
 }
 
-.navbar li a{
+.navbar li a {
     background-color: var(--primary-color);
     display: block;
     width: 7vw;
@@ -43,17 +66,15 @@
 
 }
 
-.navbar li:first-child a
-{
+.navbar li:first-child a {
     border-radius: 0.8vw 0 0 0.8vw;
 }
 
-.navbar li:last-child a
-{
+.navbar li:last-child a {
     border-radius: 0 0.8vw 0.8vw 0;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: large;
@@ -74,15 +95,30 @@
 }
 
 /* Media Queries */
+@media screen and (min-width: 801px) {
+    .navbar-container h1 span {
+        color: var(--primary-color)
+    }
+}
+
 @media screen and (max-width: 800px) {
-   
-    .hamburger-btn
-    {
-        z-index: 1;
+
+    .navbar-container {
+        top: 8vw;
+        margin-top: -5vw;
+    }
+
+    .navbar-container h1 {
+        z-index: 102;
         position: relative;
     }
-    .navigation
-    {
+
+    .hamburger-btn {
+        z-index: 102;
+        position: relative;
+    }
+
+    .navigation {
         background-color: var(--primary-color);
         width: 50%;
         position: fixed;
@@ -90,12 +126,14 @@
         right: 0;
         width: 100%;
         height: 100%;
-        
+        z-index: 100;
     }
+
     .navbar ul {
         display: block;
         margin: 20vh 0;
     }
+
     .navbar li a {
         width: 100%;
         height: 10vh;
@@ -103,9 +141,16 @@
         text-align: center;
         font-size: calc(4px + 4vh);
     }
+
     .navbar li:first-child a,
-    .navbar li:last-child a 
-    {
+    .navbar li:last-child a {
         border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-container {
+        top: 15vw;
+        margin-top: -11vw;
     }
 }
