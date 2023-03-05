@@ -149,7 +149,7 @@ const events = [
                     image: taha,
                     github: 'https://github.com/taha-ammour',
                     instagram: '',
-                    linkedin: ''
+                    linkedin: 'https://www.linkedin.com/in/mohamed-taha-ammour-779385255'
                 },
                 {
                     name: 'Bader tebaa',

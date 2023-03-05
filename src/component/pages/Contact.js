@@ -85,17 +85,14 @@ function Contact() {
             <div className="button">
               <button type="submit">Contact Us</button>
             </div>
-
           </form>
         </div>
-
-
       </div>
       <div className="Container2">
         <div className="Container21">
           <div className="p1ragraph">
             <p className="p1contain">Contact</p>
-            <p className="p2contain">contact@emsicoders.com</p>
+            <p className="p2contain">contact.clubinnovation@gmail.com</p>
           </div>
           <div className="p2ragraph">
             <p className="p3contain">Based in</p>
