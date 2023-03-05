@@ -31,14 +31,14 @@ function Footer() {
   }
 
   function validateEmail() {
-    // if (submitCount > 2) {
-    //   setMessage("The subscription send limit has been exceeded.");
-    //   setEmailValid(false);
-    //   setShowMessage(true);
-    //   localStorage.setItem(emailSubscribtionKey, 3);
-    //   localStorage.setItem(expirationDateKey, (Date.now() + 1 * 24 * 60 * 60 * 1000));
-    //   return;
-    // }
+    if (submitCount > 2) {
+      setMessage("The subscription send limit has been exceeded.");
+      setEmailValid(false);
+      setShowMessage(true);
+      localStorage.setItem(emailSubscribtionKey, 3);
+      localStorage.setItem(expirationDateKey, (Date.now() + 1 * 24 * 60 * 60 * 1000));
+      return;
+    }
 
     const rejex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -57,7 +57,7 @@ function Footer() {
         setEmailValid(true);
       });
 
-      // setSubmitCount(submitCount => submitCount + 1);
+      setSubmitCount(submitCount => submitCount + 1);
       localStorage.setItem(emailSubscribtionKey, submitCount);
       console.log("New count: " + submitCount);
 
