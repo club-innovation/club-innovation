@@ -24,7 +24,6 @@ const projects = [
         title: "Pilot Game DEMO",
         shortDescription: "project short description",
         description: "Pilot is an exciting 2022 game developed by Innovation Club using Unity and C#. Maneuver through a futuristic world filled with obstacles and solve logical puzzles. With stunning visuals and immersive sound effects, Pilot offers a challenging but intuitive gameplay experience, ideal for those who enjoy a mental challenge.",
-        image: Pilot,
         images: [
             { url: Pilot },
             { url: ptwo },
@@ -36,7 +35,7 @@ const projects = [
         date: "22/02/2022",
         duration: "3 months",
         city: "Marrakech",
-        adresse: "ECOLE MAROCAINE DES SCIENCES DE L'INGENIEUR 05 lot bouizgaren, Rte de Safi",
+        adresse: "05 lot bouizgaren, Rte de Safi, Marrakech 40000, Morocco, EMSI CENTRE",
         map:
         {
             lat: 31.63122053463084,
@@ -99,7 +98,6 @@ const projects = [
         title: "Club Innovation Website",
         shortDescription: "project short description",
         description: "Club Innovation is a modern website created in 2023 by the Innovation Club team using React JS, pure HTML, and pure CSS. The sleek design and user-friendly interface make it easy to navigate, while the use of GitHub for code management ensures constant updates and improvements. Check it out to explore the world of innovation and technology!",
-        image: wone,
         images: [
             { url: wone },
             { url: wtwo },
@@ -111,7 +109,7 @@ const projects = [
         date: "17/02/2023",
         duration: "15 days",
         city: "Marrakech",
-        adresse: "Gueliz, Marrakech",
+        adresse: "05 lot bouizgaren, Rte de Safi, Marrakech 40000, Morocco, EMSI CENTRE",
         map:
         {
             lat: 31.653610147613122,

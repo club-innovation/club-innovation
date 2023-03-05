@@ -15,7 +15,6 @@ const events = [
         title: "Brain Storming",
         shortDescription: "project short description",
         description: "The CLUB INNOVATION EMSI MARRAKECH is organizing a brainstorming event on Thursday, November 17th, at the EMSI GUELIZ amphitheater. The objective of this event is to exchange and discuss future innovative projects. All participants are welcome to share their ideas and participate in constructive discussions. This event is a unique opportunity to meet creative and passionate individuals who wish to contribute to the innovation and development of the region. Whether you are a student, a professional or simply interested in innovative projects, this event is an opportunity to network and participate in a stimulating conversation. Come in large numbers and do not hesitate to share your ideas to contribute to a more innovative and promising future.",
-        image: brain,
         images: [
             { url: brain },
         ],
@@ -23,13 +22,13 @@ const events = [
         date: "17/11/2022",
         duration: "30 min",
         city: "Marrakech",
-        adresse: "Gueliz, Marrakech",
+        adresse: "Rue Yougoslavie, Marrakech 40000, Morocco, EMSI GUELIZ, AMPHI",
         map:
         {
-            lat: 31.653610147613122,
-            lon: -8.021447459904543
+            lat: 31.63122053463084,
+            lon: -8.012774493797531
         },
-        link: "https://club-innovation.github.io/club-innovation",
+        link: "",
         organizers:
             [
                 {
@@ -86,7 +85,6 @@ const events = [
         title: "Recruitment Session",
         shortDescription: "project short description",
         description: "The Club Innovation Recruitment Session is an event designed to attract new members to join the Team and become part of a community of engaged and passionate individuals. The session is open to individuals who are interested in becoming a member of the Team and contributing to its mission.",
-        image: hiring,
         images: [
             { url: hiring },
         ],
@@ -94,11 +92,11 @@ const events = [
         date: "09/03/2023",
         duration: "40 min",
         city: "Marrakech",
-        adresse: "EMSI Gueliz, Marrakech, Salle 101",
+        adresse: "Rue Yougoslavie, Marrakech 40000, Morocco, EMSI GUELIZ, Salle 101",
         map:
         {
-            lat: 31.653610147613122,
-            lon: -8.021447459904543
+            lat: 31.63122053463084,
+            lon: -8.012774493797531
         },
         link: "https://docs.google.com/forms/d/e/1FAIpQLSfiG0c18PN8zzvWBHC6PKUZY0dNDrLZ70VYiLOW7C57R18uzQ/viewform?usp=sf_link",
         organizers:

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./style/NotFound.css"
 
 import { Stars } from "../Particle";
@@ -10,6 +10,17 @@ import moon from "../../imgs/notFound/moon.svg"
 import fog from "../../imgs/notFound/fog.svg"
 
 function NotFound() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(()=>{
+    scrollToTop();
+  }, []);
+
   return (
     <>
     <Stars />

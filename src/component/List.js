@@ -21,7 +21,7 @@ function List({data, page}) {
                     const elementLink = "/" + page + "/" + (data.length -1-index);
                     return(
                     <Link to={elementLink} key={index}>
-                        <div className="list-card" style={{backgroundImage: `url(${element.image})`}}>
+                        <div className="list-card" style={{backgroundImage: `url(${element.images[0].url})`}}>
                             <div className="list-card-info">
                                 <p className="list-card-info-title">{element.title}</p>
                             </div>

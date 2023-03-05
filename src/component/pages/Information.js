@@ -43,7 +43,8 @@ function Information({ type }) {
     function ChangeImageLeft()
     {
         var count = imageSliderIndex;
-        count = count-1 === 0 ? GetData().images.length-1 : count-1;
+        count = count-1 === -1 ? GetData().images.length-1 : count-1;
+        console.log(count);
 
         setImageSliderIndex(count);
     }
@@ -104,7 +105,7 @@ function Information({ type }) {
                 <div className="information-map-details">
                     <h1><span className="primary-color">WHERE</span></h1>
                     <p>{GetData().adresse}</p>
-                            <Link target="_blank" to={GetData().link}><button>{buttonTitle}</button></Link>
+                    {GetData().link === "" ? <Link to={"#"}><button>{buttonTitle}</button></Link> : <Link target="_blank" to={GetData().link}><button>{buttonTitle}</button></Link>}
                 </div>
             </div>
             </> 
