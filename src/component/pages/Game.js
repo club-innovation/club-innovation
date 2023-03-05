@@ -24,6 +24,11 @@ function Game() {
           &#123;Pilot <span className="primary-color">Game</span>&#125;
         </h1>
       </div>
+      <div className="list-title">
+      <div className="use-desktop">
+        <h3>Use Your Desktop !!!</h3>
+      </div>
+      </div>
       <div className="GameUi">
         <iframe
           src="https://club-innovation.github.io/Pilot_Webgl/"
@@ -34,11 +39,7 @@ function Game() {
       <div className="button-full">
         <input onClick={requestFullscreen} value="Fullscreen" type="button"/>
       </div>
-      <div className="list-title">
-      <div className="use-desktop">
-        <h3>Use Your Desktop !!!</h3>
-      </div>
-      </div>
+
     </div>
   );
 }
