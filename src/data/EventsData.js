@@ -74,7 +74,7 @@ const events = [
                 },
                 {
                     name: 'Abdelmoughit Moubarik',
-                    role: 'Member',
+                    role: 'Communication Manager',
                     image: moughit,
                     github: 'https://github.com/AkaMoughit',
                     instagram: 'https://www.instagram.com/mo.ughiit',

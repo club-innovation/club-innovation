@@ -8,7 +8,6 @@ import oualid from '../imgs/team/oualid.jpeg'
 import taha from '../imgs/team/taha.jpeg'
 import badr from '../imgs/team/bader.jpg'
 import moughit from '../imgs/data/members/moughit.jpeg'
-import tirgani from '../imgs/data/members/baderdinne.jpeg'
 import pone from "../imgs/data/game/2.png";
 import ptwo from "../imgs/data/game/3.png";
 import pthree from "../imgs/data/game/4.png";
@@ -22,7 +21,7 @@ import wfive from "../imgs/data/innovation-website/5.png"
 
 const projects = [
     {
-        title: "Pilot GameDemo",
+        title: "Pilot Game DEMO",
         shortDescription: "project short description",
         description: "Pilot is an exciting 2022 game developed by Innovation Club using Unity and C#. Maneuver through a futuristic world filled with obstacles and solve logical puzzles. With stunning visuals and immersive sound effects, Pilot offers a challenging but intuitive gameplay experience, ideal for those who enjoy a mental challenge.",
         image: Pilot,
@@ -88,19 +87,11 @@ const projects = [
                 },
                 {
                     name: 'Abdelmoughit Moubarik',
-                    role: 'Member',
+                    role: 'Communication Manager',
                     image: moughit,
                     github: 'https://github.com/AkaMoughit',
                     instagram: 'https://www.instagram.com/mo.ughiit',
                     linkedin: 'https://www.linkedin.com/in/abdelmoughit-moubarik-b258671a5/'
-                },
-                {
-                    name: 'Badereddine tirgani',
-                    role: 'Member',
-                    image: tirgani,
-                    github: 'https://github.com/',
-                    instagram: 'https://www.instagram.com/',
-                    linkedin: 'https://www.linkedin.com'
                 },
             ]
     },
