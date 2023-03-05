@@ -9,11 +9,12 @@
 
 #notFound-moon {
     width: 30%;
-    padding-bottom: 15%;
+    margin-bottom: 13%;
 }
 
 #notFound-fog {
     width: 25%;
+    padding-top: 15%;
     transform: translate(-118%, -5%);
     position: relative;
     z-index: -1;
@@ -22,13 +23,15 @@
 #notFound-earth
 {
     width: 9%;
-    transform: translate(-540%, -20%);
+    margin-left: -48%;
+    margin-bottom: 2%;
 }
 
 #notFound-astronaut
 {
     width: 12%;
-    transform: translate(100%, 0%);
+    margin-left: 48%;
+    margin-bottom: 5%;
 }
 
 .notFound-description
@@ -36,7 +39,7 @@
     text-align: center;
     font-family: 'Poppins';
     width: fit-content;
-    margin-bottom: -10%;
+    margin-bottom: 20%;
     transform: translate(180%, -300%);
 }
 
@@ -48,4 +51,62 @@
 .notFound-description h4 
 {
     font-size: 3vw;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 20px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.rotate-1 {
+    animation: rotation 1s infinite linear;
+}
+.rotate-2 {
+    animation: rotation 2s infinite linear;
+}
+.rotate-3 {
+    animation: rotation 3s infinite linear;
+}
+.rotate-4 {
+    animation: rotation 4s infinite linear;
+}
+.rotate-5 {
+    animation: rotation 5s infinite linear;
+}
+.rotate-10 {
+    animation: rotation 10s infinite linear;
+}
+.rotate-30 {
+    animation: rotation 30s infinite linear;
+}
+.rotate {
+    animation: rotation 300s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }

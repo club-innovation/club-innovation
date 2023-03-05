@@ -15,12 +15,12 @@ function NotFound() {
     <Stars />
     <div className="notFound">
       <div className="notFound-space">
-        <img id="notFound-moon" src={moon} alt="moon" />
+        <img id="notFound-moon" className="rotate" src={moon} alt="moon" />
         <img id="notFound-fog" src={fog} alt="fog" />
-        <img id="notFound-earth" src={earth} alt="earth" />
-        <img id="notFound-astronaut" src={astronaut} alt="Astronaut" />
+        <img id="notFound-earth" className="rotate-30" src={earth} alt="earth" />
+        <img id="notFound-astronaut" className="floating" src={astronaut} alt="Astronaut" />
 
-        <div className="notFound-description">
+          <div className="notFound-description">
           <h2>&#123;<span className="primary-color">404</span>&#125;</h2>
           <h4>Page not <span className="primary-color">found!</span></h4>
         </div>
