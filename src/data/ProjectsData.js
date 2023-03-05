@@ -95,7 +95,7 @@ const projects = [
                     linkedin: 'https://www.linkedin.com/in/abdelmoughit-moubarik-b258671a5/'
                 },
                 {
-                    name: 'Bdereddine tirgani',
+                    name: 'Badereddine tirgani',
                     role: 'Member',
                     image: tirgani,
                     github: 'https://github.com/',
