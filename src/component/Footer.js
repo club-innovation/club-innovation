@@ -8,7 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DiscordIcon from "../imgs/svg/discord-mark-white1.svg";
 
-import { addEmail, isEmailExists } from "../utils/firestore";
+import { addEmail, getDocIdByEmail, updateNewsLetter } from "../utils/firestore";
 
 function Footer() {
   const [email, setEmail] = useState("");
@@ -31,29 +31,33 @@ function Footer() {
   }
 
   function validateEmail() {
-    if (submitCount > 2) {
-      setMessage("The subscription send limit has been exceeded.");
-      setEmailValid(false);
-      setShowMessage(true);
-      localStorage.setItem(emailSubscribtionKey, 3);
-      localStorage.setItem(expirationDateKey, (Date.now() + 1 * 24 * 60 * 60 * 1000));
-      return;
-    }
+    // if (submitCount > 2) {
+    //   setMessage("The subscription send limit has been exceeded.");
+    //   setEmailValid(false);
+    //   setShowMessage(true);
+    //   localStorage.setItem(emailSubscribtionKey, 3);
+    //   localStorage.setItem(expirationDateKey, (Date.now() + 1 * 24 * 60 * 60 * 1000));
+    //   return;
+    // }
 
     const rejex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (rejex.test(email)) {
-
-      isEmailExists(email).then((result) => {
-        console.log(result);
-        if (!result) {
+     // Call the getDocIdByEmail function to retrieve the ID of a document in the "Emails" collection that corresponds to the given email.
+      getDocIdByEmail(email).then((result) => {
+     // If the result is null (indicating that no matching email was found)...
+        if (result == null) {
+     // Call the addEmail function to add a new email to the collection .
           addEmail(new Date().toLocaleString(), email, isChecked);
+        } else {
+     // Otherwise, call the updateNewsLetter function to update the "Newsletter" value of the existing email with the new newsletter value (true or false).
+          updateNewsLetter(result, email, isChecked);
         }
         setMessage("You have successfully subscribed.");
         setEmailValid(true);
       });
 
-      setSubmitCount(submitCount => submitCount + 1);
+      // setSubmitCount(submitCount => submitCount + 1);
       localStorage.setItem(emailSubscribtionKey, submitCount);
       console.log("New count: " + submitCount);
 
@@ -71,8 +75,7 @@ function Footer() {
     });
   };
 
-  function ResetCounter()
-  {
+  function ResetCounter() {
 
     const tmpExpirationDateValue = localStorage.getItem(expirationDateKey);
     if (Date.now() > tmpExpirationDateValue) {
