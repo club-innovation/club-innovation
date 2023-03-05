@@ -7,6 +7,8 @@ import mohammed from '../imgs/team/mohamed.jpeg'
 import oualid from '../imgs/team/oualid.jpeg'
 import taha from '../imgs/team/taha.jpeg'
 import badr from '../imgs/team/bader.jpg'
+import moughit from '../imgs/data/members/moughit.jpeg'
+import tirgani from '../imgs/data/members/baderdinne.jpeg'
 import pone from "../imgs/data/game/2.png";
 import ptwo from "../imgs/data/game/3.png";
 import pthree from "../imgs/data/game/4.png";
@@ -83,6 +85,22 @@ const projects = [
                     github: 'https://github.com/badertebaa',
                     instagram: 'https://www.instagram.com/badertebaa/',
                     linkedin: 'https://www.linkedin.com/in/badr-tebaa-310a50207/'
+                },
+                {
+                    name: 'Abdelmoughit Moubarik',
+                    role: 'Member',
+                    image: moughit,
+                    github: 'https://github.com/AkaMoughit',
+                    instagram: 'https://www.instagram.com/mo.ughiit',
+                    linkedin: 'https://www.linkedin.com/in/abdelmoughit-moubarik-b258671a5/'
+                },
+                {
+                    name: 'Bdereddine tirgani',
+                    role: 'Member',
+                    image: tirgani,
+                    github: 'https://github.com/',
+                    instagram: 'https://www.instagram.com/',
+                    linkedin: 'https://www.linkedin.com'
                 },
             ]
     },

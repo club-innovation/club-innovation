@@ -6,6 +6,7 @@ import mohammed from '../imgs/team/mohamed.jpeg'
 import oualid from '../imgs/team/oualid.jpeg'
 import taha from '../imgs/team/taha.jpeg'
 import badr from '../imgs/team/bader.jpg'
+import moughit from '../imgs/data/members/moughit.jpeg'
 import brain from '../imgs/events/brainstor/1.png'
 import hiring from '../imgs/events/hiring/1.jpeg'
 
@@ -71,6 +72,14 @@ const events = [
                     instagram: 'https://www.instagram.com/badertebaa/',
                     linkedin: 'https://www.linkedin.com/in/badr-tebaa-310a50207/'
                 },
+                {
+                    name: 'Abdelmoughit Moubarik',
+                    role: 'Member',
+                    image: moughit,
+                    github: 'https://github.com/AkaMoughit',
+                    instagram: 'https://www.instagram.com/mo.ughiit',
+                    linkedin: 'https://www.linkedin.com/in/abdelmoughit-moubarik-b258671a5/'
+                },
             ]
     },
     {
@@ -85,7 +94,7 @@ const events = [
         date: "09/03/2023",
         duration: "40 min",
         city: "Marrakech",
-        adresse: "Gueliz, Marrakech",
+        adresse: "EMSI Gueliz, Marrakech, Salle 101",
         map:
         {
             lat: 31.653610147613122,
