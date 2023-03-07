@@ -158,9 +158,9 @@ function Footer() {
         >
           <InstagramIcon className="footer__social-icon" alt="Instagram" />
         </a>
-        {/* <a href="#" className="footer__social-link" target="_blank">
+        <a href="https://www.linkedin.com/company/club-innovation-emsi-marrakech/" className="footer__social-link" target="_blank">
           <LinkedInIcon className="footer__social-icon" alt="LinkedIn" />
-        </a> */}
+        </a>
         <a href="https://discord.gg/GWfhC66hhG" className="footer__social-link" target="_blank">
           <img
             src={DiscordIcon}
