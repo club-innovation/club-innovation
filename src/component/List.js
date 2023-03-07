@@ -21,9 +21,10 @@ function List({data, page}) {
                     const elementLink = "/" + page + "/" + (data.length -1-index);
                     return(
                     <Link to={elementLink} key={index}>
-                        <div className="list-card" style={{backgroundImage: `url(${element.images[0].url})`}}>
+                            <div className="list-card" style={{ backgroundImage: `linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, .9)),url(${element.images[0].url})`}}>
                             <div className="list-card-info">
                                 <p className="list-card-info-title">{element.title}</p>
+                                <p className="list-card-info-date">{element.date}</p>
                             </div>
                         </div>
                     </Link>)

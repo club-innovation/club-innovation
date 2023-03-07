@@ -54,6 +54,14 @@
     font-weight: 500;
     text-align: left;
     text-shadow: 1px 1px 5px #000;
+    line-height: .7vw;
+}
+.list-card-info-date
+{
+    font-size: calc(.5vw + 10px);
+    font-weight: 200;
+    text-align: left;
+    text-shadow: 1px 1px 5px #000;
 }
 
 .list-btn-container
