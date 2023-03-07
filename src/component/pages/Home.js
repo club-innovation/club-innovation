@@ -85,7 +85,7 @@ function Home() {
                 </p>
                 <div className="text-container">
                    <p>
-                      Discover the Emsi Innovation System a system where you will have fun and learn at the same time
+                      Explore the Emsi Marrakech Club Innovation System, which offers an opportunity to learn and have fun simultaneously.
                    </p>
                 </div>
             </div>
@@ -99,7 +99,7 @@ function Home() {
 
           <div className="container">
             <HomeCards title="Learning Resources" description="Free Online resources for learning and obtaining certificates
-                  in many areas related to computer sience." image={programming}/>
+                  in many areas related to computer science." image={programming}/>
 
             <HomeCards description="We will have a lot of projects ! Several teams will be formed
                   And We will all work together on fun projects!" image={projects} title="Projects"/>
