@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/club-innovation/static/css/main.91312204.css",
-    "main.js": "/club-innovation/static/js/main.81249094.js",
+    "main.css": "/club-innovation/static/css/main.4a17d363.css",
+    "main.js": "/club-innovation/static/js/main.410b79ab.js",
     "static/media/ending.gif": "/club-innovation/static/media/ending.28ca47eba165111d4e62.gif",
     "static/media/background.jpg": "/club-innovation/static/media/background.81b13e3224d0d2601392.jpg",
     "static/media/build.gif": "/club-innovation/static/media/build.2d480083bc6b62650afd.gif",
@@ -38,11 +38,11 @@
     "static/media/fog.svg": "/club-innovation/static/media/fog.a2aaa1f3fd32a1229fe07c16e14015a4.svg",
     "static/media/hamburger.svg": "/club-innovation/static/media/hamburger.bd91d9ada9a2576e9bc891f9e0e7a003.svg",
     "index.html": "/club-innovation/index.html",
-    "main.91312204.css.map": "/club-innovation/static/css/main.91312204.css.map",
-    "main.81249094.js.map": "/club-innovation/static/js/main.81249094.js.map"
+    "main.4a17d363.css.map": "/club-innovation/static/css/main.4a17d363.css.map",
+    "main.410b79ab.js.map": "/club-innovation/static/js/main.410b79ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.91312204.css",
-    "static/js/main.81249094.js"
+    "static/css/main.4a17d363.css",
+    "static/js/main.410b79ab.js"
   ]
 }
