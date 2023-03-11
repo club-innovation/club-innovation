@@ -43,7 +43,7 @@ function FloatButtons() {
     return (
         <div className="icons-left">
             <div className="icons-container">
-                <Link target="blank_" to="https://discord.gg/ZB3GbCsG">
+                <Link target="blank_" to="https://discord.gg/bYF6M2K8H4">
                     <span className="discord-icon" onClick={returnToHome}>
                         <img src={Discord} />
                     </span>

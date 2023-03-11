@@ -161,7 +161,7 @@ function Footer() {
         <a href="https://www.linkedin.com/company/club-innovation-emsi-marrakech/" className="footer__social-link" target="_blank">
           <LinkedInIcon className="footer__social-icon" alt="LinkedIn" />
         </a>
-        <a href="https://discord.gg/GWfhC66hhG" className="footer__social-link" target="_blank">
+        <a href="https://discord.gg/bYF6M2K8H4" className="footer__social-link" target="_blank">
           <img
             src={DiscordIcon}
             className="footer__social-icon-disc"
