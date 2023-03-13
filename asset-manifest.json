@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/club-innovation/static/css/main.4a17d363.css",
-    "main.js": "/club-innovation/static/js/main.57d290f8.js",
+    "main.js": "/club-innovation/static/js/main.e9b586b5.js",
     "static/media/ending.gif": "/club-innovation/static/media/ending.28ca47eba165111d4e62.gif",
     "static/media/background.jpg": "/club-innovation/static/media/background.81b13e3224d0d2601392.jpg",
     "static/media/build.gif": "/club-innovation/static/media/build.2d480083bc6b62650afd.gif",
@@ -19,15 +19,18 @@
     "static/media/4.png": "/club-innovation/static/media/4.6baafbddc91b93e02d13.png",
     "static/media/up.gif": "/club-innovation/static/media/up.b913bbdf4dced6920f58.gif",
     "static/media/5.png": "/club-innovation/static/media/5.0aa2a178a198a601fc60.png",
+    "static/media/rania.jpg": "/club-innovation/static/media/rania.857831848545e7d036be.jpg",
     "static/media/oualid.jpeg": "/club-innovation/static/media/oualid.b4c57c4fde1f360df22a.jpeg",
     "static/media/bader.jpg": "/club-innovation/static/media/bader.84596dd8a0f9b56f4ba6.jpg",
     "static/media/1.jpeg": "/club-innovation/static/media/1.52a7866277fe463a378c.jpeg",
     "static/media/hamza.jpg": "/club-innovation/static/media/hamza.b562dcab628dc3d9b8ba.jpg",
     "static/media/2.png": "/club-innovation/static/media/2.80e8db52d80c658f0066.png",
     "static/media/mohamed.jpeg": "/club-innovation/static/media/mohamed.e8685685dade0e9d3b66.jpeg",
+    "static/media/mouad.jpeg": "/club-innovation/static/media/mouad.cf428b0d1d910a8fc129.jpeg",
     "static/media/taha.jpeg": "/club-innovation/static/media/taha.cd26cf8ad0ca4eeba1c8.jpeg",
     "static/media/moughit.jpeg": "/club-innovation/static/media/moughit.aa29eca1e06f64e0279b.jpeg",
     "static/media/calendar.png": "/club-innovation/static/media/calendar.0f5ea8f767685b942852.png",
+    "static/media/imane.jpeg": "/club-innovation/static/media/imane.dc4cb078b605d0f5442f.jpeg",
     "static/media/creativity.png": "/club-innovation/static/media/creativity.1e0518e720b6005ef53a.png",
     "static/media/moon.svg": "/club-innovation/static/media/moon.3222bc19a2c9dba389c0f95258e546a1.svg",
     "static/media/earth.svg": "/club-innovation/static/media/earth.c1a35e0a400cf580971241322b892b0f.svg",
@@ -39,10 +42,10 @@
     "static/media/hamburger.svg": "/club-innovation/static/media/hamburger.bd91d9ada9a2576e9bc891f9e0e7a003.svg",
     "index.html": "/club-innovation/index.html",
     "main.4a17d363.css.map": "/club-innovation/static/css/main.4a17d363.css.map",
-    "main.57d290f8.js.map": "/club-innovation/static/js/main.57d290f8.js.map"
+    "main.e9b586b5.js.map": "/club-innovation/static/js/main.e9b586b5.js.map"
   },
   "entrypoints": [
     "static/css/main.4a17d363.css",
-    "static/js/main.57d290f8.js"
+    "static/js/main.e9b586b5.js"
   ]
 }
