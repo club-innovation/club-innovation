@@ -4,7 +4,10 @@ import mohammed from '../imgs/team/mohamed.jpeg';
 import oualid from '../imgs/team/oualid.jpeg';
 import taha from '../imgs/team/taha.jpeg';
 import yahya from '../imgs/team/yahya.png';
-import badr from '../imgs/team/bader.jpg'
+import badr from '../imgs/team/bader.jpg';
+import mouad from '../imgs/team/mouad.jpeg';
+import imane from '../imgs/team/imane.jpeg';
+import rania from '../imgs/team/rania.jpg';
 
 const Members = [
     {
@@ -56,12 +59,36 @@ const Members = [
         linkedin: 'https://www.linkedin.com/in/mohamed-taha-ammour-779385255'
     },
     {
-        name: 'Bader tebaa',
+        name: 'Bader Tebaa',
         role: 'Treasurer',
         image: badr,
         github: 'https://github.com/badertebaa',
         instagram: 'https://www.instagram.com/badertebaa/',
         linkedin: 'https://www.linkedin.com/in/badr-tebaa-310a50207/'
+    },
+    {
+        name: 'Imane Barakate',
+        role: 'Communication Manager',
+        image: imane,
+        github: 'https://github.com/Imane049',
+        instagram: '',
+        linkedin: ''
+    },
+    {
+        name: 'Rania Elhezzam',
+        role: 'Communication Co-Manager',
+        image: rania,
+        github: '',
+        instagram: 'https://www.instagram.com/rania.elhazzam',
+        linkedin: ''
+    },
+    {
+        name: 'Mouad Nadzi',
+        role: 'Social Media Manager',
+        image: mouad,
+        github: 'https://github.com/MouadNadzi',
+        instagram: 'https://www.instagram.com/nadzi_mouad',
+        linkedin: 'https://www.linkedin.com/in/mouad-nadzi-46b8b01bb'
     },
 ];
 
